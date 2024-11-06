@@ -1,0 +1,13 @@
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Exemplo 1: Propagação de descontinuidades}{9}{0}{1}
+\beamer@subsectionintoc {1}{2}{Exemplo 2: Falta de injetividade entre valores iniciais e soluções}{13}{0}{1}
+\beamer@sectionintoc {2}{Existência e Regularidade das soluções das Equações com Retardo}{20}{0}{2}
+\beamer@subsectionintoc {2}{1}{Propagação de Descontinuidades}{20}{0}{2}
+\beamer@sectionintoc {3}{Métodos Numéricos Contínuos}{37}{0}{3}
+\beamer@subsectionintoc {3}{1}{Métodos Contínuos para EDOs}{37}{0}{3}
+\beamer@sectionintoc {4}{O Modelo SIR}{39}{0}{4}
+\beamer@subsectionintoc {4}{1}{Descrição Matemática}{39}{0}{4}
+\beamer@subsectionintoc {4}{2}{Número Básico de Reprodução}{40}{0}{4}
+\beamer@subsectionintoc {4}{3}{Tamanho da Epidemia}{41}{0}{4}
+\beamer@sectionintoc {5}{Referências}{43}{0}{5}
