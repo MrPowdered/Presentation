@@ -131,6 +131,29 @@
 \setbeamertemplate{theorems}[numbered]
 
 
+\setbeamertemplate{section in toc}[square] 
+%\setbeamertemplate{subsection in toc}[square] 
+%\setbeamercolor{subsection in toc}{bg=white,fg=structure}
+\setbeamertemplate{subsection in toc}{
+\hspace{1.2em}{\color{structure}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par}
+
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=4.5ex,dp=2.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=4.5ex,dp=2.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}
+    \parbox{.45\paperwidth}{\inserttitle}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+
+
+
+
 % \numberwithin{equation}{section}
 % \numberwithin{prop}{section}
 % \numberwithin{cor}{section}
@@ -143,7 +166,8 @@
 % Thesis Info %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% title
-		\title{Como fazer o título caber?}	
+		%\title{Como fazer o título caber?}	
+		\title{Solução numérica de equações diferenciais funcionais do tipo neutro e aplicações}	
 	% author 
     % (In the mandatory argument "{}", separate multiple
     % authors with "\and" - use "\\" for better author name formatting
@@ -195,6 +219,7 @@
 
 \begin{frame}{Revisão de EDO}
 
+    \small
     \begin{defi}[Equações Diferenciais Ordinárias (EDOs)]
         \label{def:1:EDO} 
         Um \textit{Problema de Valor Inicial (PVI)} para \textit{Equações Diferenciais Ordinárias (EDOs)} é dado por
@@ -308,6 +333,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
+    \small
     
     \begin{defi}[Equações Diferenciais com Retardo (EDRs)]
     Seja $p>0$. Um PI para EDRs é dado por
@@ -354,6 +380,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 \begin{frame}{Exemplo 1: Propagação de descontinuidades}
 
+    \small
         Considere a equação
         \begin{equation}
             \begin{cases}
@@ -364,28 +391,36 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
         \end{equation}
 
 
-        \noindent
-        Observe que
-        \[
-            y'(0)^- = 0 \neq -1 = -y(-1) = y'(0)^+,
-        \]
+        \begin{itemize}
+            \item[$\bullet$] \noindent
+                Observe que
+                \[
+                    y'(0)^- = 0 \neq -1 = -y(-1) = y'(0)^+,
+                \]
 
-        \noindent
-        o que significa que $y'$ tem uma descontinuidade no 0. Mais ainda, derivando a primeira equação de \eqref{chap1:ex1:eq:1} obtemos
+                \noindent
+                o que significa que $y'$ tem uma descontinuidade no 0. 
 
-        \noindent
-        \begin{equation*}
-            y''(t) = - y'(t - 1) ,
-            \label{ex_intro1_eq1}
-        \end{equation*}
-        mostrando que a descontinuidade foi propagada para a segunda derivada de $y$ no ponto 1.  
+            \item[$\bullet$] Mais ainda, derivando a primeira equação de \eqref{chap1:ex1:eq:1} obtemos
+
+                \noindent
+                \begin{equation*}
+                    y''(t) = - y'(t - 1) ,
+                    \label{ex_intro1_eq1}
+                \end{equation*}
+                mostrando que a descontinuidade foi propagada para a segunda derivada de $y$ no ponto 1.  
+
+        \end{itemize}
+
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Exemplo 1: Continuação}
-        Mostraremos, por indução, que a equação $ y''(t) = - y'(t - 1)$ implica na seguinte relação de recorrência
+
+    
+    \phantom{aa} $\bullet$ Mostraremos, por indução, que a equação $ y''(t) = - y'(t - 1)$ implica na seguinte relação de recorrência
 
         \begin{equation*}
             y^{(n+1)}(t) = (-1)^n y' (t-n), \qquad n = 1, 2, \dots
@@ -502,6 +537,8 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 \begin{frame}{Exemplo 2 (Continuação)}
 
+    \small
+
         \begin{defi}[Condição de Lipschitz]
             \label{def:EDR:Lips}
             Uma função $f: \overline{D} = [t_0, t_f] \times \R^d \times \R^d \to \R^d $ é dita que satisfaz a condição \textbf{Lipschitz} em relação às variáveis y e x no conjunto $\overline{D}$ se, e somente se,
@@ -589,21 +626,26 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
       \label{chap1:ex5:eq:1}
      \end{equation}
 
-     Como 
+     \begin{itemize}
+         \item[$\bullet$] Como 
 
-     \[
-       y'(0)^- = 1 \neq -1 = - y'(-1) = y'(0)^+,
-     \]
-    
-     \noindent
-     temos que a a primeira derivada de $y$ tem uma descontinuidade no ponto $t = 0$, mas já que $y'(t) = -y'(t - 1)$, então a descontinuidade se propaga em $y'$ para todo $t = 2, 3, \dots$. 
+             \[
+                 y'(0)^- = 1 \neq -1 = - y'(-1) = y'(0)^+,
+             \]
 
+             \noindent
+             temos que a a primeira derivada de $y$ tem uma descontinuidade no ponto $t = 0$.
+         \item[$\bullet$] Como $y'(t) = -y'(t - 1)$, então a descontinuidade se propaga em $y'$ para todo $t = 2, 3, \dots$. 
+
+     \end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Exemplo 3. Continuação}
+
+    \small
 
      $\bullet$ Utilizando o método dos passos em \eqref{chap1:ex5:eq:1}, é possível mostrar por indução que a seguinte função é solução
      
@@ -720,6 +762,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
     $\bullet$ Suponha que $\alpha(\xi_{1, i}) = t_0 $ e que $ \alpha'(\xi_{1, i}) \neq 0, $ pela regra da cadeia, obtemos
 
+    \footnotesize
     \begin{equation}
         \begin{aligned}
             y''(t)^{ \pm}= & \frac{\partial f}{\partial t}(t, y(t), y(\alpha(t)))+\frac{\partial f}{\partial y}(t, y(t), y(\alpha(t))) y'(t) \\
@@ -728,6 +771,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
         \label{chap2:eq:EDR:chain_rule}
     \end{equation}
 
+    \normalsize
     $\bullet$ Como assumimos que \(\phi'(t_{0})^{-} \neq y'(t_{0})^{+}\), então não existe \(y''(\xi_{1, i})^- \neq y''(\xi_{1, i})^+\) e, portanto, $y''$ tem uma descontinuidade em $\xi_{1, i}$.
 
     $\bullet$ De forma análoga, é possível mostrar que as descontinuidades se propagam para $y'''$ nos pontos $\xi_{2, i}$ tais que $\alpha(\xi_{2, i}) = \xi_{1, i}$, e assim sucessivamente. 
@@ -757,7 +801,9 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 \begin{frame}{Descontinuidades principais}
 
-    $\bullet$ Dentre as descontinuidades primárias, um tipo delas se destaca em importância.
+    \small
+
+    Dentre as descontinuidades primárias, um tipo delas se destaca em importância.
 
     \begin{defi}
         \label{chap2:def:principal_descontinuity}
@@ -888,6 +934,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 \subsection{Desaparecimento do Retardo}
 \begin{frame}{Desaparecimento do Retardo}
+    \small
 
     \begin{proof}
         $\bullet$ Como $\alpha$ é contínua, e como $\alpha(\xi_{k,i}) \leq \xi_{k, i} \leq  \alpha(\xi)$, temos que, pelo teorema do valor intermediário, existe $\xi_{k+1, j} \in (\xi_{k,i}, \xi)$ tal que $\alpha(\xi_{k+1, j}) = \xi_{k,i}$. 
@@ -1093,6 +1140,8 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 \begin{frame}{Métodos discretos para EDOs}
 
+    \small
+
     \phantom{aa} $\bullet$ Caso $k = 1$, temos os chamados métodos de passo único, como o método de Euler 
 
     \[
@@ -1156,6 +1205,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
     \begin{defi}[Extensão contínua]
         Uma \textit{extensão contínua}, ou \textit{interpolante} do método \eqref{chap3:def:eq:ODE_method} é uma função polinomial $\eta(t)$ definida por partes nos intervalos $[t_n, t_{n+1}]$ baseada em valores calculados pelo método definidos em $[t_{n - i_n}, t_{n+j_n + 1}]$, para $i_n, j_n \geq 0$. 
 
+        \scriptsize
         \begin{equation}
             \begin{split}
                 \eta(t_n + \theta h_{n+1}) = &\beta_{n, 1} (\theta) y_{n + j_n} + \dots + \beta_{n, j_n + i_n + 1}(\theta) y_{n - i_n} \\
@@ -1165,8 +1215,10 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
         \end{equation}
 
         \noindent
+        \normalsize
         para $\Delta _n ' = \{ t_{n - i_n} , \dots, t_{n+j_n}, t_{n +j_n + 1} \}$, onde $\eta$ satisfaz a seguinte condição de continuidade
 
+        \scriptsize
         \begin{equation}
             \eta(t_n) = y_n \qquad  \text{ e } \qquad \eta(t_{n+1}) = y_{n+1}
             \label{chap3:def:eq:continuity_condition}
@@ -1251,6 +1303,8 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
                 \label{chap3:assumption:point_lipschitz}
             \end{equation}
 
+            
+        \small
         para todo $\tilde{g} \in C^0([t_0, t_f] \times \R^d, \R^d)$ . 
 
     \end{assumption}
@@ -1563,11 +1617,28 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
     onde cada \(x^{(i)}\) é o vetor $x^{(i)} = (x_1 ^{(i)}, \dots, x_k ^{(i)})^T \in \R^k$.
 
 
-    \phantom{aa} $\bullet$ Para provar que $\mathcal{C}_n$ satisfaz \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition}, pela definição da norma induzida \ref{apendices:def:induced_matrix_norm}, basta mostrar que $\vertiii{ \mathcal{C}_n \mathbf{x}} \leq \vertiii{\mathbf{x}}$ para todo $\mathbf{x}$. Teremos, então, que
+    \phantom{aa} $\bullet$ Para  $\mathcal{C}_n$ satisfaz \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition}, ou seja,  $\vertiii{\mathcal{C}_n} \leq 1$, basta mostrar que $\vertiii{ \mathcal{C}_n \mathbf{x}} \leq \vertiii{\mathbf{x}}$. Para tanto, teremos
+
+    % \phantom{aa} $\bullet$ Para provar que $\mathcal{C}_n$ satisfaz \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition}, pela definição da norma induzida \ref{apendices:def:induced_matrix_norm}, basta mostrar que $\vertiii{ \mathcal{C}_n \mathbf{x}} \leq \vertiii{\mathbf{x}}$ para todo $\mathbf{x}$. Teremos, então, que
 
 
+    \scriptsize
     \[
       \mathcal{C}_{n} \mathbf{x}  = 
+      \begin{bmatrix}
+        \alpha_{n,1} I_d & \alpha_{n,2} I_d & \dots & \alpha_{n, k-1} I_d & \alpha_{n, k} I_d \\
+        I_d & 0 & \dots & 0 & 0 \\
+        0 & I_d & \dots & 0 & 0 \\
+        \vdots & \vdots & \ddots & \vdots & \vdots \\
+        0 & 0 & \dots & I_d & 0 \\
+      \end{bmatrix}
+      \begin{bmatrix}
+        x_1 \\
+        x_2 \\
+        x_3 \\
+        \vdots \\
+        x_k
+      \end{bmatrix} =
       \begin{bmatrix}
         \alpha_{n,1}x_1 + \dots + \alpha_{n, k} x_k \\
         x_1 \\
@@ -1764,8 +1835,8 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Métodos Contínuos para EDRs}
-
+\section{Métodos Contínuos para EDRs}
+\subsection{Adaptando o método das EDOs}
 
 \begin{frame}{Métodos Contínuos para EDRs}
 
@@ -1872,7 +1943,6 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
     \begin{itemize}
         \item[$\bullet$] Observe que o uso da extensão contínua torna o método implicito, mesmo que o método discreto usado seja explicito. Este fenômeno é chamado de \textit{sobreposição} (do inglês: \textit{overlapping}).
 
-        \item[$\bullet$] 
     \end{itemize}
 
 \end{frame}
@@ -1880,6 +1950,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Algoritmo para EDRs}
 \begin{frame}{Métodos Contínuos para EDRs}
 
     \tiny
@@ -1939,7 +2010,10 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Teorema de convergência}
+
 \begin{frame}{Métodos Contínuos para EDRs}
+    \footnotesize
 \begin{teo}[Convergência dos métodos contínuos para EDRs sem desaparecimento de retardo]
   \label{chap3:teo:DDE_method_1}
   Quanto a EDR dependendo do tempo sem desaparecimento do retardo, considere
@@ -1957,39 +2031,6 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
   Então, o método resultante tem ordem global discreta e uniforme $q' = \min\{p, q+q\}$.
 
-  
-
-  % \begin{itemize}
-  %   \item 
-  % \label{chap3:teo:DDE_method_1:H1}
-  %      A malha $\Delta=\left\{t_{0}, t_{1}, \ldots, t_{n}, \ldots, t_{N}=t_{f}\right\}$ inclui todos os pontos de descontinuidade principais e os pontos de descontinuidade de ordem $\leq p$ que se encontram em $\left[t_{0}, t_{f}\right]$, denotados por $\xi_{1}, \ldots, \xi_{s}\left(<t_{f}\right)$.
-  %   \item 
-  % \label{chap3:teo:DDE_method_1:H2}
-  %  O método para EDOs \eqref{chap3:def:eq:ODE_method} é consistente de ordem $p$, satisfaz a condição de estabilidade 
-  % \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition} e, para $k>1$, é reiniciado após cada ponto de descontinuidade $\xi_{i}, i=0,1, \ldots, s$, por um método de ordem $\geq p-1$.
-  %   \item 
-  % \label{chap3:teo:DDE_method_1:H3}
-  %  O interpolante \eqref{chap3:def:eq:Interpolant_extension} é consistente de ordem uniforme $q$.
-  %   \item 
-  % \label{chap3:teo:DDE_method_1:H4}
-  %      Para cada $n$, o intervalo $\left[t_{n-i_{n}}, t_{n+j_{n}+1}\right]$ onde a interpolação ocorre está incluído em $\left[\xi_{i}, \xi_{i+1}\right]$ para algum índice $0 \leq i \leq s$.
-  % \end{itemize}
-
-
-
-  % Então, o método de passos resultante tem ordem global discreta e ordem global uniforme $q^{\prime}=\min \{p, q+1\}$; ou seja,
-  %
-  % \[
-  % \max _{1 \leq n \leq N}\left\|y\left(t_{n}\right)-y_{n}\right\|=O\left(h^{q^{\prime}} \right)
-  % \]
-  %
-  % e
-  %
-  % \[
-  % \max _{t_{0} \leq t \leq t_{f}}\|y(t)-\eta(t)\|=O\left(h^{q^{\prime}}\right)
-  % \]
-  %
-  % onde $h=\max _{1 \leq n \leq N} h_{n}$. 
 
 \end{teo}
 \end{frame}
@@ -2002,10 +2043,10 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{O Modelo SIR}
-\subsection{Descrição Matemática}
+\subsection{O Modelo SIR}
 \begin{frame}{Modelo de Kermack e McKendrick}
 
+    \footnotesize
     \begin{exampleblock}
         <1->{Modelo SIR}
         \begin{itemize}
@@ -2034,10 +2075,10 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Número Básico de Reprodução}
 \begin{frame}{Modelo de Kermack e McKendrick}
 
 
+    \small
     \begin{exampleblock}
         <1->{Número Básico de Reprodução}
 
@@ -2062,8 +2103,8 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Tamanho da Epidemia}
 \begin{frame}{Modelo de Kermack e McKendrick}
+    \footnotesize
     \begin{exampleblock}
 	     <1->{Tamanho da Epidemia}
              \begin{itemize}
@@ -2113,6 +2154,14 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{SIR com retardo?}
+\begin{frame}{SIR com retardo?}
+
+    falar sobre 
+     
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
