@@ -44,6 +44,7 @@
 \beamer@slide {chap3:def:interpolant_extension_order:eq:1}{45}
 \beamer@slide {apendices:def:induced_matrix_norm}{47}
 \beamer@slide {apendices:def:kronecker_product}{48}
+\beamer@slide {chap3:teo:continuous_ODE}{49}
 \beamer@slide {chap3:teo:ODE_methods_convergence:eq:stability_condition}{49}
 \beamer@slide {chap3:teo:ODE_methods_convergence:eq:1}{50}
 \beamer@slide {chap3:teo:ODE_methods_convergence:eq:6}{50}
@@ -51,3 +52,7 @@
 \beamer@slide {chap3:teo:ODE_methods_convergence:eq:5}{55}
 \beamer@slide {chap3:teo:ODE_methods_convergence:eq:7}{60}
 \beamer@slide {chap3:teo:ODE_methods_convergence:eq:8}{60}
+\beamer@slide {chap3:def:EDR}{62}
+\beamer@slide {chap3:sec:2:eq:1}{63}
+\beamer@slide {chap3:sec:2:def:eq:Interpolant_extension}{65}
+\beamer@slide {chap3:teo:DDE_method_1}{67}

@@ -52,6 +52,12 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{adjustbox}
+\usepackage{lipsum}
+
+
+\usepackage{multicol}
+
+
 
 \usepackage{forest}
 \usepackage{float}% http://ctan.org/pkg/float
@@ -987,14 +993,14 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
     $\bullet$ Dentre as descontinuidades primárias, um tipo delas se destaca em importância.
 
-    \begin{definition}
+    \begin{defi}
         \label{chap2:def:principal_descontinuity}
     Seja $\bar{\xi_0} = t_0$ definido como uma \textit{descontinuidade principal de nível 0}. Indutivamente, uma \textit{descontinuidade principal de nível (k+1)} é a menor raiz $\bar{\xi}_{k+1}$ de 
         \[
             \alpha(t) = \bar{\xi_k}
         \]
         com multiplicidade ímpar, sendo $\bar{\xi_k}$ uma \textit{descontinuidade principal de nível (k)}
-    \end{definition}
+    \end{defi}
 
 
     $\bullet$ Note que $ \alpha(t) \leq \bar{\xi}_{k}, \quad \forall t \in\left[\bar{\xi}_{k}, \bar{\xi}_{k+1}\right] $ e todo $k$
@@ -1224,7 +1230,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
     \begin{frame}
 
         \small
-        \begin{definition}[Ordem Local de um método discreto]
+        \begin{defi}[Ordem Local de um método discreto]
             \label{chap3:def:order_of_discrete_methods}
 
             Um método discreto \eqref{chap3:def:eq:ODE_method}  é consistente e de ordem $p \geq 1$ é o menor inteiro tal que, para toda função $g \in C^p$ e para todos os pontos da malha tem-se que 
@@ -1255,7 +1261,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
                 \label{chap3:eq:order_of_discrete_methods:3}
             \end{equation}
 
-        \end{definition}
+        \end{defi}
 
 \end{frame}
 
@@ -1267,7 +1273,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 
     \small
-    \begin{definition}[Ordem Local do interpolante]
+    \begin{defi}[Ordem Local do interpolante]
         \label{chap3:def:interpolant_extension_order}
 
         Um interpolante \eqref{chap3:def:eq:Interpolant_extension} é consistente e de ordem $q \geq 1$ se
@@ -1288,7 +1294,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
             \label{chap3:def:interpolant_extension_order:eq:1}
         \end{equation}
 
-    \end{definition}
+    \end{defi}
 
 \end{frame}
 
@@ -1323,7 +1329,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Apêndice}
-    \begin{definition}[Norma induzida de matrizes]
+    \begin{defi}[Norma induzida de matrizes]
         \label{apendices:def:induced_matrix_norm}
         Seja $K$ o corpo dos reais ou dos complexos e sejam $\|\cdot\|_\alpha$ e $\|\cdot\|_\beta$ normas em $K^n$ e $K^m$, respectivamente.
         A norma $\| \cdot \|_{\alpha, \beta}$ em $K^{m \times n}$ é chamada de \textit{norma induzida} se 
@@ -1337,7 +1343,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
         \noindent
         \[ \| A \|_{\alpha, \beta} = \sup_{\|x\|_\alpha = 1} \|Ax\|_\beta.\]
 
-    \end{definition}
+    \end{defi}
 
 
 \end{frame}
@@ -1347,7 +1353,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 \begin{frame}{Apêndice}
 
     \small
-    \begin{definition}[Produto de Kronecker]
+    \begin{defi}[Produto de Kronecker]
         \label{apendices:def:kronecker_product}
         Sejam $A$ e $B$ duas matrizes quaisquer nos espaços vetorias $K^{m, n}, m,n \geq 0$ e $B \in K^{p, q}, r,s \geq 0$ 
         para $K = \R$ (ou $\C$). O \textit{produto Kronecker} entre $A$ e $B$ é dado pela função
@@ -1365,7 +1371,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
         \]
 
 
-    \end{definition}
+    \end{defi}
 
      
 \end{frame}
@@ -1373,36 +1379,40 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Teorema: Convergência dos Métodos para EDOs}
-
+\begin{frame}%{Teorema: Convergência dos Métodos para EDOs}
     \scriptsize
-    Considere o método \eqref{chap3:def:eq:ODE_method} de ordem $p \geq 1$ e, para cada $n$, seja
+    \begin{teo}[Convergência dos Métodos para EDOs]
+        \label{chap3:teo:continuous_ODE}
 
-    \[
-        C_n = 
-        \begin{bmatrix}
-            \alpha_{n, 1} & \alpha_{n, 2} & \cdots  & \alpha_{n, k - 1} & \alpha_{n, k} \\
-            1 & 0 & \cdots & 0 & 0 \\
-            0 & 1 & \cdots & 0 & 0 \\
-            \vdots & \vdots & \ddots & \vdots & \vdots \\
-            0 & 0 & \cdots & 1 & 0 \\
-        \end{bmatrix}
-    \]
+        Considere o método \eqref{chap3:def:eq:ODE_method} de ordem $p \geq 1$ e, para cada $n$, seja
 
-    Caso 
+        \[
+            C_n = 
+            \begin{bmatrix}
+                \alpha_{n, 1} & \alpha_{n, 2} & \cdots  & \alpha_{n, k - 1} & \alpha_{n, k} \\
+                1 & 0 & \cdots & 0 & 0 \\
+                0 & 1 & \cdots & 0 & 0 \\
+                \vdots & \vdots & \ddots & \vdots & \vdots \\
+                0 & 0 & \cdots & 1 & 0 \\
+            \end{bmatrix}
+        \]
 
-    \phantom{aa} $\bullet$ Existe uma norma $\| \cdot \|_* $ em $\R^k$, independente de $n$ e da malha $\Delta$, tal que, para a norma induzida da matriz, a seguinte condição de estabilidade é satisfeita.
+        Caso 
 
-    \begin{equation}
-        \| C_n \|_* \leq 1.
-        \label{chap3:teo:ODE_methods_convergence:eq:stability_condition}
-    \end{equation}
+        \phantom{aa} $\bullet$ Existe uma norma $\| \cdot \|_* $ em $\R^k$, independente de $n$ e da malha $\Delta$, tal que, para a norma induzida da matriz, a seguinte condição de estabilidade é satisfeita.
 
-    \phantom{aa} $\bullet$ A função $g$ de \eqref{def:eq:PVI} é $C^p$ contínua;
+        \begin{equation}
+            \| C_n \|_* \leq 1.
+            \label{chap3:teo:ODE_methods_convergence:eq:stability_condition}
+        \end{equation}
 
-    \phantom{aa} $\bullet$ Os valores iniciais $y_0, \cdots, y_{k-1}$ aproxima a solução exata com ordem $p$.
+        \phantom{aa} $\bullet$ A função $g$ de \eqref{def:eq:PVI} é $C^p$ contínua;
 
-    Então, o método discreto \eqref{chap3:def:eq:ODE_method} é convergente e de ordem global $p$ em $[t_0, t_f]$, já o interpolante, de ordem \eqref{chap3:def:eq:Interpolant_extension} $q' = \min\{p, q+1\}$.
+        \phantom{aa} $\bullet$ Os valores iniciais $y_0, \cdots, y_{k-1}$ aproxima a solução exata com ordem $p$.
+
+        Então, o método discreto \eqref{chap3:def:eq:ODE_method} é convergente e de ordem global $p$ em $[t_0, t_f]$, já o interpolante, de ordem \eqref{chap3:def:eq:Interpolant_extension} $q' = \min\{p, q+1\}$.
+    \end{teo}
+
 
 \end{frame}
 
@@ -1721,22 +1731,236 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 
 \begin{frame}{Métodos Contínuos para EDRs}
-    
 
-  \begin{equation}
-    \begin{cases}
-      y'(t) = f(t, y(t), y(t - \tau(t, y(t)))), \qquad t_0 \leq t \leq t_f , \\
-      y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0,
-    \end{cases}
-    \label{chap3:def:EDR}
-  \end{equation}
+    Utilizando do método dos passos, generalizaremos os métodos contínuos para EDOs para EDRs
+
+    \phantom{aa} $\bullet$ Considere o PI de EDRs \eqref{def:eq:EDR}, ou seja,
+
+    \begin{equation}
+        \begin{cases}
+            y'(t) = f(t, y(t), y(t - \tau(t, y(t)))), \qquad t_0 \leq t \leq t_f , \\
+            y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0,
+        \end{cases}
+        \label{chap3:def:EDR}
+    \end{equation}
+
+
+    \phantom{aa} $\bullet$ Considere uma malha \(\Delta=\left\{t_{0}, t_{1}, \ldots, t_{n}, \ldots\right., \left.t_{N}=t_{f}\right\}\) 
+
+
+    \phantom{aa} $\bullet$ Durante o $n-$ésimo passo, uma aproximação \( y_{n} \) é obtida em \( t_{n} \), o próximo passo \((n+1)\) consiste em resolver, pelo método \ref{chap3:def:eq:ODE_method}, a equação
+
+
+
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{empty frame for reference}
-     empty frame for reference
+\begin{frame}{Métodos Contínuos para EDRs}
+
+
+    \begin{equation}
+        \left\{\begin{array}{l}
+                w_{n+1}^{\prime}(t)=f(t, w_{n+1}(t), x(t-\tau(t, w_{n+1}(t)))), \quad t_{n} \leq t \leq t_{n+1} \\
+                w_{n+1}(t_{n})=y_{n}
+        \end{array}\right.
+        \label{chap3:sec:2:eq:1}
+    \end{equation}
+
+    onde
+
+    $$
+    x(s)=\left\{\begin{array}{l}
+            \phi(s) \quad \text { para } s \leq t_{0} \\
+            \eta(s) \quad \text { para } t_{0} \leq s \leq t_{n} \\
+            w_{n+1}(s) \quad \text { para } t_{n} \leq s \leq t_{n+1}
+    \end{array}\right.
+    $$
+
+    e \(\eta(t)\) é o interpolante dado por \ref{chap3:def:eq:Interpolant_extension}. 
+
+    \phantom{aa} $\bullet$ Quanto a equação \eqref{chap3:sec:2:eq:1}, temos os seguintes casos:
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Métodos Contínuos para EDRs}
+
+    Se \( s=t-\tau\left(t, w_{n+1}(t)\right) \leq t_{n}$ para todo $t \in\left[t_{n}, t_{n+1}\right]\), então, neste intervalo
+
+    \begin{itemize}
+        \item[$\bullet$] \( x(s) \) é igual ao interpolante \(\eta(s)\). 
+
+        \item[$\bullet$]  O problema local \eqref{chap3:sec:2:eq:1} se reduz a uma EDO. 
+
+        \item[$\bullet$] A solução local \( w_{n+1}(t) \) é então aproximada pelo método discreto \eqref{chap3:def:eq:ODE_method} e a aproximação de \( w_{n+1}\left(t_{n+1}\right) \) é definida como \( y_{n+1} \).
+
+    \end{itemize}
+
+    Se \( s=t-\tau\left(t, w_{n+1}(t)\right)>t_{n} \) para algum \( t \in\left[t_{n}, t_{n+1}\right] \), então
+
+    \begin{itemize}
+        \item[$\bullet$] O valor \( x(s) \) é igual a \( w_{n+1}(s) \) e é desconhecido. Portanto, \eqref{chap3:def:EDR} não pode mais ser visto como uma EDO. 
+
+        \item[$\bullet$] No entanto, \( x(s) \) ainda é aproximado pelo interpolante \( \eta(t) \) no intervalo subjacente \( \left[t_{n}, t_{n+1}\right] \), implicitamente definido por \eqref{chap3:def:eq:Interpolant_extension} com \( j_{n}=0\) , ou seja, por
+    \end{itemize}
+
+
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Métodos Contínuos para EDRs}
+    \begin{equation}
+        \begin{split}
+            \eta(t_n + \theta h_{n+1}) = &\beta_{n, 1} (\theta) y_{n + j_n} + \dots + \beta_{n, j_n + i_n + 1}(\theta) y_{n - i_n} \\
+                                         &+ h_{n+1} \Psi(y_{n+j_n}, \dots, y_{n-i_n}; \theta, g_\eta, \Delta _n '), \qquad 0 \leq \theta \leq 1,
+                                         \label{chap3:sec:2:def:eq:Interpolant_extension}
+        \end{split}
+    \end{equation}
+
+
+    onde
+
+    $$
+    g_{\eta}(t, y)=f(t, y, \eta(t-\tau(t, y)))
+    $$
+
+    \begin{itemize}
+        \item[$\bullet$] Observe que o uso da extensão contínua torna o método implicito, mesmo que o método discreto usado seja explicito. Este fenômeno é chamado de \textit{sobreposição} (do inglês: \textit{overlapping}).
+
+        \item[$\bullet$] 
+    \end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Métodos Contínuos para EDRs}
+
+    \tiny
+    \setlength{\columnseprule}{0.4pt}
+    \noindent\rule{\textwidth}{0.4pt}
+    Algoritmo para resolver EDRs dependendo do tempo sem desaparecimento do retardo
+    \noindent\rule{\textwidth}{0.4pt}
+    \begin{multicols}{2}
+        \phantom{aa} 1. Localize todos os pontos de descontinuidade
+        \phantom{aa 1.} principais e os pontos de descontinuidade de 
+        \phantom{aaala}  ordem $\leq p$. A
+
+        \[
+            \xi_1, \ldots, \xi_s\left(<t_f\right)
+        \]
+
+        \noindent
+        \phantom{aa 1.} e defina $\xi_0=t_0, \xi_{s+1}=t_f$.
+
+        \phantom{aa} 2. Resolva a equação
+
+            \noindent
+            \[
+                \left\{\begin{array}{l}
+                        z^{\prime}(t)=f(t, z(t), \phi(t-\tau(t))), \quad \xi_0 \leq t \leq \xi_1, \\
+                        z\left(\xi_0\right)=\phi\left(\xi_0\right),
+                \end{array}\right.
+            \]
+
+        \phantom{aaa 2.} usando qualquer método discreto para EDO.  
+
+        \phantom{aa} 3.   \textbf{Para} $\{ i = 1\}$ \textbf{até} $s$ faça:
+
+        \phantom{aaaaaa}$\bullet$ Calcule e armazene a extensão contínua $\eta(t)$ 
+        \phantom{aaaaaa} para $t \in\left[\xi_{i-1}, \xi_i\right]$;
+
+        \phantom{aaaaaa}$\bullet$ Resolva a equação
+
+        \noindent
+        \[
+            \left\{\begin{array}{l}
+                    z^{\prime}(t)=f(t, z(t), \eta(t-\tau(t))), \quad \xi_i \leq t \leq \xi_{i+1}, \\
+                    z\left(\xi_i\right)=\eta\left(\xi_i\right),
+            \end{array}\right.
+        \]
+
+        \phantom{aaaaaaa$\bullet$}usando o mesmo método discreto para EDOs.
+
+        \phantom{aa} 4. \textbf{Fim do Para}.
+
+        \phantom{aa} 5. \textbf{Fim}.
+
+\end{multicols}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Métodos Contínuos para EDRs}
+\begin{teo}[Convergência dos métodos contínuos para EDRs sem desaparecimento de retardo]
+  \label{chap3:teo:DDE_method_1}
+  Quanto a EDR dependendo do tempo sem desaparecimento do retardo, considere
+
+  \begin{itemize}
+      \item[$\bullet$] As funções $f, \tau$ e $phi$ são $C^p$-contínuas nos seus respectivos domínios e $\tau$ satisfaz a hipótese \ref{H1:hipotese:hypothesis}.
+
+      \item[$\bullet$] A malha $\Delta$ contém todos os pontos de descontinuidade de ordem $\leq p$.
+
+      \item[$\bullet$] Um método contínuo satisfazendo as hipóteses do Teorema \ref{chap3:teo:continuous_ODE}.
+
+      \item[$\bullet$] Para cada $n$, $\left[t_{n-i_{n}}, t_{n+1}\right] \subseteq \left[\xi_{i}, \xi_{i+1}\right]$ para algum $i$.
+
+  \end{itemize}
+
+  Então, o método resultante tem ordem global discreta e uniforme $q' = \min\{p, q+q\}$.
+
+  
+
+  % \begin{itemize}
+  %   \item 
+  % \label{chap3:teo:DDE_method_1:H1}
+  %      A malha $\Delta=\left\{t_{0}, t_{1}, \ldots, t_{n}, \ldots, t_{N}=t_{f}\right\}$ inclui todos os pontos de descontinuidade principais e os pontos de descontinuidade de ordem $\leq p$ que se encontram em $\left[t_{0}, t_{f}\right]$, denotados por $\xi_{1}, \ldots, \xi_{s}\left(<t_{f}\right)$.
+  %   \item 
+  % \label{chap3:teo:DDE_method_1:H2}
+  %  O método para EDOs \eqref{chap3:def:eq:ODE_method} é consistente de ordem $p$, satisfaz a condição de estabilidade 
+  % \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition} e, para $k>1$, é reiniciado após cada ponto de descontinuidade $\xi_{i}, i=0,1, \ldots, s$, por um método de ordem $\geq p-1$.
+  %   \item 
+  % \label{chap3:teo:DDE_method_1:H3}
+  %  O interpolante \eqref{chap3:def:eq:Interpolant_extension} é consistente de ordem uniforme $q$.
+  %   \item 
+  % \label{chap3:teo:DDE_method_1:H4}
+  %      Para cada $n$, o intervalo $\left[t_{n-i_{n}}, t_{n+j_{n}+1}\right]$ onde a interpolação ocorre está incluído em $\left[\xi_{i}, \xi_{i+1}\right]$ para algum índice $0 \leq i \leq s$.
+  % \end{itemize}
+
+
+
+  % Então, o método de passos resultante tem ordem global discreta e ordem global uniforme $q^{\prime}=\min \{p, q+1\}$; ou seja,
+  %
+  % \[
+  % \max _{1 \leq n \leq N}\left\|y\left(t_{n}\right)-y_{n}\right\|=O\left(h^{q^{\prime}} \right)
+  % \]
+  %
+  % e
+  %
+  % \[
+  % \max _{t_{0} \leq t \leq t_{f}}\|y(t)-\eta(t)\|=O\left(h^{q^{\prime}}\right)
+  % \]
+  %
+  % onde $h=\max _{1 \leq n \leq N} h_{n}$. 
+
+\end{teo}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{E o grude?}
+    Os próximos slides do modelo SIR eu não sei o que fazer
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
