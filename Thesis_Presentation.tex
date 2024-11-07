@@ -56,6 +56,9 @@
 \usepackage{forest}
 \usepackage{float}% http://ctan.org/pkg/float
 
+\newcommand{\vertiii}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert #1 
+    \right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}
+
  
 
 \pgfplotsset{compat=1.18} 
@@ -618,6 +621,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
      
 \begin{teo}[Existência local]
   \label{teo:local_existence:EDR}
+  \small
   Considere a equação \eqref{def:eq:EDR}, ou seja,
 
   \[
@@ -933,7 +937,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
         \begin{center}
             \includegraphics[width=0.9\textwidth, height=0.7\textheight]{retardo_limitado.png}
         \end{center}
-        \caption{Retardo limitado}\label{fig:Desaparecimento do Retardo}
+        \caption{Retardo limitado}\label{fig:Retardo_limitado}
     \end{figure}
 
 \end{frame}
@@ -1027,15 +1031,9 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 \begin{frame}{Métodos Contínuos para EDOs}
     \small
-    \begin{defi}[Método de k-passos]
-        Para $n = 0, ..., N-1$, sejam
+    \phantom{aa} $\bullet$ Para $n = 0, ..., N-1$, seja $\Delta = \{ t_0, ..., t_N = t_f\}$ uma malha e $h_{n+1} = t_{n+1} - t_n$ os passos.
 
-        \begin{itemize}
-            \item[$\bullet$] $\Delta = \{ t_0, ..., t_N = t_f\}$ uma malha,
-
-            \item[$\bullet$] $h_{n+1} = t_{n+1} - t_n$ os passos, 
-        \end{itemize}
-
+    \begin{defi}
         Um método numérico para resolver o PVI \eqref{def:eq:PVI} é chamado de \textit{método de k-passos} se ele satisfaz 
 
         \begin{equation}
@@ -1045,12 +1043,695 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
         para $n \geq k - 1$ e para $\Delta_n = \{ t_{n - k + 1}, ..., t_n, t_{n+1}\} $.
 
-        \begin{itemize}
-            \item[$\bullet$] A função $\Phi$ é chamada de função incremento.
-        \end{itemize}
-        alguma função $\Phi$, chamada de função incremento e parâmetros $\alpha_{n,1},..., \alpha_{n,k}$, que definem os métodos particulares. A partir do $y_0$ dado em  \eqref{def:eq:PVI} e valores $y_1,... y_{k-1}$ iniciais, que comentaremos mais a diante como os podemos obter, a fórmula  \eqref{chap3:def:eq:ODE_method}  calcula valores $y_{n+1}$ que são aproximações para a solução exata calculada nos pontos da malha, ou seja,  $y(t_{n+1}) \approx t(t_{n+1})$.
     \end{defi}
+
+    \phantom{aa} $\bullet$ A função $\Phi$ é chamada de função incremento.
+
+    \phantom{aa} $\bullet$ Os valores $y_0, ..., y_k$ são os valores iniciais.
+
+
+
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Métodos Contínuos para EDOs}
+
+    \phantom{aa} $\bullet$ Caso $k = 1$, temos os chamados métodos de passo único, como o método de Euler 
+
+    \[
+        y_{n+1} = y_n + h_n f(t_n, y_n)
+    \]
+
+    \phantom{aa} $\bullet$ Caso $k > 1$, temos os métodos multipasse. Um exemplo de um método multipasso é o método de Adams–Bashforth de 2 passos, o qual é definido por 
+
+    \[
+        y_{n} = y_{n-1} + \frac{3}{2} h g(t_{n-1},y_{n-1}) - \frac{1}{2} hg(t_{n-2},y_{n-2}),
+    \]
+
+    \noindent
+    e  inicializado por algum método de passo único, como o método do ponto médio descrito abaixo
+
+    \[
+        y_{n}=y_{n-1}+hg\left(t_{n-1}+{\tfrac {1}{2}}h,y_{n-1}+{\tfrac {1}{2}}hg(t_{n-1},y_{n-1})\right).
+    \]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Métodos Contínuos para EDOs}
+    \begin{assumption}
+        \label{chap3:assumption:1:Phi}
+        \small
+        Quanto a função incremento $\Phi$, as seguintes suposições são feitas:
+
+        \phantom{aa} 1. $\Phi$ satisfaz uma condição Lipschitz em relação às variáveis $y$ com constante de Lipschitz $Q_g$.
+
+
+        \phantom{aa} 2. Existem $h_g>0$ e $\gamma_g > 0$  tal que que $\Phi$ possui uma dependência contínua de $g$ com relação a norma do supremo no conjunto $U_n = [t_{n-k+1}, t_{n+1}] \times \R^d$, onde $h_{n - k +2 }, \dots, h_{n+1} \leq h_g (L)$, ou seja, 
+
+        \scriptsize
+            \begin{equation}
+                \begin{split}
+                    \| \Phi(y_n, ..., y_{n - k + 1}; \tilde{g}, \Delta_n)  &- \Phi(y_n, ..., y_{n - k + 1}; g, \Delta_n) \| \\
+                                                                           &\leq \gamma_g \sup_{t, y \in U_n} \| \tilde{g}(t, y) - g(t, y) \|
+                \end{split}
+                \label{chap3:assumption:point_lipschitz}
+            \end{equation}
+
+        para todo $\tilde{g} \in C^0([t_0, t_f] \times \R^d, \R^d)$ . 
+
+    \end{assumption}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Extensão Contínua}
+
+
+    \small
+    \begin{defi}[Extensão contínua]
+        Uma \textit{extensão contínua}, ou \textit{interpolante} do método \eqref{chap3:def:eq:ODE_method} é uma função polinomial $\eta(t)$ definida por partes nos intervalos $[t_n, t_{n+1}]$ baseada em valores calculados pelo método definidos em $[t_{n - i_n}, t_{n+j_n + 1}]$, para $i_n, j_n \geq 0$. 
+
+        \begin{equation}
+            \begin{split}
+                \eta(t_n + \theta h_{n+1}) = &\beta_{n, 1} (\theta) y_{n + j_n} + \dots + \beta_{n, j_n + i_n + 1}(\theta) y_{n - i_n} \\
+                                             &+ h_{n+1} \Psi(y_{n+j_n}, \dots, y_{n-i_n}; \theta, g, \Delta _n '), \qquad 0 \leq \theta \leq 1,
+                                             \label{chap3:def:eq:Interpolant_extension}
+            \end{split}
+        \end{equation}
+
+        \noindent
+        para $\Delta _n ' = \{ t_{n - i_n} , \dots, t_{n+j_n}, t_{n +j_n + 1} \}$, onde $\eta$ satisfaz a seguinte condição de continuidade
+
+        \begin{equation}
+            \eta(t_n) = y_n \qquad  \text{ e } \qquad \eta(t_{n+1}) = y_{n+1}
+            \label{chap3:def:eq:continuity_condition}
+        \end{equation}
+
+    \end{defi}
+
+\end{frame}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Extensão Contínua}
+
+    Note que
+
+    \begin{itemize}
+        \item[$\bullet$] Caso $i_n = j_n = 0$, a interpolação ocorre baseada nos valores em $[t_n, t_{n+1}]$. Tal caso é chamado de \textit{interpolação de passo único}. Caso isso não ocorra, temos uma interpolação de múltiplos passos. 
+        \item[$\bullet$] Caso $j_{n} > 0$, o interpolante \eqref{chap3:def:eq:Interpolant_extension} não pode ser calculado simultâneamente com o método \eqref{chap3:def:eq:ODE_method}, devendo esperá-lo atingir o passo $t_{n + j_n + 1}$ para poder ser calculado.
+    \end{itemize}
+
+
+    Um método numérico discreto para EDOs acompanhado de uma extensão contínua é chamado um \textit{método numérico contínuo para EDOs}. 
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Extensão Contínua}
+
+    \phantom{aa} $\bullet$ A função $\Psi$ é também chamada de função incremento. 
+
+    \phantom{aa} $\bullet$ Para garantir a condição de continuidade de $\eta$, normalmente são consideradas as seguintes hipóteses
+
+    \[
+        \begin{gathered}
+            \beta_{n, j}(0)= \begin{cases}1 & \text { para } j=1+j_{n}, \\
+            0 & \text { caso contrário, }\end{cases} \\
+            \Psi\left(y_{n+j_{n}}, \ldots, y_{n-i_{n}} ; 0, g, \Delta_{n}^{\prime}\right)=0
+            \end{gathered}
+    \]
+
+    \[
+        \begin{gathered}
+            \beta_{n, j}(1)=\left\{\begin{array}{l}
+                    \alpha_{n, j-j_{n}} \text { para } 1+j_{n} \leq j \leq k+j_{n} \\
+                    0 \text { caso contrário }
+            \end{array}\right. \\
+            \Psi\left(y_{n+j_{n}}, \ldots, y_{n-i_{n}} ; 1, g, \Delta_{n}^{\prime}\right)=\Phi\left(y_{n}, \ldots, y_{n-k+1} ; g, \Delta_{n}\right).
+        \end{gathered}
+    \]
+
+
+        \phantom{aa} $\bullet$ Para $\theta=1$, a equação \eqref{chap3:def:eq:Interpolant_extension} se reduz à \eqref{chap3:def:eq:ODE_method}. 
+
+    \end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Métodos Contínuos para EDOs}
+    \begin{assumption}
+        \label{chap3:assumption:1:Psi}
+        \small
+        Quanto a função incremento $\Psi$, as seguintes suposições são feitas:
+
+        \phantom{aa} 1. $\Psi$ satisfaz uma condição Lipschitz em relação às variáveis $y$ com constante de Lipschitz $Q_g$.
+
+
+        \phantom{aa} 2. Existem $h_g'>0$ e $\gamma_g' > 0$  tal que que $\Phi$ possui uma dependência contínua de $g$ com relação a norma do supremo no conjunto $U_n ' = [t_{n-i_n}, t_{n+j_n + 1}] \times \R^d$, onde $h_{n - i_n + 1 }, \dots, h_{n+j_n + 1} \leq h_g' (L)$, ou seja, 
+
+        \scriptsize
+            \begin{equation}
+                \begin{split}
+                    \| \Psi(y_{n + jn}, ..., y_{n - i_n}; \tilde{g}, \Delta_n ')  &- \Psi(y_{n + jn}, ..., y_{n - i_n}; g , \Delta_n ') \| \\
+           &\leq \gamma_g ' \sup_{t, y \in U_n '} \| \tilde{g}(t, y) - g(t, y) \|
+                \end{split}
+                \label{chap3:assumption:point_lipschitz}
+            \end{equation}
+
+        para todo $\tilde{g} \in C^0([t_0, t_f] \times \R^d, \R^d)$ . 
+
+    \end{assumption}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{frame}
+
+        \small
+        \begin{definition}[Ordem Local de um método discreto]
+            \label{chap3:def:order_of_discrete_methods}
+
+            Um método discreto \eqref{chap3:def:eq:ODE_method}  é consistente e de ordem $p \geq 1$ é o menor inteiro tal que, para toda função $g \in C^p$ e para todos os pontos da malha tem-se que 
+
+            \begin{equation}
+                \| z_{n+1}(t_{n+1}) - \tilde{y}_{n+1} \| = \mathcal{O} (h_{n+1}^{p+1}), 
+                \label{chap3:eq:order_of_discrete_methods:1}
+            \end{equation}
+
+            \noindent
+            uniformemente com respeito a $y_{n}^*$ em qualquer conjunto limitado de $R^d$ e para $n = 0, ..., N-1$, onde $z_{n+1}(t)$ é solução do problema local
+
+            \begin{equation}
+                \begin{cases}
+                    z_{n+1}'(t) = g(t, z_{n+1}(t)), \qquad t_n \leq t \leq t_{n+1} , \\
+                    z(t_n) = y_n ^*, \qquad t \leq t_0,
+                \end{cases}
+                \label{chap3:eq:order_of_discrete_methods:2}
+            \end{equation}
+
+
+            \begin{equation}
+                \begin{split}
+                    \text{para} \qquad 
+                    \tilde{y}_{n+1} &= \alpha_{n, 1} z_{n+1}(t_n) + \dots + \alpha_{n, k} z_{n+1}(t_{n-k+1}) \\
+                                   &+ h_{n+1} \Phi(z_{n+1}(t_n), \dots, z_{n+1}(t_{n-k+1}); g, \Delta_n).
+                \end{split}
+                \label{chap3:eq:order_of_discrete_methods:3}
+            \end{equation}
+
+        \end{definition}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Ordem Local do Interpolante}
+
+
+    \small
+    \begin{definition}[Ordem Local do interpolante]
+        \label{chap3:def:interpolant_extension_order}
+
+        Um interpolante \eqref{chap3:def:eq:Interpolant_extension} é consistente e de ordem $q \geq 1$ se
+
+
+        \begin{equation}
+            \max_{t_n \leq t \leq t_{n+1}}\| z_{n+1}(t) - \tilde{ \eta }_{n+1}(t) \| = \mathcal{O} (h_{n+1}^{q+1}), 
+            \label{chap3:eq:Interpolant_extension_order}
+        \end{equation}
+
+        para 
+
+        \begin{equation}
+            \begin{split}
+                \tilde{\eta}(t_{n} + \theta h_{n+1}) &= \beta_{n, 1}(\theta) z_{n+1}(t_{n+j_n}) + \dots + \beta_{n, j_n + i_n + 1}(\theta) z_{n+1}(t_{n-i_n}) \\
+                                                     &+ h_{n+1} \Psi(z_{n+1}(t_{n+ j_n}), \dots, z_{n+1}(t_{n-i_n}); \theta,  g, \Delta_n ')
+            \end{split}
+            \label{chap3:def:interpolant_extension_order:eq:1}
+        \end{equation}
+
+    \end{definition}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Ordem Global}
+
+    \phantom{aa} $\bullet$ Seja $h = \max_{1 \leq n \leq N} h_n$.
+
+    \begin{defi}[Ordem Global de um Método Discreto]
+        
+        Um método discreto \eqref{chap3:def:eq:ODE_method} tem ordem global $p$, se 
+
+        \begin{equation}
+            \max_{1 \leq n \leq N} \| y(t_n) - y_n \| = \mathcal{O}(h^p),
+        \end{equation}
+    \end{defi}
+
+
+    \begin{defi}[Ordem Global de um Interpolante]
+        
+        Um interpolante \eqref{chap3:def:eq:Interpolant_extension} tem ordem global $p$, se 
+
+        \begin{equation}
+            \max_{t_0 \leq t \leq t_f} \| y(t) - \eta(t) \| = \mathcal{O}(h^{p}).
+        \end{equation}
+    \end{defi}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Apêndice}
+    \begin{definition}[Norma induzida de matrizes]
+        \label{apendices:def:induced_matrix_norm}
+        Seja $K$ o corpo dos reais ou dos complexos e sejam $\|\cdot\|_\alpha$ e $\|\cdot\|_\beta$ normas em $K^n$ e $K^m$, respectivamente.
+        A norma $\| \cdot \|_{\alpha, \beta}$ em $K^{m \times n}$ é chamada de \textit{norma induzida} se 
+
+        \noindent
+        \[ \| A \|_{\alpha, \beta} = \sup\{\frac{\|Ax\|_\beta}{\|x\|_\alpha} : x\in K^n \backslash \{0\} \}. \]
+
+
+        Normalmente, a notação a acima é reduzida simplesmente a 
+
+        \noindent
+        \[ \| A \|_{\alpha, \beta} = \sup_{\|x\|_\alpha = 1} \|Ax\|_\beta.\]
+
+    \end{definition}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Apêndice}
+
+    \small
+    \begin{definition}[Produto de Kronecker]
+        \label{apendices:def:kronecker_product}
+        Sejam $A$ e $B$ duas matrizes quaisquer nos espaços vetorias $K^{m, n}, m,n \geq 0$ e $B \in K^{p, q}, r,s \geq 0$ 
+        para $K = \R$ (ou $\C$). O \textit{produto Kronecker} entre $A$ e $B$ é dado pela função
+        $\otimes: K^{m, n} \times K^{p, q} \to (K^{pm \times qn})$ definida notação por blocos
+
+        \noindent
+        \[
+            A \otimes B = 
+            \begin{bmatrix}
+                a_{1,1} B & a_{1,2} B & \dots & a_{1, n} B \\
+                a_{2,1} B & a_{2,2} B & \dots & a_{2, n} B \\
+                \vdots & \vdots & \ddots & \vdots \\
+                a_{m,1} B & a_{m,2} B & \dots & a_{m, n} B \\
+            \end{bmatrix},
+        \]
+
+
+    \end{definition}
+
+     
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Convergência dos Métodos para EDOs}
+
+    \scriptsize
+    Considere o método \eqref{chap3:def:eq:ODE_method} de ordem $p \geq 1$ e, para cada $n$, seja
+
+    \[
+        C_n = 
+        \begin{bmatrix}
+            \alpha_{n, 1} & \alpha_{n, 2} & \cdots  & \alpha_{n, k - 1} & \alpha_{n, k} \\
+            1 & 0 & \cdots & 0 & 0 \\
+            0 & 1 & \cdots & 0 & 0 \\
+            \vdots & \vdots & \ddots & \vdots & \vdots \\
+            0 & 0 & \cdots & 1 & 0 \\
+        \end{bmatrix}
+    \]
+
+    Caso 
+
+    \phantom{aa} $\bullet$ Existe uma norma $\| \cdot \|_* $ em $\R^k$, independente de $n$ e da malha $\Delta$, tal que, para a norma induzida da matriz, a seguinte condição de estabilidade é satisfeita.
+
+    \begin{equation}
+        \| C_n \|_* \leq 1.
+        \label{chap3:teo:ODE_methods_convergence:eq:stability_condition}
+    \end{equation}
+
+    \phantom{aa} $\bullet$ A função $g$ de \eqref{def:eq:PVI} é $C^p$ contínua;
+
+    \phantom{aa} $\bullet$ Os valores iniciais $y_0, \cdots, y_{k-1}$ aproxima a solução exata com ordem $p$.
+
+    Então, o método discreto \eqref{chap3:def:eq:ODE_method} é convergente e de ordem global $p$ em $[t_0, t_f]$, já o interpolante, de ordem \eqref{chap3:def:eq:Interpolant_extension} $q' = \min\{p, q+1\}$.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Demonstração}
+    \small
+
+    \phantom{aa} $\bullet$ Como o método discreto \eqref{chap3:def:eq:ODE_method} tem ordem $p$, então 
+
+    
+    \begin{equation}
+      \begin{aligned}
+        y\left(t_{n+1}\right)= & \alpha_{n, 1} y\left(t_{n}\right)+\cdots+\alpha_{n, k} y\left(t_{n-k+1}\right) \\
+        & +h_{n+1} \Phi\left(y\left(t_{n}\right), \ldots, y\left(t_{n-k+1}\right) ; g, \Delta_{n}\right)+\epsilon_{n+1} 
+      \end{aligned}
+      \label{chap3:teo:ODE_methods_convergence:eq:1}
+    \end{equation}
+
+    
+    com
+
+    \begin{equation}
+      \left\|\epsilon_{n+1}\right\| \leq c h_{n+1}^{p+1}, 
+      \label{chap3:teo:ODE_methods_convergence:eq:6}
+    \end{equation}
+
+
+    \noindent
+    para alguma constante \(c>0\) e para todo \(n=k-1, \ldots, N-1\). 
+
+   \phantom{aa} $\bullet$ Para os mesmos $n$, introduziremos a seguinte notação por blocos
+
+    \begin{equation*}
+        \begin{split}
+            &\mathbf{y}_{n}=\left[y_{n}, y_{n-1}, \ldots, y_{n-k+1}\right]^{T}, \\
+            &\mathbf{y}(t_{n})=[y(t_{n}), y(t_{n-1}), \ldots, y(t_{n-k+1})]^{T}.
+        \end{split}
+    \end{equation*}
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Demonstração}
+    
+    \phantom{aa} $\bullet$ Note que $\mathbf{y}_n, \mathbf{y}(t_n) \in \R^{kd}$. Agora, defina \(\mathcal{C}_{n}\) por
+
+    \[
+      \mathcal{C}_{n}=C_{n} \otimes I_{d}.
+    \]
+
+    \noindent
+    \phantom{aa} $\bullet$  Então que $\mathcal{C}_{n}$ é uma matriz $(dk)\times(dk)$ dada por
+
+    \[
+      \mathcal{C}_{n}  = 
+      \begin{bmatrix}
+        \alpha_{n,1} I_d & \alpha_{n,2} I_d & \dots & \alpha_{n, k-1} I_d & \alpha_{n, k} I_d \\
+        I_d & 0 & \dots & 0 & 0 \\
+        0 & I_d & \dots & 0 & 0 \\
+        \vdots & \vdots & \ddots & \vdots & \vdots \\
+        0 & 0 & \dots & I_d & 0 \\
+      \end{bmatrix}.
+    \]
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Demonstração}
+    
+    \phantom{aa} $\bullet$ Devemos mostrar que $\mathcal{C}_n$ herda a propriedade de estabilidade \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition}. Para tanto, considere $\mathbf{x} \in \R^{kd}$ qualquer. Pela notação de blocos, podemos representar $\mathbf{x}$ por $k$ blocos de vetores $x_1, \dots, x_k$  em $\R^d$, ou seja,
+
+  \[
+    \mathbf{x} = 
+    \begin{bmatrix}
+      x_1 \\
+      x_2 \\
+      \vdots \\
+      x_k
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+      (x_{1}^{(1)} ,& x_{1}^{(2)} ,& \dots ,&x_{1}^{(d)})^T \\
+      (x_{2}^{(1)} ,& x_{2}^{(2)} ,& \dots ,&x_{2}^{(d)})^T \\
+      \vdots & \vdots  &\phantom{\dots} &\vdots \\
+      (x_{k}^{(1)} ,& x_{k}^{(2)} ,& \dots ,&x_{k}^{(d)})^T \\
+    \end{bmatrix}.
+  \]
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Demonstração}
+
+
+    \phantom{aa} $\bullet$ A a norma que utilizaremos para trabalhar em $\R^{kd}$ será a norma do máximo definida como
+    
+    \begin{equation}
+      \vertiii{\mathbf{x}} = \max_{1 \leq i \leq d} \|x^{(i)}\|_* ,
+      \label{chap3:teo:ODE_methods_convergence:eq:norm}
+    \end{equation}
+ 
+    \noindent
+    onde cada \(x^{(i)}\) é o vetor $x^{(i)} = (x_1 ^{(i)}, \dots, x_k ^{(i)})^T \in \R^k$.
+
+
+    \phantom{aa} $\bullet$ Para provar que $\mathcal{C}_n$ satisfaz \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition}, pela definição da norma induzida \ref{apendices:def:induced_matrix_norm}, basta mostrar que $\vertiii{ \mathcal{C}_n \mathbf{x}} \leq \vertiii{\mathbf{x}}$ para todo $\mathbf{x}$. Teremos, então, que
+
+
+    \[
+      \mathcal{C}_{n} \mathbf{x}  = 
+      \begin{bmatrix}
+        \alpha_{n,1}x_1 + \dots + \alpha_{n, k} x_k \\
+        x_1 \\
+        x_2 \\
+        \vdots \\
+        x_{k-1}
+      \end{bmatrix}
+    \]
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Continuação}
+    \small
+
+    \phantom{aa} $\bullet$ Observe que, para todo $1 \leq j \leq d$, o vetor coluna do lado direito da igualdade acima é dado por
+
+    \[
+        \begin{bmatrix}
+          \alpha_{n,1}x_1 ^{(j)} + \dots + \alpha_{n, k} x_k^{(j)} \\
+          x_1^{(j)} \\
+          x_2 ^{(j)}\\
+          \vdots \\
+          x_{k-1}^{(j)}
+        \end{bmatrix}
+        = 
+          C_n x^{(j)}.
+    \]
+
+    \phantom{aa} $\bullet$ Pela propriedade da estabilidade \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition} sobre $C_n$, temos que $\| C_n x^{(j)} \|_* \leq \| x^{(j)} \|_*$. 
+
+    \phantom{aa} $\bullet$ Finalmente, como $\vertiii{ \mathcal{C}_{n} \mathbf{x}} \leq \|x^{(j)}\|_*$ para todo $1 \leq j \leq d$, então $\vertiii{ \mathcal{C}_{n} \mathbf{x}} \leq \vertiii{\mathbf{x}}$ e $\mathcal{C}_n$ satisfaz a propriedade.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Continuação}
+
+    \small
+
+    \phantom{aa} $\bullet$ Pela notação de blocos, temos que $y(t_n) - y_n$ é equivalente a 
+
+    \begin{equation}
+      \mathbf{y}\left(t_{n+1}\right)-\mathbf{y}_{n+1}=\mathcal{C}_{n}\left(\mathbf{y}\left(t_{n}\right)-\mathbf{y}_{n}\right)+h_{n+1} \Gamma_{n}+E_{n+1}, \quad n=k-1, \ldots, N-1 
+      \label{chap3:teo:ODE_methods_convergence:eq:5}, 
+    \end{equation}
+  
+    \noindent
+    onde
+
+    \begin{align*}
+      &\Gamma_{n}=\left(\Phi\left(\mathbf{y}\left(t_{n}\right) ; g, \Delta_{n}\right)-\Phi\left(\mathbf{y}_{n} ; g, \Delta_{n}\right), 0, \ldots, 0\right)^{T}, \\
+      &E_{n+1}=\left(\epsilon_{n+1}, 0, \ldots, 0\right)^{T},
+    \end{align*}
+
+    \noindent
+    sendo 0 o vetor nulo em \(\mathbb{R}^{d}\). 
+
+    \phantom{aa} $\bullet$ Aplicando a norma $\vertiii{\cdot}$ em ambos os lados de \eqref{chap3:teo:ODE_methods_convergence:eq:5} e utilizando da propriedade de estabilidade de $\mathcal{C}_n$, obtemos
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Continuação}
+
+    \small
+
+    \[
+      \vertiii{\mathbf{y}(t_{n+1})-\mathbf{y}_{n+1}} \leq \vertiii{\mathbf{y}(t_{n})-\mathbf{y}_{n}}+h_{n+1} \vertiii{\Gamma _ { n }} + \vertiii{E_{n+1} },
+    \]
+
+    \noindent
+    para todo \(n=k-1, \ldots, N-1\).
+
+    \phantom{aa} $\bullet$ Utilizando da propriedade da equivalência das normas em espaços de dimensão finita, obtemos 
+
+    \[
+      \begin{aligned}
+        \vertiii{E_{n+1}} &= \max_{1 \leq i \leq d} \| (e_{n+1}^{(i)}, 0, \dots, 0) \|_* \leq 
+        \max_{1 \leq i \leq d} ( k_1 \| (e_{n+1}^{(i)}, 0, \dots, 0) \|_\infty ) \\
+                          &\leq k_1 \max_{1 \leq i \leq d} |e_{n+1}^{(i)}| 
+        \leq k_1 \|e_{n+1}^{(i)}\|_\infty  \\
+                          &\leq k_1 k_2 \|e_{n+1}\| \leq k_1 k_2 c h_{n+1}^{p+1} \leq k_1 k_2 c h_{n+1} h^{p},
+      \end{aligned}
+    \]
+
+    \noindent
+    para algum $k_1, k_2 > 0$ e para $h = \max_{1 \leq n \leq N} h_n$.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Continuação}
+    \phantom{aa} $\bullet$ Quanto ao restante da normas, pela continuidade Lipschitz da função incremento \(\Phi\) em relação aos argumentos \(y\) na norma \(\|\cdot\|\) em \(\mathbb{R}^{d}\) e, novamente, pela propriedade de equivalência das normas, junto com \eqref{chap3:teo:ODE_methods_convergence:eq:6}, existe uma constante \(Q>0\) tal que, para $c' = k_1 k_2$ e para todo $n = k - 1, \dots, N -1$, temos
+
+    \[
+      \vertiii{\mathbf{y}(t_{n+1})-\mathbf{y}_{n+1}} \leq (1+h_{n+1} Q) \vertiii{\mathbf{y}(t_{n})-\mathbf{y}_{n}} 
+      +c^{\prime} h_{n+1} h^{p}.
+    \]
+
+    \phantom{aa} $\bullet$ Observe que $1 + h_j Q \leq e^{h_j Q}$ para todo $j$, assim, continuando a relação de recorrência, obtemos
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Continuação}
+    \begin{align*}
+        \vertiii{\mathbf{y}(t_{n+1})-\mathbf{y}_{n+1}} \leq & \overbrace{^{h_{n+1}Q} \dots e^{h_{k}Q} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}}}^{(\star)} \\
+                                                            &+ \underbrace{c' h^p (h_{n+1} + e^{h_{n+1}Q}h_n + \dots + e^{(h_{n+1} \dots h_{k+1})Q}h_k)}_{(\star \star)}.
+    \end{align*}
+
+    \phantom{aa} $\bullet$ Quanto a $(\star)$, observe que, como $h_k + \dots h_{n+1} \leq t_f - t_0$, então
+
+    \begin{align*}
+      e^{h_{n+1}Q} \dots e^{h_{k}Q} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}} &= e^{Q(h_{n+1} \dots h_k)} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}} \\
+                                                                                   &\leq e^{Q(t_f - t_0)} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}},
+    \end{align*}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Continuação}
+    \noindent
+    \phantom{aa} $\bullet$ Quando a $(\star \star)$, temos que
+
+    
+
+    \[
+        \begin{split}
+            h_{n+1} + e^{h_{n+1}Q}h_n &+ \dots + e^{(h_{n+1} \dots h_{k+1})Q}h_k = 
+            \sum_{r = k}^{n+1}e^{\left( Q \sum_{s = r + 1}^{n+1}h_s \right)} h_r \\
+            &\leq \int_{t_0}^{t_f} e^{Q(t_f - t)} \, dt = \frac{e^{Q(t_f - t_0)} - 1}{Q}
+        \end{split}
+    \]
+
+    \phantom{aa} $\bullet$ Por fim, obtemos a relação final
+
+
+    \[
+      \vertiii{  \mathbf{y}(t_{n+1})-\mathbf{y}_{n+1} } \leq e^{Q(t_{f}-t_{0})} \vertiii{ \mathbf{y}(t_{k-1})-\mathbf{y}_{k-1} }
+      +\frac{e^{Q(t_{f}-t_{0})}-1}{Q} c' h^{p}
+    \]
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Continuação}
+
+    \phantom{aa} $\bullet$ Quanto ao resultado de ordem uniforme global, suponha novamente \(y_{n}^{*}=y\left(t_{n}\right)\) em \eqref{chap3:eq:order_of_discrete_methods:2} , de modo que \eqref{chap3:def:interpolant_extension_order:eq:1} fornece 
+
+    \begin{equation}
+      \begin{aligned}
+        y(t_{n}+\theta h_{n+1})= & \beta_{n, 1}(\theta) y(t_{n+j_{n}})+\ldots+\beta_{n, j_{n}+i_{n}+1}(\theta) y(t_{n-i_{n}}) \\
+        & +h_{n+1} \Psi(y(t_{n+j_{n}}), \ldots, y(t_{n-i_{n}}) ; \theta, g, \Delta_{n}^{\prime})+\epsilon_{n+1}(\theta) 
+      \end{aligned}
+      \label{chap3:teo:ODE_methods_convergence:eq:7}
+    \end{equation}
+
+    \noindent
+    \phantom{aa} $\bullet$ Sendo $\max _{0 \leq \theta \leq 1}\|\epsilon_{n+1}(\theta)\| \leq \mathcal{O}(h_{n+1}^{q+1})$ para todo $n = 1, \dots, N-1$, de acordo coma definição \eqref{chap3:eq:Interpolant_extension_order}. Logo
+
+    \begin{equation}
+      \max _{0 \leq n \leq N-1} \max _{0 \leq \theta \leq 1}\left\|\epsilon_{n+1}(\theta)\right\|=O\left(h^{q+1}\right)
+      \label{chap3:teo:ODE_methods_convergence:eq:8}
+    \end{equation}
+
+
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Teorema: Continuação}
+
+    \phantom{aa} $\bullet$  Subtraindo \eqref{chap3:def:eq:Interpolant_extension} de \eqref{chap3:teo:ODE_methods_convergence:eq:7}, utilizando da estimativa já demonstrada \eqref{chap3:eq:Interpolant_extension_order} e a da estimativa \eqref{chap3:teo:ODE_methods_convergence:eq:8}, junto com a suposição de que os termos \(\beta_{n, i}(\theta)\) são limitados uniformemente e de que a função incremento \(\Psi\) é Lipschitz continua em relação aos argumentos \(y\), obtemos
+    \[
+      \max _{0 \leq n \leq N-1} \max _{0 \leq \theta \leq 1}\left\|y\left(t_{n}+\theta h_{n+1}\right)-\eta\left(t_{n}+\theta h_{n+1}\right)\right\| \leq O\left(h^{p}\right)+O\left(h^{q+1}\right)
+    \]
+
+    \noindent 
+     Concluindo o teorema.
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Métodos Contínuos para EDRs}
+
+
+\begin{frame}{Métodos Contínuos para EDRs}
+    
+
+  \begin{equation}
+    \begin{cases}
+      y'(t) = f(t, y(t), y(t - \tau(t, y(t)))), \qquad t_0 \leq t \leq t_f , \\
+      y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0,
+    \end{cases}
+    \label{chap3:def:EDR}
+  \end{equation}
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

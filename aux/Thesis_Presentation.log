@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.10)  6 NOV 2024 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.10)  6 NOV 2024 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1063,7 +1063,7 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@externalize@max@outer@n=\count401
 \forest@externalize@inner@n=\count402
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 68.
+Package hyperref Info: Option `colorlinks' set `true' on input line 71.
  (./TeiPel_En_Beamer_Layout.sty
 Package: TeiPel_En_Beamer_Layout 22/06/2017 TeiPel Beamer Layout Package (English version)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.tex
@@ -1088,7 +1088,7 @@ Package: calculator 2022/09/15 v.2.1
 \c@exemplo=\count413
 \c@ex=\count414
 \c@hipN=\count415
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 153.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 156.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (aux/Thesis_Presentation.aux
@@ -1096,45 +1096,45 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX Warning: Label `fig:Desaparecimento do Retardo' multiply defined.
 
 
-LaTeX Warning: Label `fig:Desaparecimento do Retardo' multiply defined.
+LaTeX Warning: Label `chap3:assumption:point_lipschitz' multiply defined.
 
 )
 \openout1 = `Thesis_Presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 153.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 153.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 156.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 156.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 153.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 153.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 156.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 156.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 153.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 153.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 156.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 156.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 153.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 153.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 156.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 156.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1184,57 +1184,57 @@ LaTeX Font Info:    ... okay on input line 153.
 \makeMPintoPDFobject=\count421
 \everyMPtoPDFconversion=\toks79
 )
-Package hyperref Info: Link coloring ON on input line 153.
+Package hyperref Info: Link coloring ON on input line 156.
  (aux/Thesis_Presentation.out) (aux/Thesis_Presentation.out)
 \@outlinefile=\write6
 \openout6 = `Thesis_Presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 153.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 153.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 153.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 153.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 156.
 \symnumbers=\mathgroup11
 \sympureletters=\mathgroup12
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/txr/m/n --> T1/lmr/m/n on input line 153.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 153.
+(Font)                  OT1/txr/m/n --> T1/lmr/m/n on input line 156.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 153.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 153.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 153.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 156.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 153.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 153.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 153.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 156.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 153.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 153.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 153.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 156.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 153.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 153.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 153.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 153.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/txr/bx/n --> T1/lmr/b/n on input line 153.
+(Font)                  OT1/txr/bx/n --> T1/lmr/b/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 153.
+(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 153.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 153.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 153.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 156.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1251,124 +1251,124 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 (aux/Thesis_Presentation.nav)
-Overfull \hbox (6.0774pt too wide) detected at line 153
-  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
- []
-
-
 Overfull \hbox (6.0774pt too wide) detected at line 156
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 156.
+
+Overfull \hbox (6.0774pt too wide) detected at line 159
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 159.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 156.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 159.
 
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <8> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 156.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 159.
 
-<images/usp-logo-transp.png, id=91, 762.85pt x 321.2pt>
+<images/usp-logo-transp.png, id=95, 762.85pt x 321.2pt>
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 156.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 159.
 (pdftex.def)             Requested size: 108.1136pt x 45.52458pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 156.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 159.
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./images/usp-logo-transp.png>]
-Overfull \hbox (6.0774pt too wide) detected at line 156
+Overfull \hbox (6.0774pt too wide) detected at line 159
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 (aux/Thesis_Presentation.toc) [2
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 196
+Overfull \hbox (6.0774pt too wide) detected at line 199
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 196.
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 199.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 196.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 196.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 196.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 196.
+(Font)              <10.95> on input line 199.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 196.
+(Font)              <8> on input line 199.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 196.
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 196.
+(Font)              <6> on input line 199.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 196.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 196.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 196.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 196.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for T1+mak on input line 196.
+LaTeX Font Info:    Trying to load font information for T1+mak on input line 199.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/kerkis/t1mak.fd)
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 196.
+(Font)              scaled to size 9.85492pt on input line 199.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 196.
+(Font)              scaled to size 7.19995pt on input line 199.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 196.
+(Font)              scaled to size 5.39996pt on input line 199.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 199.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
-LaTeX Font Info:    Calculating math sizes for size <4> on input line 196.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 199.
+LaTeX Font Info:    Calculating math sizes for size <4> on input line 199.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4> on input line 196.
+(Font)              <4> on input line 199.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <2.79999> on input line 196.
+(Font)              <2.79999> on input line 199.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <2> on input line 196.
+(Font)              <2> on input line 199.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 3.59998pt on input line 196.
+(Font)              scaled to size 3.59998pt on input line 199.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 2.51996pt on input line 196.
+(Font)              scaled to size 2.51996pt on input line 199.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 1.79999pt on input line 196.
+(Font)              scaled to size 1.79999pt on input line 199.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 199.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <2.79999> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 199.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <2> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 196.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 199.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 196.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 199.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1378,13 +1378,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [3
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
-Overfull \hbox (6.0774pt too wide) detected at line 221
+Overfull \hbox (6.0774pt too wide) detected at line 224
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 221.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 224.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1394,13 +1394,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [4
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 252
+Overfull \hbox (6.0774pt too wide) detected at line 255
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 252.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 255.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1410,13 +1410,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 269
+Overfull \hbox (6.0774pt too wide) detected at line 272
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 269.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 272.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1426,13 +1426,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [6
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 298
+Overfull \hbox (6.0774pt too wide) detected at line 301
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 298.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 301.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1442,13 +1442,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [7
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 313
+Overfull \hbox (6.0774pt too wide) detected at line 316
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 313.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 316.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1458,13 +1458,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 346
+Overfull \hbox (6.0774pt too wide) detected at line 349
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 346.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 349.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1474,13 +1474,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [9
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 367
+Overfull \hbox (6.0774pt too wide) detected at line 370
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 367.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 370.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1490,13 +1490,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [10
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 396
+Overfull \hbox (6.0774pt too wide) detected at line 399
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 396.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 399.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1506,13 +1506,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [11
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 449
+Overfull \hbox (6.0774pt too wide) detected at line 452
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 449.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 452.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1522,13 +1522,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [12
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 466
+Overfull \hbox (6.0774pt too wide) detected at line 469
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 466.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 469.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1538,22 +1538,22 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 491
+Overfull \hbox (6.0774pt too wide) detected at line 494
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 
-Overfull \hbox (4.48071pt too wide) detected at line 491
+Overfull \hbox (4.48071pt too wide) detected at line 494
 [] \OT1/lmss/m/n/10.95 = [] = [] [] \OML/lmm/m/it/10.95 :
  []
 
 
-Overfull \vbox (2.95972pt too high) detected at line 491
+Overfull \vbox (2.95972pt too high) detected at line 494
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 491.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 494.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1563,25 +1563,25 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 518
+Overfull \hbox (6.0774pt too wide) detected at line 521
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 518.
+(Font)              <9> on input line 521.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 518.
+(Font)              <5> on input line 521.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 518.
+(Font)              scaled to size 8.09995pt on input line 521.
 LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 518.
+(Font)              scaled to size 4.49997pt on input line 521.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 518.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 521.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 518.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 521.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 518.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 521.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1591,13 +1591,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [15
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 529
+Overfull \hbox (6.0774pt too wide) detected at line 532
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 529.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 532.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1607,13 +1607,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [16
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 555
+Overfull \hbox (6.0774pt too wide) detected at line 558
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 555.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 558.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1623,13 +1623,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 613
+Overfull \hbox (6.0774pt too wide) detected at line 616
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 613.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 616.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1639,17 +1639,25 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 633
+Overfull \hbox (6.0774pt too wide) detected at line 637
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
-
-Overfull \vbox (10.34734pt too high) detected at line 633
- []
-
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 637.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 637.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 637.
+LaTeX Font Info:    Font shape `T1/mak/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 637.
+LaTeX Font Info:    Font shape `T1/mak/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 637.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 637.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 633.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 637.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1659,13 +1667,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [19
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 668
+Overfull \hbox (6.0774pt too wide) detected at line 672
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 668.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 672.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1675,13 +1683,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [20
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 693
+Overfull \hbox (6.0774pt too wide) detected at line 697
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 693.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 697.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1691,13 +1699,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [21
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 713
+Overfull \hbox (6.0774pt too wide) detected at line 717
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 713.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 717.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1707,13 +1715,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [22
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 730
+Overfull \hbox (6.0774pt too wide) detected at line 734
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 730.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 734.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1723,13 +1731,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [23
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 755
+Overfull \hbox (6.0774pt too wide) detected at line 759
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 755.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 759.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1739,13 +1747,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [24
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 801
+Overfull \hbox (6.0774pt too wide) detected at line 805
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 801.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 805.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1755,13 +1763,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [25
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 821
+Overfull \hbox (6.0774pt too wide) detected at line 825
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 821.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 825.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1771,13 +1779,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [26
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 841
+Overfull \hbox (6.0774pt too wide) detected at line 845
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 841.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 845.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1787,17 +1795,17 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [27
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 867
+Overfull \hbox (6.0774pt too wide) detected at line 871
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 
-Overfull \vbox (4.41481pt too high) detected at line 867
+Overfull \vbox (4.41481pt too high) detected at line 871
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 867.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 871.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1807,13 +1815,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [28
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 889
+Overfull \hbox (6.0774pt too wide) detected at line 893
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 889.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 893.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1823,18 +1831,18 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [29
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 905
+Overfull \hbox (6.0774pt too wide) detected at line 909
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
-<./images/desaparecimento_do_retardo.png, id=967, 1027.84pt x 822.07124pt>
+<./images/desaparecimento_do_retardo.png, id=974, 1027.84pt x 822.07124pt>
 File: ./images/desaparecimento_do_retardo.png Graphic file (type png)
 <use ./images/desaparecimento_do_retardo.png>
-Package pdftex.def Info: ./images/desaparecimento_do_retardo.png  used on input line 905.
+Package pdftex.def Info: ./images/desaparecimento_do_retardo.png  used on input line 909.
 (pdftex.def)             Requested size: 276.56381pt x 154.07526pt.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 905.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 909.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1844,13 +1852,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [30
 
  <./images/desaparecimento_do_retardo.png>]
-Overfull \hbox (6.0774pt too wide) detected at line 926
+Overfull \hbox (6.0774pt too wide) detected at line 930
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 926.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 930.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1860,24 +1868,18 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [31
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 939
+Overfull \hbox (6.0774pt too wide) detected at line 943
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
-<./images/retardo_limitado.png, id=1021, 935.495pt x 746.79pt>
+<./images/retardo_limitado.png, id=1028, 935.495pt x 746.79pt>
 File: ./images/retardo_limitado.png Graphic file (type png)
 <use ./images/retardo_limitado.png>
-Package pdftex.def Info: ./images/retardo_limitado.png  used on input line 939.
+Package pdftex.def Info: ./images/retardo_limitado.png  used on input line 943.
 (pdftex.def)             Requested size: 276.55388pt x 154.0729pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:Desaparecimento\040do\040Retardo}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.939 \end{frame}
-                 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 939.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 943.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1887,13 +1889,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [32
 
  <./images/retardo_limitado.png>]
-Overfull \hbox (6.0774pt too wide) detected at line 961
+Overfull \hbox (6.0774pt too wide) detected at line 965
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 961.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 965.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1903,24 +1905,24 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [33
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 976
+Overfull \hbox (6.0774pt too wide) detected at line 980
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
-<./images/hip123.png, id=1086, 931.48pt x 732.7375pt>
+<./images/hip123.png, id=1094, 931.48pt x 732.7375pt>
 File: ./images/hip123.png Graphic file (type png)
 <use ./images/hip123.png>
-Package pdftex.def Info: ./images/hip123.png  used on input line 976.
+Package pdftex.def Info: ./images/hip123.png  used on input line 980.
 (pdftex.def)             Requested size: 276.56087pt x 154.06949pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:Desaparecimento\040do\040Retardo}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.976 \end{frame}
+l.980 \end{frame}
                  
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 976.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 980.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1930,13 +1932,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [34
 
  <./images/hip123.png>]
-Overfull \hbox (6.0774pt too wide) detected at line 1000
+Overfull \hbox (6.0774pt too wide) detected at line 1004
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1000.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1004.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1946,25 +1948,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [35
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 1021
+Overfull \hbox (6.0774pt too wide) detected at line 1025
   \T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo 
  []
 
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 1021.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1021.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1021.
-LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 1021.
-LaTeX Font Info:    Font shape `T1/mak/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 1021.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 1021.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1021.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1025.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1974,17 +1964,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [36
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 1053
+Overfull \hbox (6.0774pt too wide) detected at line 1054
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
- []
-
-
-Overfull \vbox (58.56273pt too high) detected at line 1053
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1053.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1054.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -1994,13 +1980,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [37
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 1059
+Overfull \hbox (6.0774pt too wide) detected at line 1078
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1059.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1078.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -2010,13 +1996,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [38
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 1090
+Overfull \hbox (6.0774pt too wide) detected at line 1106
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1090.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1106.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -2026,18 +2012,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [39
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 1120
+Overfull \hbox (6.0774pt too wide) detected at line 1138
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
- []
-
-
-Overfull \hbox (1.77246pt too wide) detected at line 1120
-\T1/lmss/m/n/10.95 0 \OML/lmm/m/it/10.95 < [] \OT1/lmss/m/n/10.95 = \OML/lmm/m/it/10.95 ^^L\T1/lmss/m/sl/10.95 is \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ^^M\T1/lmss/m/sl/10.95 i  \OMS/lmsy/m/n/10.95 ([])  \T1/lmss/m/n/10.95 0 \OML/lmm/m/it/10.95 < ^^L\T1/lmss/m/sl/10.95 i \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 ^^M\T1/lmss/m/sl/10.95 i  \OMS/lmsy/m/n/10.95 ([])  \T1/lmss/m/sl/10.95 i \OML/lmm/m/it/10.95 < []\T1/lmss/m/sl/10.95 i  \OMS/lmsy/m/n/10.95 ([])  \T1/lmss/m/n/10.95 0 \OML/lmm/m/it/10.95 < []
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1120.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1138.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -2047,20 +2028,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [40
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 1170
+Overfull \hbox (6.0774pt too wide) detected at line 1156
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
- []
-
-PGFPlots: reading {data.csv}
-PGFPlots: reading {data.csv}
-PGFPlots: reading {data.csv}
-
-Overfull \vbox (5.93594pt too high) detected at line 1170
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1170.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1156.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -2070,21 +2044,13 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 [41
 
 ]
-Overfull \hbox (6.0774pt too wide) detected at line 1204
+Overfull \hbox (6.0774pt too wide) detected at line 1188
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 1204.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1204.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1204.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1188.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -2093,14 +2059,20 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 
 [42
 
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} </usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-Overfull \hbox (6.0774pt too wide) detected at line 1237
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1219
   []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
  []
 
+
+pdfTeX warning (ext4): destination with the same identifier (name{chap3:assumption:point_lipschitz}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1219 \end{frame}
+                  
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1237.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1219.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \hbox (6.0774pt too wide) has occurred while \output is active
@@ -2109,41 +2081,339 @@ Overfull \hbox (6.0774pt too wide) has occurred while \output is active
 
 [43
 
- </usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamericonbook.pdf>]
-\tf@nav=\write7
-\openout7 = `Thesis_Presentation.nav'.
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1260
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
 
-\tf@toc=\write8
-\openout8 = `Thesis_Presentation.toc'.
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1260.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
-\tf@snm=\write9
-\openout9 = `Thesis_Presentation.snm'.
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
 
- (aux/Thesis_Presentation.aux)
- ***********
-LaTeX2e <2023-11-01>
-L3 programming layer <2024-01-04>
- ***********
+[44
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1293
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1293.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[45
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1322
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1322.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[46
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1343
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1343.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[47
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1371
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1371.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[48
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1407
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1407.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[49
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1447
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1447.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1447.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1447.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <4> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1447.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <2.79999> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1447.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <2> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1447.
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1447.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[50
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1475
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1475.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1475.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1475.
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1475.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[51
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1500
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1500.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[52
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1533
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
 
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \vbox (12.00182pt too high) detected at line 1533
+ []
 
-Package rerunfilecheck Info: File `Thesis_Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: C076DCD6E66B5DF6E517F9181836A7A9;2574.
- ) 
-Here is how much of TeX's memory you used:
- 52098 strings out of 474166
- 1270808 string characters out of 5745489
- 1958525 words of memory out of 5000000
- 73351 multiletter control sequences out of 15000+600000
- 688413 words of font info for 168 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 128i,21n,123p,1640b,2679s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb>
-Output written on aux/Thesis_Presentation.pdf (43 pages, 559121 bytes).
-PDF statistics:
- 1538 PDF objects out of 1728 (max. 8388607)
- 922 compressed objects within 10 object streams
- 133 named destinations out of 1000 (max. 500000)
- 1131 words of extra memory for PDF output out of 10000 (max. 10000000)
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1533.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[53
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1558
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1558.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[54
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1586
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1586.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[55
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1616
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1616.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[56
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1630
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1630.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[57
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1647
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+
+Overfull \hbox (17.0487pt too wide) detected at line 1647
+[]
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1647.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[58
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1673
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1673.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[59
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1700
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+
+Overfull \hbox (5.54068pt too wide) detected at line 1700
+[][][][][]
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1700.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[60
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1715
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+
+Overfull \hbox (14.85541pt too wide) detected at line 1715
+[] [] [] \OMS/lmsy/m/n/10.95 ^^T \T1/lmss/m/sl/10.95 O [] \OT1/lmss/m/n/10.95 + \T1/lmss/m/sl/10.95 O []
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1715.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox (6.0774pt too wide) has occurred while \output is active
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+[61
+
+]
+Overfull \hbox (6.0774pt too wide) detected at line 1733
+  []\T1/lmss/m/n/6 Existência e Regularidade das soluções das Equações com Retardo[] 
+ []
+
+File: images/usp-logo-transp.png Graphic file (type png)
+<use images/usp-logo-transp.png>
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1733.
+(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
+
+Overfull \hbox

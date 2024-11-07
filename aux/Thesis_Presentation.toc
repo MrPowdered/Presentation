@@ -6,8 +6,9 @@
 \beamer@subsectionintoc {2}{1}{Propagação de Descontinuidades}{20}{0}{2}
 \beamer@sectionintoc {3}{Métodos Numéricos Contínuos}{37}{0}{3}
 \beamer@subsectionintoc {3}{1}{Métodos Contínuos para EDOs}{37}{0}{3}
-\beamer@sectionintoc {4}{O Modelo SIR}{39}{0}{4}
-\beamer@subsectionintoc {4}{1}{Descrição Matemática}{39}{0}{4}
-\beamer@subsectionintoc {4}{2}{Número Básico de Reprodução}{40}{0}{4}
-\beamer@subsectionintoc {4}{3}{Tamanho da Epidemia}{41}{0}{4}
-\beamer@sectionintoc {5}{Referências}{43}{0}{5}
+\beamer@subsectionintoc {3}{2}{Métodos Contínuos para EDRs}{62}{0}{3}
+\beamer@sectionintoc {4}{O Modelo SIR}{64}{0}{4}
+\beamer@subsectionintoc {4}{1}{Descrição Matemática}{64}{0}{4}
+\beamer@subsectionintoc {4}{2}{Número Básico de Reprodução}{65}{0}{4}
+\beamer@subsectionintoc {4}{3}{Tamanho da Epidemia}{66}{0}{4}
+\beamer@sectionintoc {5}{Referências}{68}{0}{5}
