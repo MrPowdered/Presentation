@@ -176,7 +176,24 @@
 
 
 \section{Introdução}
-\begin{frame}{Introdução}
+
+\begin{frame}{O que está por vir?}
+
+    \begin{itemize}
+        \item[$\bullet$] Revisão de EDO.
+        \item[$\bullet$] Introdução às EDRs e EDRNs.
+        \item[$\bullet$] Regularidade, existência e unicidade das EDRs.
+        \item[$\bullet$] Métodos contínuos para EDOs.
+        \item[$\bullet$] Métodos para EDRs.
+        \item[$\bullet$] Aplicações.
+    \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Revisão de EDO}
+
+\begin{frame}{Revisão de EDO}
 
     \begin{defi}[Equações Diferenciais Ordinárias (EDOs)]
         \label{def:1:EDO} 
@@ -206,7 +223,7 @@
 
 %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%%
 
-\begin{frame}{Introdução}
+\begin{frame}
 
     \begin{defi}[Condição de Lipschitz]
         \label{def:2:condicao_de_lispchitz}
@@ -235,7 +252,7 @@
     \begin{defi}[Problema bem posto]
          \label{def:3:problema_bem_posto}
             
-         O problema de valor inicial \eqref{def:eq:PVI} é dito ser um \textit{problema bem posto} se 
+         O PVI \eqref{def:eq:PVI} é dito ser um \textit{problema bem posto} se 
          \begin{itemize}
              \item[$\bullet$] Existe uma única solução $y(t)$ para o PVI.
          \item[$\bullet$] Existem constantes $\epsilon_0 > 0$ e $k>0$ tais que, para qualquer $\epsilon $ sendo $0 < \epsilon < \epsilon_0$ o \textit{problema perturbado}
@@ -271,11 +288,22 @@
 
         \begin{itemize}
             \item[$\bullet$] Equações Diferenciais com Retardo (EDRs) generalizam as EDOs ao levarem em consideração o estado passado da solução na sua equação.
-            \item[$\bullet$] Seu Problema de Valor Inicial (PI, para evitar confusões) pode ser descrito de forma mais ou menos geral. Utilizaremos a definição utilizada por {\color{red} Bellen e zennaro}, que é prática do posto de vista numérico.
+            \item[$\bullet$] Seu Problema de Valor Inicial (PI, para evitar confusões) pode ser descrito de forma mais ou menos geral. Utilizaremos a definição utilizada por Bellen e Zennaro em \cite{zennaro}  , que é prática do posto de vista numérico.
         \end{itemize}
 
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Regularidade, existência e unicidade das EDRs}
+\subsection{Introdução às EDRs e EDRNs}
+
+\begin{frame}{Introdução às EDRs e EDRNs}
+    \begin{itemize}
+        \item[$\bullet$] ESCREVER ALGUM BLÁ BLÁ BLÁ DE INTRODUÇÃO?
+    \end{itemize} 
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -293,7 +321,7 @@
         \label{def:eq:EDR}
     \end{equation}
 
-    para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}  $\tau: [t_0, t_f] \times \R^d \to [0, p]$ e para $\phi:[t_0 - p, t_0] \to \R^d $}. Quanto ao PI \eqref{def:eq:EDR}, nós temos:
+para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau: [t_0, t_f] \times \R^d \to [0, p]$ e para $\phi:[t_0 - p, t_0] \to \R^d $. Quanto ao PI \eqref{def:eq:EDR}, nós temos:
         
     \begin{itemize}
         \item[$\bullet$] A primeira equação do PI é a chamada EDR, já a segunda, o estado inicial.
@@ -311,8 +339,8 @@
 \begin{frame}
     Quanto ao retardo $\tau(t, y(t))$, dizemos que
      \begin{itemize}
-         \item[$\bullet$] {\color{red} O retardo depende do estado quando a função $\tau$ depende tanto do tempo $t$, quando do estado $y$.
-         quanto do estado $y$}
+         \item[$\bullet$] {\color{red}o} O retardo depende do estado quando a função $\tau$ depende tanto do tempo $t$, quando do estado $y$.
+         quanto do estado $y$
          \item[$\bullet$] \textit{O retardo depende do tempo} caso a função retardo $\tau$ dependa apenas da tempo $t$.
          \item[$\bullet$] \textit{O retardo é constante} caso $\tau$ for constante.
      \end{itemize}
@@ -324,7 +352,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Exemplo 1: Propagação de descontinuidades}
 \begin{frame}{Exemplo 1: Propagação de descontinuidades}
 
         Considere a equação
@@ -408,58 +435,55 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Exemplo 1: Continuação}
-        inaeiudnae 
-        {\color{red} \huge GRÁFICO COMENTADO} 
-         % \begin{figure}[H]
-         %     \begin{center}
-         %         \begin{adjustbox}{max width=\textwidth}  
-         %             \begin{tikzpicture}
-         %                 \begin{axis}[
-         %                     legend pos=outer north east,
-         %                     axis lines = box,
-         %                     %xlabel = $x$,
-         %                     %ylabel = $y$,
-         %                     trig format plots = rad,
-         %                     xmin=-1, xmax=3, 
-         %                     ymin=-1, ymax=1.5,
-         %                     %xtick={-2,-1.5, ..., 2},
-         %                     ytick={-1,-0.5,...,5},
-         %                     width = 15cm, 
-         %                     height = 6cm,
-         %                     ticklabel style={font=\footnotesize}, % Make tick labels smaller
-         %                     grid=both,  %grid=major,  grid=minor,  
-         %                     grid style={dashed, gray!30}, % Optional grid style customization
-         %                     ]
-         %                     % valor inicial
-         %                     \addplot [ domain=-1:0, samples=70, color=black, ] {1};
-         %                     %solução y
-         %                     \addplot [ domain=0:1, samples=70, color=black, ] {1 - x};
-         %                     \addplot [ domain=1:2, samples=70, color=black, ] {(1/2)*(x^2 - 4*x + 3)};
-         %                     \addplot [ domain=2:3, samples=70, color=black, ] {(1/6)*(17 - 24*x + 9*x^2 - x^3) };
-         %
-         %                     %labels
-         %                     \node[black] at (axis cs:0.28, 1.23) {$C_0$};
-         %                     \draw[->] (0.2,1.2) -- (0,1);            
-         %
-         %                     \node[black] at (axis cs:1.28, 0.23) {$C_1$};
-         %                     \draw[->] (1.2,0.2) -- (1,0);            
-         %
-         %                     \node[black] at (axis cs:2,0.1) {$C_2$};
-         %                     \draw[->] (2,0) -- (2,-1/2);            
-         %
-         %                 \end{axis}
-         %             \end{tikzpicture}
-         %         \end{adjustbox}
-         %     \end{center}
-         %     \caption{Representação do nível e localização dos pontos de descontinuidade da solução de  \eqref{chap1:ex1:eq:1}}
-         %     \label{chap1:ex1:fig:1}
-         % \end{figure}
+         \begin{figure}[H]
+             \begin{center}
+                 \begin{adjustbox}{max width=\textwidth}  
+                     \begin{tikzpicture}
+                         \begin{axis}[
+                             legend pos=outer north east,
+                             axis lines = box,
+                             %xlabel = $x$,
+                             %ylabel = $y$,
+                             trig format plots = rad,
+                             xmin=-1, xmax=3, 
+                             ymin=-1, ymax=1.5,
+                             %xtick={-2,-1.5, ..., 2},
+                             ytick={-1,-0.5,...,5},
+                             width = 15cm, 
+                             height = 6cm,
+                             ticklabel style={font=\footnotesize}, % Make tick labels smaller
+                             grid=both,  %grid=major,  grid=minor,  
+                             grid style={dashed, gray!30}, % Optional grid style customization
+                             ]
+                             % valor inicial
+                             \addplot [ domain=-1:0, samples=70, color=black, ] {1};
+                             %solução y
+                             \addplot [ domain=0:1, samples=70, color=black, ] {1 - x};
+                             \addplot [ domain=1:2, samples=70, color=black, ] {(1/2)*(x^2 - 4*x + 3)};
+                             \addplot [ domain=2:3, samples=70, color=black, ] {(1/6)*(17 - 24*x + 9*x^2 - x^3) };
+
+                             %labels
+                             \node[black] at (axis cs:0.28, 1.23) {$C_0$};
+                             \draw[->] (0.2,1.2) -- (0,1);            
+
+                             \node[black] at (axis cs:1.28, 0.23) {$C_1$};
+                             \draw[->] (1.2,0.2) -- (1,0);            
+
+                             \node[black] at (axis cs:2,0.1) {$C_2$};
+                             \draw[->] (2,0) -- (2,-1/2);            
+
+                         \end{axis}
+                     \end{tikzpicture}
+                 \end{adjustbox}
+             \end{center}
+             \caption{Representação do nível e localização dos pontos de descontinuidade da solução de  \eqref{chap1:ex1:eq:1}}
+             \label{chap1:ex1:fig:1}
+         \end{figure}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Exemplo 2: Falta de injetividade entre valores iniciais e soluções}
 \begin{frame}{Exemplo 2: Falta de injetividade entre valores iniciais e soluções}
         Considere a equação
         \begin{equation}
@@ -492,21 +516,23 @@
         $\bullet$ Considere os pontos $(0, \frac{1}{n}, \frac{1}{n})$ e $(0, 0, \frac{1}{n})$, então
 
         \noindent
+        \footnotesize
         \[
             \left\| f\left(0, \frac{1}{n}, \frac{1}{n}\right) - f\left(0, 0, \frac{1}{n}\right) \right\| =  \left\|\frac{1}{n}^2 \right\| =  \left|\frac{1}{n}\right|\left( \left\|\frac{1}{n} - 0\right\| - \left\|\frac{1}{n} - \frac{1}{n} \right\| \right).
         \]
 
+        \normalsize
         $\bullet$ Como $|\frac{1}{n}| \to \infty$, então $f(t, y, x) = x(y-1)$ não satisfaz a definição \ref{def:EDR:Lips}.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Definição: Equações Diferenciais do tipo Neutro com Retardo (EDRNs) ??}
+\begin{frame}
      
-    \begin{defi}[Equações Diferenciais do tipo Neutro com Retardo (EDRNs)]
+    \begin{defi}[Equações Diferenciais do tipo Neutro com Retardo]
         Seja $p>0$. Um PI para EDRNs é dado por
 
-        \footnotesize
+        \small
         \begin{equation}
             \begin{cases}
                 y'(t) = f(t, y(t), y(t - \tau(t, y(t))), y'(t - \sigma(t, y(t))), \qquad t_0 \leq t \leq t_f , \\
@@ -517,24 +543,36 @@
 
 
     \normalsize
-para $f:[t_0, t_f] \times \R^d \times \R^d \times \R^d \to \R^d$, {\color{red}  $\tau: [t_0, t_f] \times \R^d \to [0, p]$}, $\sigma: [t_0, t_f] \times \R^d \to [0, p]$ e $\phi:[t_0 - p, t_0] \to \R^d $. 
+    \par
+    para $f:[t_0, t_f] \times \R^d \times \R^d \times \R^d \to \R^d$, {\color{red}o}  $\tau: [t_0, t_f] \times \R^d \to [0, p]$, $\sigma: [t_0, t_f] \times \R^d \to [0, p]$ e $\phi:[t_0 - p, t_0] \to \R^d $. Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
+
+    \[ \vdots \]
+
 
     \end{defi}
 
-Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
         
 
 \end{frame}
 
 
 \begin{frame}
-    \begin{itemize}
-        \item[$\bullet$] A primeira equação do PI é a chamada EDRN, já a segunda, o estado inicial.
-        \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
-        \item[$\bullet$] A função $\tau$ é chamada de \textit{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
-        \item[$\bullet$] Naturalmente, mais dificuldades são introduzidas ao genearalizar as EDRs. No próximo exemplo, mostra-se que as descontinuidades não se suavizam conforme o tempo aumenta.
 
-    \end{itemize} 
+
+    \begin{exampleblock}
+        <1->{Definição 6. Continuação}
+        \[ \vdots \]
+        \begin{itemize}
+            \item[$\bullet$] A primeira equação do PI é a chamada EDRN, já a segunda, o estado inicial.
+            \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
+            \item[$\bullet$] A função $\tau$ é chamada de \textit{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
+        \end{itemize} 
+
+    \end{exampleblock}
+
+    Naturalmente, mais dificuldades são introduzidas ao genearalizar as EDRs. No próximo exemplo, mostra-se que as descontinuidades não se suavizam conforme o tempo aumenta.
+
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -565,7 +603,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Exemplo 3: Continuação}
+\begin{frame}{Exemplo 3. Continuação}
 
      $\bullet$ Utilizando o método dos passos em \eqref{chap1:ex5:eq:1}, é possível mostrar por indução que a seguinte função é solução
      
@@ -580,79 +618,57 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
      $\bullet$ Cuja gráfico é dado por
      
-     {\color{red} \Huge gráfico comentado}
-     % \begin{figure}[H]
-     %   \begin{center}
-     %     \begin{adjustbox}{width=0.75\textwidth}  
-     %       \begin{tikzpicture}
-     %         \begin{axis}[
-     %             legend pos=outer north east,
-     %             axis lines = box,
-     %             %xlabel = $x$,
-     %             %ylabel = $y$,
-     %             trig format plots = rad,
-     %             xmin=-1, xmax=5, 
-     %             ymin=-1.5, ymax=0.5,
-     %             xtick={-1,0, ..., 5},
-     %             ytick={-1,-0.5,...,0.5},
-     %             width = 15cm, 
-     %             height = 6cm,
-     %             ticklabel style={font=\footnotesize}, % Make tick labels smaller
-     %             grid=both,  %grid=major,  grid=minor,  
-     %             grid style={dashed, gray!30}, % Optional grid style customization
-     %           ]
-     %           % valor inicial
-     %           \addplot [ domain=-1:0, samples=70, color=black, ] {x};
-     %           %solução y
-     %           \addplot [ domain=0:1, samples=70, color=black, ] {- x};
-     %           \addplot [ domain=1:2, samples=70, color=black, ] {x - 2};
-     %           \addplot [ domain=2:3, samples=70, color=black, ] {-x + 2 };
-     %           \addplot [ domain=3:4, samples=70, color=black, ] {x - 4 };
-     %           \addplot [ domain=4:5, samples=70, color=black, ] {-x + 4 };
-     %
-     %
-     %         \end{axis}
-     %       \end{tikzpicture}
-     %     \end{adjustbox}
-     %   \end{center}
-     %   \caption{Gráfico da solução de \eqref{chap1:ex5:eq:1}}
-     %   \label{chap1:fig:3}
-     % \end{figure}
+     \begin{figure}[H]
+       \begin{center}
+         \begin{adjustbox}{width=0.75\textwidth}  
+           \begin{tikzpicture}
+             \begin{axis}[
+                 legend pos=outer north east,
+                 axis lines = box,
+                 %xlabel = $x$,
+                 %ylabel = $y$,
+                 trig format plots = rad,
+                 xmin=-1, xmax=5, 
+                 ymin=-1.5, ymax=0.5,
+                 xtick={-1,0, ..., 5},
+                 ytick={-1,-0.5,...,0.5},
+                 width = 15cm, 
+                 height = 6cm,
+                 ticklabel style={font=\footnotesize}, % Make tick labels smaller
+                 grid=both,  %grid=major,  grid=minor,  
+                 grid style={dashed, gray!30}, % Optional grid style customization
+               ]
+               % valor inicial
+               \addplot [ domain=-1:0, samples=70, color=black, ] {x};
+               %solução y
+               \addplot [ domain=0:1, samples=70, color=black, ] {- x};
+               \addplot [ domain=1:2, samples=70, color=black, ] {x - 2};
+               \addplot [ domain=2:3, samples=70, color=black, ] {-x + 2 };
+               \addplot [ domain=3:4, samples=70, color=black, ] {x - 4 };
+               \addplot [ domain=4:5, samples=70, color=black, ] {-x + 4 };
+
+
+             \end{axis}
+           \end{tikzpicture}
+         \end{adjustbox}
+       \end{center}
+       \caption{Gráfico da solução de \eqref{chap1:ex5:eq:1}}
+       \label{chap1:fig:3}
+     \end{figure}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-     
-\begin{teo}[Existência local]
-  \label{teo:local_existence:EDR}
-  \small
-  Considere a equação \eqref{def:eq:EDR}, ou seja,
-
-  \[
-    \left\{\begin{array}{l}
-        y^{\prime}(t)=f(t, y(t), y(t-\tau(t, y(t)))), \quad t \geq t_{0}  \\
-        y(t)=\phi(t), \quad t \leq t_{0}
-    \end{array}\right.
-  \]
-
-  Sejam \(U \subseteq \mathbb{R}^{d}\) e \(V \subseteq \mathbb{R}^{d}\) vizinhanças de \(\phi\left(t_{0}\right)\) e \(\phi\left(t_{0}-\tau\left(t_{0}, \phi\left(t_{0}\right)\right)\right)\), respectivamente, e suponha que a função \(f(t, u, v)\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(u\) e \(v\) em \(\left[t_{0}, t_{0}+h\right] \times U \times V\) para algum \(h>0\). Além disso, suponha que a função inicial \(\phi(t)\) seja Lipschitz contínua para \(t \leq t_{0}\) e que a função de atraso \(\tau(t, y) \geq 0\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(y\) em \(\left[t_{0}, t_{0}+h\right] \times U\). Então o problema \ref{def:eq:EDR} tem uma única solução em \(\left[t_{0}, t_{0}+\delta\right)\) para algum \(\delta>0\) e esta solução depende continuamente dos dados iniciais.
-
-\end{teo}
-\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Existência e Regularidade das soluções das Equações com Retardo}
 \subsection{Propagação de Descontinuidades}
-\begin{frame}{Existência e Regularidade das soluções das Equações com Retardo}
+\begin{frame}{Propagação de descontinuidades}
 
-    $\bullet$ Nesta seção, generalizaremos alguns dos conceitos dos exemplos já apresentados, e além.
-    
-    \begin{exampleblock}{Propagação de Descontinuidades}
+    Nesta seção, generalizaremos alguns dos conceitos dos exemplos já apresentados, e além.
 
-        $\bullet$ Para simplificar a notação, introduziremos a seguintes funções.
+    \begin{itemize}
+
+        \item[$\bullet$] Para simplificar a notação, introduziremos a seguintes funções.
 
             \[
                 \alpha(t)=t-\tau(t, y(t)) \qquad \text{ e } \qquad \beta(t)=t-\sigma(t, y(t)),
@@ -661,19 +677,14 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
         \noindent
         os quais são chamados de \textit{argumentos deviados}. 
 
-        $\bullet$ Note que $\alpha(t) \leq t$ e $\beta(t) \leq t$.
+        \item[$\bullet$] Note que $\alpha(t) \leq t$ e $\beta(t) \leq t$.
 
-        $\bullet$ Partiremos do caso escalar de \eqref{def:eq:EDR}, ou seja, $y(t) \in \R$.
+        \item[$\bullet$] Partiremos do caso escalar de \eqref{def:eq:EDR}, ou seja, $y(t) \in \R$.
 
-        $\bullet$ Também consideraremos que $\alpha(t)$ depende apenas do tempo.
+        \item[$\bullet$] Também consideraremos que $\alpha(t)$ depende apenas do tempo.
 
-        \noindent
-        \[
-            \vdots
-        \]
+    \end{itemize}
          
-    \end{exampleblock}
-
 
 \end{frame}
 
@@ -682,6 +693,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 \begin{frame}{Propagação de Descontinuidades}
     
+
 
     $\bullet$ Suponha que $\alpha(t) \leq t_0$ para algum intervalo em $[t_0, t_f]$ e que $y(t)$ tem uma descontinuidade em sua primeira derivada no ponto $t_0$, ou seja, 
 
@@ -725,7 +737,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Propagação de Descontinuidades}
+\begin{frame}{Descontinuidades primárias}
 
     $\bullet$ Cada $\xi_{k, i}$ gera uma descontinuidade em $y^{(k+1)}$. Estes pontos são chamados de \textit{descontinuidades primárias de k-ésimo nível}.
 
@@ -742,9 +754,33 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+\begin{frame}{Descontinuidades principais}
+
+    $\bullet$ Dentre as descontinuidades primárias, um tipo delas se destaca em importância.
+
+    \begin{defi}
+        \label{chap2:def:principal_descontinuity}
+    Seja $\bar{\xi_0} = t_0$ definido como uma \textit{descontinuidade principal de nível 0}. Indutivamente, uma \textit{descontinuidade principal de nível (k+1)} é a menor raiz $\bar{\xi}_{k+1}$ de 
+        \[
+            \alpha(t) = \bar{\xi_k}
+        \]
+        com multiplicidade ímpar, sendo $\bar{\xi_k}$ uma \textit{descontinuidade principal de nível (k)}
+    \end{defi}
+
+
+    $\bullet$ Note que $ \alpha(t) \leq \bar{\xi}_{k}, \quad \forall t \in\left[\bar{\xi}_{k}, \bar{\xi}_{k+1}\right] $ e todo $k$
+
+    $\bullet$ Logo, a EDR \eqref{def:eq:EDR} se reduz a uma EDO nos intervalos $\left[\bar{\xi}_{k}, \bar{\xi}_{k+1}\right]$. 
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}{Propagação de Descontinuidades}
      
-    $\bullet$ Tal suavização, em geral, não ocorre para EDRNs. 
+    $\bullet$ A suavização que pode ocorrer com as EDRs, em geral, não ocorre para EDRNs. 
 
     $\bullet$ Suponha que $y'$ tem um ponto de descontinuidade em $t_0$ para a equação \ref{chap1:def:EDRN};
 
@@ -768,45 +804,43 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 \begin{frame}{Propagação de Descontinuidades}
      
-    {\color{red} \Huge Gráfico comentado}
 
-
-    % \begin{figure}
-    %     \centering
-    %     \begin{forest}
-    %         for tree={
-    %             edge={->, semithick},
-    %             s sep=20pt, 
-    %             inner sep=1pt, 
-    %             l sep=4pt,
-    %             scale = 1
-    %         }
-    %         [$c^1$ 
-    %         [$c^2$, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}
-    %         [$c^3$, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}} 
-    %         [$\phantom{aaa}\vdots$, edge=dashed, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}]
-    %         [$\vdots\phantom{aaa}$, edge=dashed, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}}]
-    %         ] 
-    %         [$c^2$, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}} 
-    %         [$\phantom{aaa}\vdots$, edge=dashed, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}]
-    %         [$\vdots\phantom{aaa}$, edge=dashed, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}}]
-    %         ] 
-    %         ]
-    %         [$c^1$, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}} 
-    %         [$c^2$, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}} 
-    %         [$\phantom{aaa}\vdots$, edge=dashed, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}]
-    %         [$\vdots\phantom{aaa}$, edge=dashed, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}}]
-    %         ] 
-    %         [$c^1$, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}} 
-    %         [$\phantom{aaa}\vdots$, edge=dashed, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}]
-    %         [$\vdots\phantom{aaa}$, edge=dashed, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}}]
-    %         ] 
-    %         ]
-    %         ]
-    %     \end{forest}
-    %     \caption{árvore que representa a propagação de descontinuidades nas derivadas das solução do problema \eqref{chap1:def:EDRN} a partir de uma descontinuidade primária de nível zero.}
-    %     \label{chap2:disc_prop_tree}
-    % \end{figure}
+    \begin{figure}
+        \centering
+        \begin{forest}
+            for tree={
+                edge={->, semithick},
+                s sep=20pt, 
+                inner sep=1pt, 
+                l sep=4pt,
+                scale = 1
+            }
+            [$c^1$ 
+            [$c^2$, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}
+            [$c^3$, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}} 
+            [$\phantom{aaa}\vdots$, edge=dashed, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}]
+            [$\vdots\phantom{aaa}$, edge=dashed, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}}]
+            ] 
+            [$c^2$, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}} 
+            [$\phantom{aaa}\vdots$, edge=dashed, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}]
+            [$\vdots\phantom{aaa}$, edge=dashed, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}}]
+            ] 
+            ]
+            [$c^1$, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}} 
+            [$c^2$, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}} 
+            [$\phantom{aaa}\vdots$, edge=dashed, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}]
+            [$\vdots\phantom{aaa}$, edge=dashed, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}}]
+            ] 
+            [$c^1$, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}} 
+            [$\phantom{aaa}\vdots$, edge=dashed, edge label={node[midway,left, xshift=-3pt, yshift=3pt] {$\alpha$}}]
+            [$\vdots\phantom{aaa}$, edge=dashed, edge label={node[midway,right, xshift=3pt, yshift=3pt] {$\beta$}}]
+            ] 
+            ]
+            ]
+        \end{forest}
+        \caption{árvore que representa a propagação de descontinuidades nas derivadas das solução do problema \eqref{chap1:def:EDRN} a partir de uma descontinuidade primária de nível zero.}
+        \label{chap2:disc_prop_tree}
+    \end{figure}
 
 \end{frame}
 
@@ -852,6 +886,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Desaparecimento do Retardo}
 \begin{frame}{Desaparecimento do Retardo}
 
     \begin{proof}
@@ -908,7 +943,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
         \begin{center}
             \includegraphics[width=0.9\textwidth, height=0.7\textheight]{desaparecimento_do_retardo.png}
         \end{center}
-        \caption{fig:Desaparecimento do Retardo}\label{fig:Desaparecimento do Retardo}
+        \caption{Desaparecimento do Retardo (Ainda vou montar minha própria imagem)}\label{fig:Desaparecimento do Retardo}
     \end{figure}
         
 
@@ -917,6 +952,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Retardos Limitados e Ilimitados}
 \begin{frame}{Retardos Limitados e Ilimitados}
 
     \begin{exampleblock}
@@ -943,7 +979,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
         \begin{center}
             \includegraphics[width=0.9\textwidth, height=0.7\textheight]{retardo_limitado.png}
         \end{center}
-        \caption{Retardo limitado}\label{fig:Retardo_limitado}
+        \caption{Retardo limitado (Ainda vou montar minha própria imagem)}\label{fig:Retardo_limitado}
     \end{figure}
 
 \end{frame}
@@ -980,7 +1016,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
         \begin{center}
             \includegraphics[width=0.9\textwidth, height=0.7\textheight]{hip123.png}
         \end{center}
-        \caption{Hip 123}\label{fig:Desaparecimento do Retardo}
+        \caption{Hipóteses 1, 2 e 3 (Ainda vou montar a minha)}\label{fig:hip123}
     \end{figure}
 
 \end{frame}
@@ -989,53 +1025,47 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}{Descontinuidades Principais}
-
-    $\bullet$ Dentre as descontinuidades primárias, um tipo delas se destaca em importância.
-
-    \begin{defi}
-        \label{chap2:def:principal_descontinuity}
-    Seja $\bar{\xi_0} = t_0$ definido como uma \textit{descontinuidade principal de nível 0}. Indutivamente, uma \textit{descontinuidade principal de nível (k+1)} é a menor raiz $\bar{\xi}_{k+1}$ de 
-        \[
-            \alpha(t) = \bar{\xi_k}
-        \]
-        com multiplicidade ímpar, sendo $\bar{\xi_k}$ uma \textit{descontinuidade principal de nível (k)}
-    \end{defi}
 
 
-    $\bullet$ Note que $ \alpha(t) \leq \bar{\xi}_{k}, \quad \forall t \in\left[\bar{\xi}_{k}, \bar{\xi}_{k+1}\right] $ e todo $k$
+\subsection{Existência e unicidade}
+\begin{frame}
+     
+\begin{teo}[Existência e unicidade para EDRs]
+  \label{teo:local_existence:EDR}
+  \small
+  Considere a equação \eqref{def:eq:EDR}, ou seja,
 
-    $\bullet$ Logo, a EDR \eqref{def:eq:EDR} se reduz a uma EDO nos intervalos $\left[\bar{\xi}_{k}, \bar{\xi}_{k+1}\right]$. 
+  \[
+    \left\{\begin{array}{l}
+        y^{\prime}(t)=f(t, y(t), y(t-\tau(t, y(t)))), \quad t \geq t_{0}  \\
+        y(t)=\phi(t), \quad t \leq t_{0}
+    \end{array}\right.
+  \]
 
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  Sejam \(U \subseteq \mathbb{R}^{d}\) e \(V \subseteq \mathbb{R}^{d}\) vizinhanças de \(\phi\left(t_{0}\right)\) e \(\phi\left(t_{0}-\tau\left(t_{0}, \phi\left(t_{0}\right)\right)\right)\), respectivamente, e suponha que a função \(f(t, u, v)\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(u\) e \(v\) em \(\left[t_{0}, t_{0}+h\right] \times U \times V\) para algum \(h>0\). Além disso, suponha que a função inicial \(\phi(t)\) seja Lipschitz contínua para \(t \leq t_{0}\) e que a função de atraso \(\tau(t, y) \geq 0\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(y\) em \(\left[t_{0}, t_{0}+h\right] \times U\). Então o problema \ref{def:eq:EDR} tem uma única solução em \(\left[t_{0}, t_{0}+\delta\right)\) para algum \(\delta>0\) e esta solução depende continuamente dos dados iniciais.
 
-
-\begin{frame}{Existência e unicidade de soluções}
-
-    \small
-    \begin{teo}[Existência local]
-        \label{chap2:teo:local_existence:EDR}
-        Teorema 2.2.4 Considere a equação \ref{chap1:def:EDRN}, ou seja,
-
-        \[
-            \left\{\begin{array}{l}
-                    y^{\prime}(t)=f(t, y(t), y(t-\tau(t, y(t)))), \quad t \geq t_{0}  \\
-                    y(t)=\phi(t), \quad t \leq t_{0}
-            \end{array}\right.
-        \]
-
-        Sejam \(U \subseteq \mathbb{R}^{d}\) e \(V \subseteq \mathbb{R}^{d}\) vizinhanças de \(\phi\left(t_{0}\right)\) e \(\phi\left(t_{0}-\tau\left(t_{0}, \phi\left(t_{0}\right)\right)\right)\), respectivamente, e suponha que a função \(f(t, u, v)\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(u\) e \(v\) em \(\left[t_{0}, t_{0}+h\right] \times U \times V\) para algum \(h>0\). Além disso, suponha que a função inicial \(\phi(t)\) seja Lipschitz contínua para \(t \leq t_{0}\) e que a função de atraso \(\tau(t, y) \geq 0\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(y\) em \(\left[t_{0}, t_{0}+h\right] \times U\). Então o problema \ref{chap1:def:EDRN} tem uma única solução em \(\left[t_{0}, t_{0}+\delta\right)\) para algum \(\delta>0\) e esta solução depende continuamente dos dados iniciais.
-
-    \end{teo}
+\end{teo}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Métodos Numéricos Contínuos}
-\subsection{Métodos Contínuos para EDOs}
 
-\begin{frame}{Métodos Contínuos para EDOs}
+\subsection{Intro}
+
+\begin{frame}{Intro aqui?}
+    \begin{itemize}
+        \item[$\bullet$] Algum blalablkanla
+    \end{itemize} 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Métodos discretos para EDOs}
+
+
+\begin{frame}{Métodos discretos para EDOs}
     \small
     \phantom{aa} $\bullet$ Para $n = 0, ..., N-1$, seja $\Delta = \{ t_0, ..., t_N = t_f\}$ uma malha e $h_{n+1} = t_{n+1} - t_n$ os passos.
 
@@ -1061,7 +1091,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Métodos Contínuos para EDOs}
+\begin{frame}{Métodos discretos para EDOs}
 
     \phantom{aa} $\bullet$ Caso $k = 1$, temos os chamados métodos de passo único, como o método de Euler 
 
@@ -1085,7 +1115,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Métodos Contínuos para EDOs}
+\begin{frame}{Métodos discretos para EDOs}
     \begin{assumption}
         \label{chap3:assumption:1:Phi}
         \small
@@ -1116,6 +1146,9 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+\subsection{Extensão Contínua}
 \begin{frame}{Extensão Contínua}
 
 
@@ -1198,7 +1231,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Métodos Contínuos para EDOs}
+\begin{frame}{Extensão Contínua}
     \begin{assumption}
         \label{chap3:assumption:1:Psi}
         \small
@@ -1226,10 +1259,12 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Ordem dos métodos}
 
-    \begin{frame}
 
-        \small
+    \begin{frame}{Ordem dos métodos}
+
+        \footnotesize
         \begin{defi}[Ordem Local de um método discreto]
             \label{chap3:def:order_of_discrete_methods}
 
@@ -1269,7 +1304,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Ordem Local do Interpolante}
+\begin{frame}{Ordem dos métodos}
 
 
     \small
@@ -1302,7 +1337,7 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Ordem Global}
+\begin{frame}{Ordem dos métodos}
 
     \phantom{aa} $\bullet$ Seja $h = \max_{1 \leq n \leq N} h_n$.
 
@@ -1327,6 +1362,8 @@ Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Teorema de convergência}
 
 \begin{frame}{Apêndice}
     \begin{defi}[Norma induzida de matrizes]
@@ -2105,6 +2142,15 @@ K. W. Neves and S. Thompson,
 \oldstylenums{1992}.
 \newblock \url{https://doi.org/10.1016/0168-9274(92)90029-D}.
 
+
+\beamertemplatebookbibitems
+\bibitem{zennaro}
+A. Bellen and M. Zennaro,
+\newblock \emph{Numerical Methods for Delay Differential Equations}.
+\newblock Oxford University Press,
+\oldstylenums{2003}.
+\newblock \url{https://doi.org/10.1093/acprof:oso/9780198506546.001.0001}.
+ 
 \end{thebibliography}
 \end{frame}
 
