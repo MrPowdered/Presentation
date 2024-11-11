@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1731302934.9766 "Thesis_Presentation.tex" "Thesis_Presentation.pdf" "Thesis_Presentation" 1731302942.14081 0
+["pdflatex"] 1731308672.61061 "Thesis_Presentation.tex" "Thesis_Presentation.pdf" "Thesis_Presentation" 1731308679.62497 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -377,11 +377,11 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1704927586 8218547 a0ef5fb9328cbf1d1241f1eb1e2fef0a ""
   "/usr/local/texlive/2023/texmf.cnf" 1704927461.02649 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "TeiPel_En_Beamer_Layout.sty" 1730992842.70977 6860 c32369cd46e45c5d07cb2d73b9c56a02 ""
-  "Thesis_Presentation.tex" 1731302933.20535 88385 fa354103068826892a651098fa02014a ""
-  "aux/Thesis_Presentation.aux" 1731302941.8453 28832 2ffe721a9caf7a20c42660c47db52988 "pdflatex"
-  "aux/Thesis_Presentation.nav" 1731302941.84863 11239 ed6530893c7aebf055a9b089b227fb64 "pdflatex"
-  "aux/Thesis_Presentation.out" 1731302941.84863 3535 b5c350898bb395baee08930179b39c92 "pdflatex"
-  "aux/Thesis_Presentation.toc" 1731302941.84863 1324 39bac0cdf76dbad867f786b7602d92c1 "pdflatex"
+  "Thesis_Presentation.tex" 1731308670.74053 90862 e6155f62bbd2bde61ecb62db0e439cec ""
+  "aux/Thesis_Presentation.aux" 1731308679.38382 28505 d21d35827584171b7a1051d04a653169 "pdflatex"
+  "aux/Thesis_Presentation.nav" 1731308679.38715 10992 dd84804a116827476786403265a812d5 "pdflatex"
+  "aux/Thesis_Presentation.out" 1731308679.38715 3535 02edcd4edff24faf862a911d74dd0a24 "pdflatex"
+  "aux/Thesis_Presentation.toc" 1731308679.38715 1324 bbb468a968fd450c4b3a69741948c876 "pdflatex"
   "data.csv" 1730578270.73313 14702 03d7fb0f6bc29b48c6e937095c96c10a ""
   "images/desaparecimento_do_retardo.png" 1730905973.2982 47125 2d0ff675c2589db6c40259eaed14eadf ""
   "images/hip123.png" 1730905973.2982 38736 9853ae55c3190e2ffd2ed021999ea4e9 ""

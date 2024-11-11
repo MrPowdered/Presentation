@@ -825,11 +825,6 @@ INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
@@ -846,10 +841,6 @@ INPUT ./images/desaparecimento_do_retardo.png
 INPUT ./images/desaparecimento_do_retardo.png
 INPUT ./images/desaparecimento_do_retardo.png
 INPUT ./images/desaparecimento_do_retardo.png
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
@@ -939,6 +930,7 @@ INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT ./images/usp-logo-transp.png

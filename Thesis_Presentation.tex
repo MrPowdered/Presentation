@@ -916,7 +916,8 @@
     \end{equation}
 
     \normalsize
-    $\bullet$ Como assumimos que \(\phi'(t_{0})^{-} \neq y'(t_{0})^{+}\), então não existe \(y''(\xi_{1, i})^- \neq y''(\xi_{1, i})^+\) e, portanto, $y''$ tem uma descontinuidade em $\xi_{1, i}$.
+    $\bullet$ Logo, \(y''(\xi_{1, i})^- \neq y''(\xi_{1, i})^+\) já que 
+    \[y'(\alpha(t_0))^- = \phi'(t_{0})^{-} \neq y'(t_{0})^{+} = y' (\alpha(t_0))^+ \]
 
     $\bullet$ De forma análoga, é possível mostrar que as descontinuidades se propagam para $y'''$ nos pontos $\xi_{2, i}$ tais que $\alpha(\xi_{2, i}) = \xi_{1, i}$, e assim sucessivamente. 
 
@@ -978,8 +979,11 @@
 
     \footnotesize
     \begin{equation}
-        f(\bar{\xi}_{1, i}, y(\bar{\xi}_{1, i}), y(\alpha(\bar{\xi}_{1, i})), \phi'(t_0)^-) \neq 
-        f(\bar{\xi}_{1, i}, y(\bar{\xi}_{1, i}), y(\alpha(\bar{\xi}_{1, i})), y'(t_0)^+),
+        \begin{split}
+            y'(\bar{\xi}_{1, i})^- &= f(\bar{\xi}_{1, i}, y(\bar{\xi}_{1, i}), y(\alpha(\bar{\xi}_{1, i})), \phi'(t_0)^-)  \\
+                                   &\neq f(\bar{\xi}_{1, i}, y(\bar{\xi}_{1, i}), y(\alpha(\bar{\xi}_{1, i})), y'(t_0)^+) 
+                                   = y'(\bar{\xi}_{1, i})^+
+        \end{split}
         \label{chap2:eq:disco:edrn}
     \end{equation}
 
@@ -1040,7 +1044,7 @@
     
     $\bullet$ Em geral, a suavização das solução de EDRNs não pode ser garantida. 
 
-    $\bullet$ No entanto, o seguinte teorema abaixo é foi encontrado por Neves e Thompson \cite{neves[206]} que garante a suavização das EDRNs tais que $\tau=\sigma$ e que 
+    $\bullet$ No entanto, o seguinte teorema abaixo é foi encontrado por Neves e Thompson \cite{PhysRevE.64.026118} que garante a suavização das EDRNs tais que $\tau=\sigma$ e que 
 
     \[
     \phi^{\prime}(t_{0})^{-}=y^{\prime}(t_{0})^{+}=f(t_{0}, \phi(t_{0}), \phi(\alpha(t_{0}), \phi^{\prime}(\alpha(t_{0}))))
@@ -1056,89 +1060,119 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Desaparecimento do Retardo}
 
 \begin{frame}{Desaparecimento do Retardo}
 
+   \small
+
     $\bullet$ Diz-se que o retardo desaparece caso $\alpha(t) = t$ para algum $t$, ou seja, nos pontos fixos de $\alpha$.
 
-    $\bullet$ Neste caso, as descontinuidades se acumulam a esquerda do ponto fixo, como visto na Proposição \ref{chap2:prop:1} abaixo.
 
     $\bullet$ Considere, como hipótese para a Proposição \ref{chap2:prop:1}, que $f, \phi, \alpha$ e $\beta$ sejam $C^\infty$ nos seus respectivos domínios.
 
 
     \begin{prop}
         \label{chap2:prop:1}
-        Seja $\xi > t_0$ único ponto fixo de $\alpha$ em $[t_0, \xi]$, ou seja, não existe outro $\xi$ neste intervalo tal que $\alpha(\xi) = \xi$. Suponha que exista alguma descontinuidade primária $\xi_{k, i} < \xi$ de grau $k$ tal que $\alpha(\xi_{k, i}) < \xi_{k, i}$. Então, para qualquer vizinhança a esquerda de $\xi$, existem infinitos pontos de descontinuidade nesta vizinhança.
+        \begin{itemize}
+            \item[$\bullet$] Suponha que $f, \phi, \alpha$ e $\beta$ sejam $C^\infty$ nos seus respectivos domínios.
+            \item[$\bullet$] Seja $\xi > t_0$ único ponto fixo de $\alpha$ em $[t_0, \xi]$.
+            \item[$\bullet$] Suponha que exista alguma descontinuidade primária $\xi_k < \xi$ de grau $k$.
+            \item Então, para qualquer vizinhança a esquerda de $\xi$, existem infinitos pontos de descontinuidade nesta vizinhança.+
+        \end{itemize}
+
+
 
     \end{prop}
+
+    % $\bullet$ Neste caso, as descontinuidades se acumulam a esquerda do ponto fixo, como visto na Proposição \ref{chap2:prop:1} abaixo.
+    %
+    % $\bullet$ Considere, como hipótese para a Proposição \ref{chap2:prop:1}, que $f, \phi, \alpha$ e $\beta$ sejam $C^\infty$ nos seus respectivos domínios.
+
+
+    % \begin{prop}
+    %     \label{chap2:prop:1}
+    %     Seja $\xi > t_0$ único ponto fixo de $\alpha$ em $[t_0, \xi]$, ou seja, não existe outro $\xi$ neste intervalo tal que $\alpha(\xi) = \xi$. Suponha que exista alguma descontinuidade primária $\xi_{k, i} < \xi$ de grau $k$ tal que $\alpha(\xi_{k, i}) < \xi_{k, i}$. Então, para qualquer vizinhança a esquerda de $\xi$, existem infinitos pontos de descontinuidade nesta vizinhança.
+    %
+    % \end{prop}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Desaparecimento do Retardo}
 \begin{frame}{Desaparecimento do Retardo}
-    \small
 
+    \footnotesize
     \begin{proof}
-        $\bullet$ Como $\alpha$ é contínua, e como $\alpha(\xi_{k,i}) \leq \xi_{k, i} \leq  \alpha(\xi)$, temos que, pelo teorema do valor intermediário, existe $\xi_{k+1, j} \in (\xi_{k,i}, \xi)$ tal que $\alpha(\xi_{k+1, j}) = \xi_{k,i}$. 
+        $\bullet$ Como $\alpha$ é contínua, e como $\alpha(\xi_k) \leq \xi_k \leq  \alpha(\xi)$, temos que, pelo teorema do valor intermediário, existe $\xi_{k+1} \in (\xi_k, \xi)$ tal que $\alpha(\xi_{k+1}) = \xi_k$. 
 
-        $\bullet$ Continuando este processo, podemos criar a sequência monotonicamente crescente $s = \{\xi_{k, i}, \xi_{k+1, j}, ...\}$ limitada superiormente por $\xi$. 
+        $\bullet$ Continuando este processo, podemos criar a sequência monotonicamente crescente $\{\xi_k, \xi_{k+1}, ...\}$ limitada superiormente por $\xi$. 
 
-        $\bullet$ Para simplificar a notação, denotaremos esta sequência por $s = \{ s_1, s_2, \dots \}$, observe que $\alpha(s_{k+1}) = s_k$ para todo $k = 1, 2, \dots$. 
 
-        $\bullet$ Pelo teorema da convergência monótona, temos que $\lim_{n \to \infty} s_n = \sup_{n \geq 1} s_n \leq \xi$. Logo, nós temos
+        $\bullet$ Pelo teorema da convergência monótona, temos que $\lim_{n \to \infty} \xi_n = \sup_{n \geq 1} \xi_n \leq \xi$. Logo, nós temos
 
         \noindent
         \[
-            \sup_{n \geq 1} s_n = \lim_{n \to \infty} s_n  = 
-            \lim_{n \to \infty} \alpha(s_{n+1}) = 
-            \alpha(lim_{n \to \infty} s_{n+1}) = 
-            \alpha\left(\sup_{n \geq 1} s_n \right).
+            \sup_{n \geq 1} \xi_n = \lim_{n \to \infty} \xi_n  = 
+            \lim_{n \to \infty} \alpha(\xi_{n+1}) = 
+            \alpha(lim_{n \to \infty} \xi_{n+1}) = 
+            \alpha\left(\sup_{n \geq 1} \xi_n \right).
         \]
 
-    \renewcommand{\qedsymbol}{}
+        $\bullet$ Como $\xi$ é único ponto fixo em $[t_0, \xi]$ por hípotese, então $\lim_{n \to \infty} s_n = \xi$. Portanto, existem infinitos pontos de descontinuidade em qualquer vizinhança a esquerda de $\xi$.
+
+
+    %\renewcommand{\qedsymbol}{}
 
     \end{proof}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Desaparecimento do Retardo}
+\begin{frame}%{Desaparecimento do Retardo}
 
+    \small
 
-    \begin{proof}[Demonstração ...Continuação]
-        \[
-            \vdots
-        \]
-        $\bullet$ Como $\xi$ é único ponto fixo em $[t_0, \xi]$ por hípotese, então $\lim_{n \to \infty} s_n = \xi$. Portanto, existem infinitos pontos de descontinuidade em qualquer vizinhança a esquerda de $\xi$.
-    \end{proof}
-
-    $\bullet$ Para evitar este problema, a seguinte hipótese sobre $\alpha$ é introduzida.
+    % \begin{proof}[Demonstração ...Continuação]
+    %     \[
+    %         \vdots
+    %     \]
+    %     $\bullet$ Como $\xi$ é único ponto fixo em $[t_0, \xi]$ por hípotese, então $\lim_{n \to \infty} s_n = \xi$. Portanto, existem infinitos pontos de descontinuidade em qualquer vizinhança a esquerda de $\xi$.
+    % \end{proof}
+    %
+    $\bullet$ Para evitar este problema, a seguinte hipótese é introduzida.
 
     \begin{hip}
         Existe uma constante $ \tau_0 > 0 $ tal que $ \tau(t) = t - \alpha(t) > \tau_0 $ para todo $ t \in [t_0, t_f] $.
         \label{H1:hipotese:hypothesis}
     \end{hip}
 
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Desaparecimento do Retardo}
-    
-
     \begin{figure}
         \begin{center}
-            \includegraphics[width=0.9\textwidth, height=0.7\textheight]{desaparecimento_do_retardo.png}
+            \includegraphics[width=0.7\textwidth, height=0.5\textheight]{desaparecimento_do_retardo.png}
         \end{center}
-        \caption{Desaparecimento do Retardo (Ainda vou montar minha própria imagem)}\label{fig:Desaparecimento do Retardo}
+        \caption{Desaparecimento do Retardo ({\color{red} texto})}\label{fig:Desaparecimento do Retardo}
     \end{figure}
-        
+
+
 
 \end{frame}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \begin{frame}{Desaparecimento do Retardo}
+%     
+%
+%     \begin{figure}
+%         \begin{center}
+%             \includegraphics[width=0.9\textwidth, height=0.7\textheight]{desaparecimento_do_retardo.png}
+%         \end{center}
+%         \caption{Desaparecimento do Retardo (Ainda vou montar minha própria imagem)}\label{fig:Desaparecimento do Retardo}
+%     \end{figure}
+%         
+%
+% \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1146,34 +1180,48 @@
 \subsection{Retardos Limitados e Ilimitados}
 \begin{frame}{Retardos Limitados e Ilimitados}
 
-    \begin{exampleblock}
-        <1->{Retardos Limitados}
+    \scriptsize
+    $\bullet$ Caso o retardo seja limitado, a suavização da solução como visto no teorema \ref{chap2:teo:EDR_smooting}, não ocorre.
 
-        $\bullet$ Caso o retardo seja limitado, a suavização da solução como visto no teorema \ref{chap2:teo:EDR_smooting}, não ocorre.
+    $\bullet$ Para mostrar tanto, supoha que exista algum $M>0$ tal que \( \lim_{t \to \infty} \alpha(t) \leq M \).
 
-
-        $\bullet$ Para mostrar tanto, supoha que exista algum $M>0$ tal que \( \lim_{t \to \infty} \alpha(t) \leq M \).
-
-        $\bullet$ Suponha que $\xi_{k, i}$ seja uma descontinuidade primária em $[M, +\infty)$, então $\alpha(t) < M < \xi_{k, j}$ para todo $t > M$, logo não existe $\xi_{k+1, i}$ que satisfaz $\alpha(\xi_{k+1, i}) = \xi_{k, j}$.
-        
-        $\bullet$ Segue uma ilustração deste fenômemo.
-
-    \end{exampleblock}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Retardos Limitados e Ilimitados}
+    $\bullet$ Suponha que $\xi_{k, i}$ seja uma descontinuidade primária em $[M, +\infty)$, então $\alpha(t) < M < \xi_{k, j}$ para todo $t > M$, logo não existe $\xi_{k+1, i}$ que satisfaz $\alpha(\xi_{k+1, i}) = \xi_{k, j}$.
 
     \begin{figure}
         \begin{center}
-            \includegraphics[width=0.9\textwidth, height=0.7\textheight]{retardo_limitado.png}
+            \includegraphics[width=0.7\textwidth, height=0.5\textheight]{retardo_limitado.png}
         \end{center}
-        \caption{Retardo limitado (Ainda vou montar minha própria imagem)}\label{fig:Retardo_limitado}
+        \caption{Retardo limitado ({\color{red} texto})}\label{fig:Retardo_limitado}
     \end{figure}
 
+    % \begin{exampleblock}
+    %     <1->{Retardos Limitados}
+    %
+    %     $\bullet$ Caso o retardo seja limitado, a suavização da solução como visto no teorema \ref{chap2:teo:EDR_smooting}, não ocorre.
+    %
+    %
+    %     $\bullet$ Para mostrar tanto, supoha que exista algum $M>0$ tal que \( \lim_{t \to \infty} \alpha(t) \leq M \).
+    %
+    %     $\bullet$ Suponha que $\xi_{k, i}$ seja uma descontinuidade primária em $[M, +\infty)$, então $\alpha(t) < M < \xi_{k, j}$ para todo $t > M$, logo não existe $\xi_{k+1, i}$ que satisfaz $\alpha(\xi_{k+1, i}) = \xi_{k, j}$.
+    %     
+    %     $\bullet$ Segue uma ilustração deste fenômemo.
+    %
+    % \end{exampleblock}
+
 \end{frame}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \begin{frame}{Retardos Limitados e Ilimitados}
+%
+%     \begin{figure}
+%         \begin{center}
+%             \includegraphics[width=0.9\textwidth, height=0.7\textheight]{retardo_limitado.png}
+%         \end{center}
+%         \caption{Retardo limitado (Ainda vou montar minha própria imagem)}\label{fig:Retardo_limitado}
+%     \end{figure}
+%
+% \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2303,7 +2351,7 @@
 \subsection{SIR com retardo?}
 \begin{frame}{SIR com retardo?}
 
-    falar sobre
+    Colocar a foto dos compartimentos 
      
 \end{frame}
 
@@ -2347,6 +2395,15 @@ K. W. Neves and A. Feldstein,
 \oldstylenums{1976}.
 \newblock \url{https://doi.org/10.1016/0022-247X(76)90033-0}.
 
+\beamertemplatearticlebibitems
+\bibitem{NEVES1992385}
+K. W. Neves and S. Thompson,
+\newblock Software for the numerical solution of systems of functional differential equations with state-dependent delays.
+\newblock \emph{Applied Numerical Mathematics},
+\oldstylenums{9}(3):385-401,
+\oldstylenums{1992}.
+\newblock \url{https://doi.org/10.1016/0168-9274(92)90029-D}.
+ 
 
 
 \beamertemplatebookbibitems
@@ -2368,7 +2425,7 @@ A. Bellen and M. Zennaro,
 \begin{frame}{Referências}
 
 
-\begin{thebibliography}{4}
+\begin{thebibliography}{3}
 
 \beamertemplatearticlebibitems
 \bibitem{PhysRevE.66.016128}

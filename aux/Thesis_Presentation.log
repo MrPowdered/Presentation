@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.10)  11 NOV 2024 02:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.10)  11 NOV 2024 04:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1674,12 +1674,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [18
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 923
+Overfull \vbox (0.63403pt too high) detected at line 924
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 923.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 924.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1687,12 +1687,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [19
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 940
+Overfull \vbox (0.63403pt too high) detected at line 941
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 940.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 941.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1700,12 +1700,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [20
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 966
+Overfull \vbox (0.63403pt too high) detected at line 967
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 966.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 967.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1713,12 +1713,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [21
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 991
+Overfull \vbox (0.63403pt too high) detected at line 995
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 991.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 995.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1726,17 +1726,17 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [22
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1035
+Overfull \vbox (0.63403pt too high) detected at line 1039
  []
 
 
-Overfull \hbox (4.06941pt too wide) in paragraph at lines 1035--1035
+Overfull \hbox (4.06941pt too wide) in paragraph at lines 1039--1039
  [] 
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1035.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1039.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1744,15 +1744,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [23
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1055
+Overfull \vbox (0.63403pt too high) detected at line 1059
  []
-
-
-LaTeX Warning: Citation `neves[206]' on page 24 undefined on input line 1055.
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1055.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1059.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1760,12 +1757,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [24
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1075
+Overfull \vbox (0.63403pt too high) detected at line 1099
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1075.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1099.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1773,12 +1770,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [25
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1103
+Overfull \vbox (0.63403pt too high) detected at line 1128
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1103.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1128.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1786,47 +1783,56 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [26
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1125
+Overfull \vbox (0.63403pt too high) detected at line 1159
+ []
+
+<./images/desaparecimento_do_retardo.png, id=1047, 1027.84pt x 822.07124pt>
+File: ./images/desaparecimento_do_retardo.png Graphic file (type png)
+<use ./images/desaparecimento_do_retardo.png>
+Package pdftex.def Info: ./images/desaparecimento_do_retardo.png  used on input line 1159.
+(pdftex.def)             Requested size: 215.09996pt x 102.79628pt.
+
+Overfull \vbox (1.54501pt too high) detected at line 1159
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1125.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1159.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
  [27
 
-]
-Overfull \vbox (0.63403pt too high) detected at line 1141
+ <./images/desaparecimento_do_retardo.png>]
+Overfull \vbox (0.63403pt too high) detected at line 1211
  []
 
-<./images/desaparecimento_do_retardo.png, id=1087, 1027.84pt x 822.07124pt>
-File: ./images/desaparecimento_do_retardo.png Graphic file (type png)
-<use ./images/desaparecimento_do_retardo.png>
-Package pdftex.def Info: ./images/desaparecimento_do_retardo.png  used on input line 1141.
-(pdftex.def)             Requested size: 276.56381pt x 143.92734pt.
+<./images/retardo_limitado.png, id=1078, 935.495pt x 746.79pt>
+File: ./images/retardo_limitado.png Graphic file (type png)
+<use ./images/retardo_limitado.png>
+Package pdftex.def Info: ./images/retardo_limitado.png  used on input line 1211.
+(pdftex.def)             Requested size: 215.10222pt x 102.80643pt.
 
-Overfull \vbox (7.15028pt too high) detected at line 1141
+Overfull \vbox (1.6071pt too high) detected at line 1211
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1141.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1211.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
  [28
 
- <./images/desaparecimento_do_retardo.png>]
-Overfull \vbox (0.63403pt too high) detected at line 1163
+ <./images/retardo_limitado.png>]
+Overfull \vbox (0.63403pt too high) detected at line 1246
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1163.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1246.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1834,30 +1840,30 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [29
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1176
+Overfull \vbox (0.63403pt too high) detected at line 1261
  []
 
-<./images/retardo_limitado.png, id=1156, 935.495pt x 746.79pt>
-File: ./images/retardo_limitado.png Graphic file (type png)
-<use ./images/retardo_limitado.png>
-Package pdftex.def Info: ./images/retardo_limitado.png  used on input line 1176.
-(pdftex.def)             Requested size: 276.55388pt x 143.91989pt.
+<./images/hip123.png, id=1160, 931.48pt x 732.7375pt>
+File: ./images/hip123.png Graphic file (type png)
+<use ./images/hip123.png>
+Package pdftex.def Info: ./images/hip123.png  used on input line 1261.
+(pdftex.def)             Requested size: 276.56087pt x 143.92862pt.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1176.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1261.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
  [30
 
- <./images/retardo_limitado.png>]
-Overfull \vbox (0.63403pt too high) detected at line 1198
+ <./images/hip123.png>]
+Overfull \vbox (0.63403pt too high) detected at line 1287
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1198.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1287.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1865,30 +1871,25 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [31
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1213
+Overfull \vbox (0.63403pt too high) detected at line 1330
  []
 
-<./images/hip123.png, id=1239, 931.48pt x 732.7375pt>
-File: ./images/hip123.png Graphic file (type png)
-<use ./images/hip123.png>
-Package pdftex.def Info: ./images/hip123.png  used on input line 1213.
-(pdftex.def)             Requested size: 276.56087pt x 143.92862pt.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1213.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1330.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
  [32
 
- <./images/hip123.png>]
-Overfull \vbox (0.63403pt too high) detected at line 1239
+]
+Overfull \vbox (0.63403pt too high) detected at line 1356
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1239.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1356.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1896,12 +1897,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [33
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1282
+Overfull \vbox (0.63403pt too high) detected at line 1384
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1282.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1384.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1909,12 +1910,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [34
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1308
+Overfull \vbox (0.63403pt too high) detected at line 1422
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1308.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1422.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1922,12 +1923,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [35
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1336
+Overfull \vbox (0.63403pt too high) detected at line 1440
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1336.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1440.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1935,12 +1936,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [36
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1374
+Overfull \vbox (0.63403pt too high) detected at line 1472
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1374.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1472.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1948,12 +1949,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [37
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1392
+Overfull \vbox (0.63403pt too high) detected at line 1505
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1392.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1505.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1961,12 +1962,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [38
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1424
+Overfull \vbox (0.63403pt too high) detected at line 1548
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1424.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1548.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1974,12 +1975,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [39
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1457
+Overfull \vbox (0.63403pt too high) detected at line 1581
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1457.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1581.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -1987,12 +1988,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [40
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1500
+Overfull \vbox (0.63403pt too high) detected at line 1610
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1500.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1610.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2000,12 +2001,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [41
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1533
+Overfull \vbox (0.63403pt too high) detected at line 1633
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1533.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1633.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2013,12 +2014,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [42
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1562
+Overfull \vbox (0.63403pt too high) detected at line 1661
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1562.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1661.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2026,12 +2027,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [43
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1585
+Overfull \vbox (0.63403pt too high) detected at line 1701
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1585.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1701.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2039,25 +2040,43 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [44
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1613
+Overfull \vbox (0.63403pt too high) detected at line 1741
  []
 
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1741.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1741.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1741.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <4> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1741.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <2.79999> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1741.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <2> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1741.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1613.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1741.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1741.
  [45
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1653
+Overfull \vbox (0.63403pt too high) detected at line 1769
  []
 
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1769.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1769.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1653.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1769.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2065,43 +2084,30 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [46
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1693
+Overfull \vbox (0.63403pt too high) detected at line 1794
  []
 
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1693.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1693.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <5> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1693.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <4> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1693.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <2.79999> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1693.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <2> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1693.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1693.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1794.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1693.
  [47
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1721
+Overfull \vbox (0.63403pt too high) detected at line 1844
  []
 
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1721.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 1721.
+
+Overfull \hbox (0.5249pt too wide) detected at line 1844
+\OMS/lmsy/m/n/8 C[]\T1/lmss/bx/n/8 x \OT1/lmss/m/n/8 = [] [] = []
+ []
+
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1721.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1844.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2109,12 +2115,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [48
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1746
+Overfull \vbox (0.63403pt too high) detected at line 1869
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1746.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1869.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2122,17 +2128,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [49
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1796
- []
-
-
-Overfull \hbox (0.5249pt too wide) detected at line 1796
-\OMS/lmsy/m/n/8 C[]\T1/lmss/bx/n/8 x \OT1/lmss/m/n/8 = [] [] = []
+Overfull \vbox (0.63403pt too high) detected at line 1897
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1796.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1897.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2140,12 +2141,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [50
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1821
+Overfull \vbox (0.63403pt too high) detected at line 1927
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1821.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1927.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2153,12 +2154,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [51
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1849
+Overfull \vbox (0.63403pt too high) detected at line 1941
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1849.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1941.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2166,12 +2167,22 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [52
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1879
+Overfull \vbox (0.63403pt too high) detected at line 1958
+ []
+
+
+Overfull \hbox (17.0487pt too wide) detected at line 1958
+[]
+ []
+
+
+Overfull \hbox (3.33725pt too wide) detected at line 1958
+[]
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1879.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1958.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2179,12 +2190,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [53
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1893
+Overfull \vbox (0.63403pt too high) detected at line 1983
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1893.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1983.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2192,22 +2203,17 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [54
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1910
+Overfull \vbox (0.63403pt too high) detected at line 2010
  []
 
 
-Overfull \hbox (17.0487pt too wide) detected at line 1910
-[]
- []
-
-
-Overfull \hbox (3.33725pt too wide) detected at line 1910
-[]
+Overfull \hbox (5.54068pt too wide) detected at line 2010
+[][][][][]
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1910.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2010.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2215,12 +2221,17 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [55
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1935
+Overfull \vbox (0.63403pt too high) detected at line 2025
+ []
+
+
+Overfull \hbox (14.85541pt too wide) detected at line 2025
+[] [] [] \OMS/lmsy/m/n/10.95 ^^T \T1/lmss/m/sl/10.95 O [] \OT1/lmss/m/n/10.95 + \T1/lmss/m/sl/10.95 O []
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1935.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2025.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2228,17 +2239,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [56
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1962
- []
-
-
-Overfull \hbox (5.54068pt too wide) detected at line 1962
-[][][][][]
+Overfull \vbox (0.63403pt too high) detected at line 2055
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1962.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2055.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2246,17 +2252,17 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [57
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 1977
+Overfull \vbox (0.63403pt too high) detected at line 2085
  []
 
 
-Overfull \hbox (14.85541pt too wide) detected at line 1977
-[] [] [] \OMS/lmsy/m/n/10.95 ^^T \T1/lmss/m/sl/10.95 O [] \OT1/lmss/m/n/10.95 + \T1/lmss/m/sl/10.95 O []
+Overfull \hbox (2.79958pt too wide) detected at line 2085
+[][][] []
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 1977.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2085.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2264,12 +2270,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [58
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2007
+Overfull \vbox (0.63403pt too high) detected at line 2114
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2007.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2114.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2277,17 +2283,22 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [59
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2037
+Overfull \vbox (0.63403pt too high) detected at line 2140
  []
 
 
-Overfull \hbox (2.79958pt too wide) detected at line 2037
-[][][] []
+Overfull \hbox (9.58672pt too wide) detected at line 2140
+[]
+ []
+
+
+Overfull \hbox (1.82497pt too wide) in alignment at lines 2140--2140
+[] []
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2037.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2140.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2295,12 +2306,22 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [60
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2066
+Overfull \vbox (0.63403pt too high) detected at line 2200
+ []
+
+
+Overfull \hbox (2.602pt too wide) detected at line 2200
+[]
+ []
+
+
+Overfull \hbox (7.157pt too wide) detected at line 2200
+[]
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2066.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2200.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2308,22 +2329,14 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [61
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2092
+Overfull \vbox (0.63403pt too high) detected at line 2228
  []
 
-
-Overfull \hbox (9.58672pt too wide) detected at line 2092
-[]
- []
-
-
-Overfull \hbox (1.82497pt too wide) in alignment at lines 2092--2092
-[] []
- []
-
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 2228.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2092.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2228.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2331,22 +2344,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [62
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2152
- []
-
-
-Overfull \hbox (2.602pt too wide) detected at line 2152
-[]
- []
-
-
-Overfull \hbox (7.157pt too wide) detected at line 2152
-[]
+Overfull \vbox (0.63403pt too high) detected at line 2234
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2152.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2234.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2354,14 +2357,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [63
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2180
+Overfull \vbox (0.63403pt too high) detected at line 2265
  []
 
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 2180.
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2180.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2265.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2369,12 +2370,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [64
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2186
+Overfull \vbox (0.63403pt too high) detected at line 2295
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2186.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2295.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2382,12 +2383,19 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [65
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2217
+Overfull \vbox (0.63403pt too high) detected at line 2345
+ []
+
+PGFPlots: reading {data.csv}
+PGFPlots: reading {data.csv}
+PGFPlots: reading {data.csv}
+
+Overfull \vbox (2.92523pt too high) detected at line 2345
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2217.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2345.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2395,12 +2403,12 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [66
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2247
+Overfull \vbox (0.63403pt too high) detected at line 2356
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2247.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2356.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
@@ -2408,84 +2416,55 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
  [67
 
 ]
-Overfull \vbox (0.63403pt too high) detected at line 2297
+Overfull \vbox (0.63403pt too high) detected at line 2378
  []
 
-PGFPlots: reading {data.csv}
-PGFPlots: reading {data.csv}
-PGFPlots: reading {data.csv}
-
-Overfull \vbox (2.92523pt too high) detected at line 2297
- []
-
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 2378.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmss.fd
+File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2378.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2297.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2378.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
  [68
 
-]
-Overfull \vbox (0.63403pt too high) detected at line 2308
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} </usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+Overfull \vbox (0.63403pt too high) detected at line 2418
+ []
+
+
+Overfull \vbox (48.57353pt too high) detected at line 2418
  []
 
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2308.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2418.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
  [69
 
-]
-Overfull \vbox (0.63403pt too high) detected at line 2330
+ </usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamericonbook.pdf>]
+Overfull \vbox (0.63403pt too high) detected at line 2452
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 2330.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2330.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 File: images/usp-logo-transp.png Graphic file (type png)
 <use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2330.
+Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2452.
 (pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
 
 Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 
  [70
-
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} </usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-Overfull \vbox (0.63403pt too high) detected at line 2361
- []
-
-File: images/usp-logo-transp.png Graphic file (type png)
-<use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2361.
-(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
-
-Overfull \vbox (0.63403pt too high) has occurred while \output is active []
-
- [71
-
- </usr/local/texlive/2023/texmf-dist/tex/latex/beamer/beamericonbook.pdf>]
-Overfull \vbox (0.63403pt too high) detected at line 2395
- []
-
-File: images/usp-logo-transp.png Graphic file (type png)
-<use images/usp-logo-transp.png>
-Package pdftex.def Info: images/usp-logo-transp.png  used on input line 2395.
-(pdftex.def)             Requested size: 12.1523pt x 5.12128pt.
-
-Overfull \vbox (0.63403pt too high) has occurred while \output is active []
-
- [72
 
 ]
 \tf@nav=\write7
@@ -2502,26 +2481,22 @@ Overfull \vbox (0.63403pt too high) has occurred while \output is active []
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `Thesis_Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: B5C350898BB395BAEE08930179B39C92;3535.
+(rerunfilecheck)             Checksum: 02EDCD4EDFF24FAF862A911D74DD0A24;3535.
  ) 
 Here is how much of TeX's memory you used:
- 54985 strings out of 474166
- 1324956 string characters out of 5745489
- 1962652 words of memory out of 5000000
- 76127 multiletter control sequences out of 15000+600000
+ 54964 strings out of 474166
+ 1324322 string characters out of 5745489
+ 1961133 words of memory out of 5000000
+ 76109 multiletter control sequences out of 15000+600000
  707747 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  136i,22n,134p,1640b,2702s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txexa.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb>
-Output written on aux/Thesis_Presentation.pdf (72 pages, 699029 bytes).
+Output written on aux/Thesis_Presentation.pdf (70 pages, 691821 bytes).
 PDF statistics:
- 2742 PDF objects out of 2984 (max. 8388607)
- 1628 compressed objects within 17 object streams
- 230 named destinations out of 1000 (max. 500000)
- 1579 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2664 PDF objects out of 2984 (max. 8388607)
+ 1587 compressed objects within 16 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 1507 words of extra memory for PDF output out of 10000 (max. 10000000)
 
