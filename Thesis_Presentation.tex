@@ -198,32 +198,22 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \section{Introdução}
 
-\begin{frame}{O que está por vir?}
 
-    \begin{itemize}
-        \item[$\bullet$] Revisão de EDO.
-        \item[$\bullet$] Introdução às EDRs e EDRNs.
-        \item[$\bullet$] Regularidade, existência e unicidade das EDRs.
-        \item[$\bullet$] Métodos contínuos para EDOs.
-        \item[$\bullet$] Métodos para EDRs.
-        \item[$\bullet$] Aplicações.
-    \end{itemize}
-\end{frame}
+\begin{frame}{Introdução}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Revisão de EDO}
-
-\begin{frame}{Revisão de EDO}
-
-    \small
+    \footnotesize
     \begin{defi}[Equações Diferenciais Ordinárias (EDOs)]
         \label{def:1:EDO} 
-        Um \textit{Problema de Valor Inicial (PVI)} para \textit{Equações Diferenciais Ordinárias (EDOs)} é dado por
+        Uma \textit{Equação Diferencial Ordinária (EDO) de Primeira Ordem} é definida como.
 
+        \begin{equation}
+            y'(t) = g(t, y(t))
+        \end{equation}
+
+
+        para $g: [t_0, t_f] \times \R^d \to \R^d$. Um \textit{Problema de Valor Inicial (PVI)} para EDOs é dado por
 
         \begin{equation}
             \begin{cases}
@@ -234,11 +224,9 @@
         \end{equation}
 
 
-
-        para $g: [t_0, t_f] \times \R^d \to \R^d$ e $(t_0, y_0) \in \R \times \R^d$. Quanto ao PVI \ref{def:eq:PVI}, nós temos:
+        para algum valor inicial $(t_0, y_0) \in \R^{d+1}$. 
 
         \begin{enumerate}
-            \item[$\bullet$] A primeira equação é a chamada EDO e a segunda, o valor inicial.
             \item[$\bullet$] Uma função $\gamma: [t_0, t_f] \to \R^d$ é dita \textit{solução} do PVI se $\gamma$ é diferenciável e se satisfaz \ref{def:eq:PVI}.
         \end{enumerate}
 
@@ -246,10 +234,151 @@
 
 \end{frame}
 
-%%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{frame}
+        \footnotesize
+    \begin{defi}[Equações Diferenciais com Retardo (EDRs)]
 
+        Uma \textit{Equação Diferencial com Retardo (EDR)} é dada por
+
+        \begin{equation}
+            y'(t) = f(t, y(t), y(t - \tau(t, y(t)))),
+        \end{equation}
+
+        para $p > 0$, $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, $\tau: [t_0, t_f] \times \R^d \to [0, p]$. Um \textit{Problema Inicial (PI)} para EDRs é dado por
+
+        \begin{equation}  
+            \begin{cases}
+                y'(t) = f(t, y(t), y(t - \tau(t, y(t)))), \qquad t_0 \leq t \leq t_f , \\
+                y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0, 
+            \end{cases}
+            \label{def:eq:EDR}
+        \end{equation}
+
+        para alguma função inicial $\phi:[t_0 - p, t_0] \to \R^d$.
+
+
+        \begin{itemize}
+            \item[$\bullet$] A função retardo $\tau$ é positiva e pode ser constante, depender do tempo ou do estado.
+            \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{def:eq:EDR}.
+
+        \end{itemize}
+    \end{defi}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+     
+    \footnotesize
+    \begin{defi}[Equações Diferenciais do tipo Neutro com Retardo]
+
+        Uma \textit{Equação Diferencial do tipo Neutro com Retardo (EDRN)} é dada por
+
+        \begin{equation}
+            y'(t) = f(t, y(t), y(t - \tau(t, y(t))), y'(t - \sigma(t, y(t)))), 
+        \end{equation}
+
+        para $f:[t_0, t_f] \times \R^d \times \R^d \times \R^d \to \R^d$,  $\tau: [t_0, t_f] \times \R^d \to [0, p]$, $\sigma: [t_0, t_f] \times \R^d \to [0, p]$. Um PI para EDRNs é dado por 
+
+        \begin{equation}
+            \begin{cases}
+                y'(t) = f(t, y(t), y(t - \tau(t, y(t))), y'(t - \sigma(t, y(t)))), \qquad t_0 \leq t \leq t_f , \\
+                y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0,
+            \end{cases}
+            \label{chap1:def:EDRN}
+        \end{equation}
+        
+        para alguma função inicial $\phi:[t_0 - p, t_0] \to \R^d $.
+
+        
+        \begin{itemize}
+            \item[$\bullet$] $\tau$ e $\sigma$ são retardos positivos.
+            \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
+        \end{itemize}
+
+    \end{defi}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Introdução}
+
+    \begin{exampleblock}
+        <1->{Observações}
+        \begin{itemize}
+            \item[$\bullet$] Assim como EDOs, EDRs e EDRNs são difíceis de resolver analiticamente.
+            \item[$\bullet$] Para propósitos aplicados, métodos numéricos são preferíveis.
+            \item[$\bullet$] Difícil acesso aos softwares de solução.
+        \end{itemize}
+    \end{exampleblock}
+
+    \begin{exampleblock}
+        <1->{Objetivos}
+        \begin{itemize}
+            \item[$\bullet$] Estudar EDRs e EDRNs, com enfoque numérico.
+            \item[$\bullet$] Implementação no python.
+        \end{itemize}
+    \end{exampleblock}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Revisão de EDO}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%WARN: Substituído pelo acima
+% \section{Revisão de EDO}
+%
+%
+%
+% \begin{frame}{Revisão de EDO}
+%
+%     \small
+%     \begin{defi}[Equações Diferenciais Ordinárias (EDOs)]
+%         \label{def:1:EDO} 
+%         Um \textit{Problema de Valor Inicial (PVI)} para \textit{Equações Diferenciais Ordinárias (EDOs)} é dado por
+%
+%
+%         \begin{equation}
+%             \begin{cases}
+%                 y'(t) = g(t, y(t)), \qquad t_0 \leq t\leq t_f,\\
+%                 y(t_0) = y_0,
+%             \end{cases}
+%             \label{def:eq:PVI}
+%         \end{equation}
+%
+%
+%
+%         para $g: [t_0, t_f] \times \R^d \to \R^d$ e $(t_0, y_0) \in \R \times \R^d$. Quanto ao PVI \ref{def:eq:PVI}, nós temos:
+%
+%         \begin{enumerate}
+%             \item[$\bullet$] A primeira equação é a chamada EDO e a segunda, o valor inicial.
+%             \item[$\bullet$] Uma função $\gamma: [t_0, t_f] \to \R^d$ é dita \textit{solução} do PVI se $\gamma$ é diferenciável e se satisfaz \ref{def:eq:PVI}.
+%         \end{enumerate}
+%
+%     \end{defi}
+%
+% \end{frame}
+%
+%%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%% %%%%%%%
+
+
+
+
+\begin{frame}{Revisão de EDO}
+
+    \small
     \begin{defi}[Condição de Lipschitz]
         \label{def:2:condicao_de_lispchitz}
         Diz-se que uma função $g: D = [t_0, t_f] \times \R^d \to \R^d$ satisfaz uma condição de \textit{Lipschitz} em relação a variável y no conjunto $D$ se, e somente se,
@@ -265,7 +394,7 @@
     \begin{teo}[Existência e Unicidade]
         
     \label{teo:1:PVI:existencia_unicidade}
-    Considere o PVI \eqref{def:eq:PVI}. Se $g$ for contínua e satisfazer a condição de Lipschitz na variável $y$ no conjunto $D$, então existe uma única solução $y(t)$ em $[t_0, t_f]$ de \eqref{def:eq:PVI} 
+    Considere o PVI \eqref{def:eq:PVI}. Se $g$ for contínua e satisfaz a condição de Lipschitz na variável $y$ no conjunto $D$, então existe uma única solução $y(t)$ em $[t_0, t_f]$ de \eqref{def:eq:PVI} 
     \end{teo}
 
 
@@ -274,13 +403,14 @@
 
 \begin{frame}
 %\begin{frame}{Revisão EDO}
+    \footnotesize 
     \begin{defi}[Problema bem posto]
          \label{def:3:problema_bem_posto}
             
          O PVI \eqref{def:eq:PVI} é dito ser um \textit{problema bem posto} se 
          \begin{itemize}
              \item[$\bullet$] Existe uma única solução $y(t)$ para o PVI.
-         \item[$\bullet$] Existem constantes $\epsilon_0 > 0$ e $k>0$ tais que, para qualquer $\epsilon $ sendo $0 < \epsilon < \epsilon_0$ o \textit{problema perturbado}
+         \item[$\bullet$] Existem  $\epsilon_0 > 0$ e $k>0$ tais que, para qualquer $\epsilon $ sendo $0 < \epsilon < \epsilon_0$ o \textit{problema perturbado}
 
 
          \begin{equation*}
@@ -296,7 +426,7 @@
              |z(t)-y(t)|<k \epsilon, \qquad \forall t \in [t_0, t_f],
          \end{equation*} 
         
-         para toda função $\delta \in C^0([t_0, t_f], (-\epsilon, \epsilon))$ e todo $|\delta_0| < \epsilon$.
+         para toda função contínua $\delta$ tal que $|\delta(t)| \leq \epsilon, \forall t \in [t_0, t_f]$ e todo $|\delta_0| < \epsilon$.
          \end{itemize}
 
      \end{defi}
@@ -305,82 +435,88 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Revisão EDO}
+
+    \begin{itemize}
+        \item[$\bullet$] Métodos numéricos introduzem erro.
+        \item[$\bullet$] Para garantir a convergência, métodos numéricos são aplicados sobre PVIs bem postos.
+
+        % \item[$\bullet$] Equações Diferenciais com Retardo (EDRs) generalizam as EDOs ao levarem em consideração o estado passado da solução na sua equação.
+        % \item[$\bullet$] Seu Problema de Valor Inicial (PI, para evitar confusões) pode ser descrito de forma mais ou menos geral. Utilizaremos a definição utilizada por Bellen e Zennaro em \cite{zennaro}  , que é prática do posto de vista numérico.
+    \end{itemize}
+
     \begin{teo}[Problema bem posto]
         \label{teo:2:problema_bem_posto}
         Considere o PVI \eqref{def:eq:PVI}. Se $g$ satisfaz as condições do Teorema de Existência
         e Unicidade \ref{teo:1:PVI:existencia_unicidade}, então o problema \eqref{def:eq:PVI} é bem posto.
     \end{teo}
 
-        \begin{itemize}
-            \item[$\bullet$] Equações Diferenciais com Retardo (EDRs) generalizam as EDOs ao levarem em consideração o estado passado da solução na sua equação.
-            \item[$\bullet$] Seu Problema de Valor Inicial (PI, para evitar confusões) pode ser descrito de forma mais ou menos geral. Utilizaremos a definição utilizada por Bellen e Zennaro em \cite{zennaro}  , que é prática do posto de vista numérico.
-        \end{itemize}
 
 
 \end{frame}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%WARN: to be subbed
+% \section{Regularidade, existência e unicidade das EDRs}
+% \subsection{Introdução às EDRs e EDRNs}
+%
+% \begin{frame}
+%     \small
+%     
+%     \begin{defi}[Equações Diferenciais com Retardo (EDRs)]
+%     Seja $p>0$. Um PI para EDRs é dado por
+%
+%     \noindent
+%     \begin{equation}  
+%         \begin{cases}
+%             y'(t) = f(t, y(t), y(t - \tau(t, y(t)))), \qquad t_0 \leq t \leq t_f , \\
+%             y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0, 
+%         \end{cases}
+%         \label{def:eq:EDR}
+%     \end{equation}
+%
+% para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para  $\tau: [t_0, t_f] \times \R^d \to [0, p]$ e para $\phi:[t_0 - p, t_0] \to \R^d $. Quanto ao PI \eqref{def:eq:EDR}, nós temos:
+%         
+%     \begin{itemize}
+%         \item[$\bullet$] A primeira equação do PI é a chamada EDR, já a segunda, o estado inicial.
+%         \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{def:eq:EDR}.
+%         \item[$\bullet$] A função $\tau$ é chamada de \textit{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
+%
+%     \end{itemize}
+%     \end{defi}
+%
+%
+% \end{frame}
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \section{Regularidade, existência e unicidade das EDRs}
+% \subsection{Introdução às EDRs e EDRNs}
+%
+% \begin{frame}
+%     {\color{red} \huge O QUE EU FAÇO AQUI?}
+%     Quanto ao retardo $\tau(t, y(t))$, dizemos que
+%      \begin{itemize}
+%          \item[$\bullet$] O retardo depende do estado quando a função $\tau$ depende tanto do tempo $t$, quando do estado $y$.
+%          quanto do estado $y$
+%          \item[$\bullet$] \textit{O retardo depende do tempo} caso a função retardo $\tau$ dependa apenas da tempo $t$.
+%          \item[$\bullet$] \textit{O retardo é constante} caso $\tau$ for constante.
+%      \end{itemize}
+%      
+%     Novos desafios emergem ao fazer a generalização das EDOs para EDRs, sendo necessária uma nova teoria de existência, unicidade e estabilidade das soluções.
+%
+% \end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Regularidade, existência e unicidade das EDRs}
 \subsection{Introdução às EDRs e EDRNs}
 
-\begin{frame}{Introdução às EDRs e EDRNs}
-    \begin{itemize}
-        \item[$\bullet$] ESCREVER ALGUM BLÁ BLÁ BLÁ DE INTRODUÇÃO?
-    \end{itemize} 
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-    \small
-    
-    \begin{defi}[Equações Diferenciais com Retardo (EDRs)]
-    Seja $p>0$. Um PI para EDRs é dado por
-
-    \noindent
-    \begin{equation}  
-        \begin{cases}
-            y'(t) = f(t, y(t), y(t - \tau(t, y(t)))), \qquad t_0 \leq t \leq t_f , \\
-            y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0, 
-        \end{cases}
-        \label{def:eq:EDR}
-    \end{equation}
-
-para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau: [t_0, t_f] \times \R^d \to [0, p]$ e para $\phi:[t_0 - p, t_0] \to \R^d $. Quanto ao PI \eqref{def:eq:EDR}, nós temos:
-        
-    \begin{itemize}
-        \item[$\bullet$] A primeira equação do PI é a chamada EDR, já a segunda, o estado inicial.
-        \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{def:eq:EDR}.
-        \item[$\bullet$] A função $\tau$ é chamada de \textit{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
-
-    \end{itemize}
-    \end{defi}
-
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-    Quanto ao retardo $\tau(t, y(t))$, dizemos que
-     \begin{itemize}
-         \item[$\bullet$] {\color{red}o} O retardo depende do estado quando a função $\tau$ depende tanto do tempo $t$, quando do estado $y$.
-         quanto do estado $y$
-         \item[$\bullet$] \textit{O retardo depende do tempo} caso a função retardo $\tau$ dependa apenas da tempo $t$.
-         \item[$\bullet$] \textit{O retardo é constante} caso $\tau$ for constante.
-     \end{itemize}
-     
-    Novos desafios emergem ao fazer a generalização das EDOs para EDRs, sendo necessária uma nova teoria de existência, unicidade e estabilidade das soluções.
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Exemplo 1: Propagação de descontinuidades}
 
-    \small
+    \footnotesize
         Considere a equação
         \begin{equation}
             \begin{cases}
@@ -391,85 +527,41 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
         \end{equation}
 
 
+    O resolveremos pelo método dos passos.
+
         \begin{itemize}
-            \item[$\bullet$] \noindent
-                Observe que
-                \[
-                    y'(0)^- = 0 \neq -1 = -y(-1) = y'(0)^+,
-                \]
-
-                \noindent
-                o que significa que $y'$ tem uma descontinuidade no 0. 
-
-            \item[$\bullet$] Mais ainda, derivando a primeira equação de \eqref{chap1:ex1:eq:1} obtemos
-
-                \noindent
-                \begin{equation*}
-                    y''(t) = - y'(t - 1) ,
-                    \label{ex_intro1_eq1}
-                \end{equation*}
-                mostrando que a descontinuidade foi propagada para a segunda derivada de $y$ no ponto 1.  
-
-        \end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Exemplo 1: Continuação}
-
-    
-    \phantom{aa} $\bullet$ Mostraremos, por indução, que a equação $ y''(t) = - y'(t - 1)$ implica na seguinte relação de recorrência
-
-        \begin{equation*}
-            y^{(n+1)}(t) = (-1)^n y' (t-n), \qquad n = 1, 2, \dots
-            \label{ex_intro1_eq2}
-        \end{equation*} 
-
-        Sabemos que a relação é valida para $n = 1$, suponhemos que o resultado para algum $k>1$, então 
-    
-        \[
-            y^{n+2}(t) = (-1)^n \frac{d}{dt} y' (t-n) = (-1)^{n+1} y'((t-(n+1))
-        \]
-
-        Logo, a relação é válida para todo $n \geq 1$ e, de fato, a descontinuidade de $y'(0)$ é propagada para todo $y^{(n+1)}(n)$.
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Exemplo 1: Continuação}
-        \begin{itemize}
-            \item[$\bullet$] A solução do PI \eqref{chap1:ex1:eq:1}
-                $
-                \begin{cases}
-                    y'(t) = -y(t - 1), \qquad t \geq 0, \\
-                    y(t) = \phi(t) = 1, \qquad t \leq 0.
-                \end{cases} 
-                $
-                existe?
-            \item[$\bullet$] Observe que, para todo $t \in [0,1]$, tem-se que $t-1 \in [-1, 0]$, logo, o PI \eqref{chap1:ex1:eq:1} se reduz ao seguinte PVI
+            \item[$\bullet$] Para todo $t \in [0,1]$, tem-se que $t-1 \in [-1, 0]$, logo, o PI \eqref{chap1:ex1:eq:1} se reduz ao seguinte PVI
                 \begin{equation*}
                     \begin{cases}
-                        y'(t) = -1, \qquad t \in [0, 1], \\
+                        y'(t) = -\phi(t - 1) = -1, \qquad t \in [0, 1], \\
                         y(0) = \phi(0) = 1.
                     \end{cases} 
                 \end{equation*}
 
-                Cuja solução é única e dada por $y(t) = 1 - t$ em $[0, 1]$. 
+                Cuja solução é única e dada por $y_1(t) = 1 - t$ em $[0, 1]$. 
         
-            \item[$\bullet$] Repetindo este processo, o PI se reduz a um PVI nos intervalos $[i, i+1], i = 1, 2, \dots$, cuja solução existe e é única. 
-            \item[$\bullet$] Este método é chamado de \textit{método dos passos} e é a base para os métodos numéricos para EDRs.
+            \item[$\bullet$] Repetindo o passo anterior, tem-se $\forall t \in [1, 2], t - 1 \in [0, 1]$, logo o PI \eqref{chap1:ex1:eq:1} se reduz ao seguinte PVI
+
+                \begin{equation*}
+                    \begin{cases}
+                        y'(t) = - y_1(t - 1) = t - 2 , \qquad t \in [1, 2], \\
+                        y(1) = y_1(1) = 0
+                    \end{cases} 
+                \end{equation*}
+
         \end{itemize}
 
 
 \end{frame}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \begin{itemize}
+        \item[$\bullet$] Cuja solução é única e dada por $y_2(t) = \frac{1}{2}(x^2 - 4x + 3)$
+        \item[$\bullet$] Repetindo este processo, o PI se reduz a um PVI nos intervalos $[i, i+1], i = 1, 2, \dots$, cuja solução existe e é única. 
 
-\begin{frame}{Exemplo 1: Continuação}
+    \end{itemize}
+
          \begin{figure}[H]
              \begin{center}
                  \begin{adjustbox}{max width=\textwidth}  
@@ -515,22 +607,75 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
              \label{chap1:ex1:fig:1}
          \end{figure}
 
+
+
+     
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Exemplo 1: Propagação de descontinuidades}
+
+    \small
+        Reconsideremos a equação
+        \begin{equation}
+            \begin{cases}
+                y'(t) = -y(t - 1), \qquad t \geq 0, \\
+                y(t) = \phi(t) = 1, \qquad t \leq 0.
+            \end{cases} 
+        \end{equation}
+
+
+        \begin{itemize}
+            \item[$\bullet$] $y'$ tem uma descontinuidade no 0 já que
+
+                \[
+                    y'(0)^- = 0 \neq -1 = -y(-1) = y'(0)^+,
+                \]
+    
+                mas $y'$ é contínua para todo $t > 0$.
+
+
+            \item[$\bullet$] $y''(t)$ tem uma descontinuidade no 1 já que 
+
+                \begin{equation*}
+                    y''(t) = - y'(t - 1)
+                    \label{ex_intro1_eq1}
+                \end{equation*}
+
+                mas $y''(t)$ é contínua para todo $t > 1$.
+
+
+        \end{itemize}
+
+\end{frame}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Exemplo 2: Falta de injetividade entre valores iniciais e soluções}
         Considere a equação
         \begin{equation}
-            y'(t) = y(t - 1) (y(t) - 1), \qquad t \geq 0,
+            \begin{cases}
+                y'(t) = y(t - 1) (y(t) - 1), \qquad t \geq 0, \\
+                y(t) = \phi(t), \qquad t \leq 0,
+            \end{cases}
             \label{chap1:ex2:eq:1}
         \end{equation}
+
+        para qualquer $\phi: \R \times \R^d$ tal que $\phi(0) = 1$. 
+
         \begin{itemize}
-            \item[$\bullet$] Para toda $\phi:\R \to \R^d$ tal que $\phi(0) = 1$, tem-se que $y(t) = 1$ é solução.
-            \item[$\bullet$] Então a unicidade entre valores iniciais e soluções é violada. 
+            \item[$\bullet$] Observe que $y(t) = 1$ é sempre solução.
+            \item[$\bullet$] A injetividade entre valores iniciais e soluções é violada. 
             \item[$\bullet$] Como veremos no teorema \ref{teo:local_existence:EDR}, isso ocorre porque a função $f(t, y, x) = x(y - 1)$ não satisfaz a condição de Lipschitz nas variáveis $y$ e $x$. 
             \item[$\bullet$] Para tanto, precisamos extender a definição \ref{def:IVP_Lips}.
         \end{itemize} 
+
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -562,55 +707,56 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
         $\bullet$ Como $|\frac{1}{n}| \to \infty$, então $f(t, y, x) = x(y-1)$ não satisfaz a definição \ref{def:EDR:Lips}.
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}
-     
-    \begin{defi}[Equações Diferenciais do tipo Neutro com Retardo]
-        Seja $p>0$. Um PI para EDRNs é dado por
-
-        \small
-        \begin{equation}
-            \begin{cases}
-                y'(t) = f(t, y(t), y(t - \tau(t, y(t))), y'(t - \sigma(t, y(t))), \qquad t_0 \leq t \leq t_f , \\
-                y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0,
-            \end{cases}
-            \label{chap1:def:EDRN}
-        \end{equation}
-
-
-    \normalsize
-    \par
-    para $f:[t_0, t_f] \times \R^d \times \R^d \times \R^d \to \R^d$, {\color{red}o}  $\tau: [t_0, t_f] \times \R^d \to [0, p]$, $\sigma: [t_0, t_f] \times \R^d \to [0, p]$ e $\phi:[t_0 - p, t_0] \to \R^d $. Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
-
-    \[ \vdots \]
-
-
-    \end{defi}
-
-        
-
-\end{frame}
-
-
-\begin{frame}
-
-
-    \begin{exampleblock}
-        <1->{Definição 6. Continuação}
-        \[ \vdots \]
-        \begin{itemize}
-            \item[$\bullet$] A primeira equação do PI é a chamada EDRN, já a segunda, o estado inicial.
-            \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
-            \item[$\bullet$] A função $\tau$ é chamada de \textit{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
-        \end{itemize} 
-
-    \end{exampleblock}
-
-    Naturalmente, mais dificuldades são introduzidas ao genearalizar as EDRs. No próximo exemplo, mostra-se que as descontinuidades não se suavizam conforme o tempo aumenta.
-
-
-\end{frame}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%WARN: PUT THIS IN THE INTRO
+%
+% \begin{frame}
+%      
+%     \begin{defi}[Equações Diferenciais do tipo Neutro com Retardo]
+%         Seja $p>0$. Um PI para EDRNs é dado por
+%
+%         \small
+%         \begin{equation}
+%             \begin{cases}
+%                 y'(t) = f(t, y(t), y(t - \tau(t, y(t))), y'(t - \sigma(t, y(t))), \qquad t_0 \leq t \leq t_f , \\
+%                 y(t) = \phi(t), \qquad t_0 - p \leq t \leq t_0,
+%             \end{cases}
+%             \label{chap1:def:EDRN}
+%         \end{equation}
+%
+%
+%     \normalsize
+%     \par
+%     para $f:[t_0, t_f] \times \R^d \times \R^d \times \R^d \to \R^d$,  $\tau: [t_0, t_f] \times \R^d \to [0, p]$, $\sigma: [t_0, t_f] \times \R^d \to [0, p]$ e $\phi:[t_0 - p, t_0] \to \R^d $. Quanto ao PI \eqref{chap1:def:EDRN}, tem-se que:
+%
+%     \[ \vdots \]
+%
+%
+%     \end{defi}
+%
+%         
+%
+% \end{frame}
+%
+%
+% \begin{frame}
+%
+%
+%     \begin{exampleblock}
+%         <1->{Definição 6. Continuação}
+%         \[ \vdots \]
+%         \begin{itemize}
+%             \item[$\bullet$] A primeira equação do PI é a chamada EDRN, já a segunda, o estado inicial.
+%             \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
+%             \item[$\bullet$] A função $\tau$ é chamada de \textit{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
+%         \end{itemize} 
+%
+%     \end{exampleblock}
+%
+%     Naturalmente, mais dificuldades são introduzidas ao genearalizar as EDRs. No próximo exemplo, mostra-se que as descontinuidades não se suavizam conforme o tempo aumenta.
+%
+%
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -627,14 +773,12 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
      \end{equation}
 
      \begin{itemize}
-         \item[$\bullet$] Como 
+         \item[$\bullet$] $y'$ tem uma descontinuidade no 0, já que
 
              \[
                  y'(0)^- = 1 \neq -1 = - y'(-1) = y'(0)^+,
              \]
 
-             \noindent
-             temos que a a primeira derivada de $y$ tem uma descontinuidade no ponto $t = 0$.
          \item[$\bullet$] Como $y'(t) = -y'(t - 1)$, então a descontinuidade se propaga em $y'$ para todo $t = 2, 3, \dots$. 
 
      \end{itemize}
@@ -717,7 +861,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
             \]
 
         \noindent
-        os quais são chamados de \textit{argumentos deviados}. 
+        os quais são chamados de \textit{argumentos desviados}. 
 
         \item[$\bullet$] Note que $\alpha(t) \leq t$ e $\beta(t) \leq t$.
 
@@ -752,7 +896,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
         \alpha(t)=t_{0},
     \]
 
-    sendo $i$ referente a multiplicidade da raiz.
+    sendo $i$ referente às multiplas da raizes.
 
 \end{frame}
 
@@ -785,7 +929,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
     $\bullet$ Cada $\xi_{k, i}$ gera uma descontinuidade em $y^{(k+1)}$. Estes pontos são chamados de \textit{descontinuidades primárias de k-ésimo nível}.
 
-    $\bullet$ Note que, conforme o nível das descontinuidades primárias aumenta, também aumenta a suavidade da solução, como descrito por Neves e Feldstein em \cite{Neves1976CharacterizationOJ} na forma do seguinte teorema.
+    $\bullet$ Note que, conforme o nível das descontinuidades primárias aumentam, também aumenta a suavidade da solução, como descrito por Neves e Feldstein em \cite{Neves1976CharacterizationOJ} na forma do seguinte teorema.
 
 
     \begin{teo}[Suavização para EDRs]
@@ -1089,7 +1233,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
     \end{array}\right.
   \]
 
-  Sejam \(U \subseteq \mathbb{R}^{d}\) e \(V \subseteq \mathbb{R}^{d}\) vizinhanças de \(\phi\left(t_{0}\right)\) e \(\phi\left(t_{0}-\tau\left(t_{0}, \phi\left(t_{0}\right)\right)\right)\), respectivamente, e suponha que a função \(f(t, u, v)\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(u\) e \(v\) em \(\left[t_{0}, t_{0}+h\right] \times U \times V\) para algum \(h>0\). Além disso, suponha que a função inicial \(\phi(t)\) seja Lipschitz contínua para \(t \leq t_{0}\) e que a função de atraso \(\tau(t, y) \geq 0\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(y\) em \(\left[t_{0}, t_{0}+h\right] \times U\). Então o problema \ref{def:eq:EDR} tem uma única solução em \(\left[t_{0}, t_{0}+\delta\right)\) para algum \(\delta>0\) e esta solução depende continuamente dos dados iniciais.
+  Sejam \(U \subseteq \mathbb{R}^{d}\) e \(V \subseteq \mathbb{R}^{d}\) vizinhanças de \(\phi\left(t_{0}\right)\) e \(\phi\left(t_{0}-\tau\left(t_{0}, \phi\left(t_{0}\right)\right)\right)\), respectivamente, e suponha que a função \(f(t, u, v)\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(u\) e \(v\) em \(\left[t_{0}, t_{0}+h\right] \times U \times V\) para algum \(h>0\). Além disso, suponha que a função inicial \(\phi(t)\) seja Lipschitz contínua para \(t \leq t_{0}\) e que a função de retardo \(\tau(t, y) \geq 0\) seja contínua em relação a \(t\) e Lipschitz contínua em relação a \(y\) em \(\left[t_{0}, t_{0}+h\right] \times U\). Então o problema \ref{def:eq:EDR} tem uma única solução em \(\left[t_{0}, t_{0}+\delta\right)\) para algum \(\delta>0\) e esta solução depende continuamente dos dados iniciais.
 
 \end{teo}
 \end{frame}
@@ -1098,13 +1242,14 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
 \section{Métodos Numéricos Contínuos}
 
-\subsection{Intro}
-
-\begin{frame}{Intro aqui?}
-    \begin{itemize}
-        \item[$\bullet$] Algum blalablkanla
-    \end{itemize} 
-\end{frame}
+%WARN: REMOVED
+% \subsection{Intro}
+%
+% \begin{frame}{Intro aqui?}
+%     \begin{itemize}
+%         \item[$\bullet$] Algum blalablkanla
+%     \end{itemize} 
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1117,7 +1262,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
     \phantom{aa} $\bullet$ Para $n = 0, ..., N-1$, seja $\Delta = \{ t_0, ..., t_N = t_f\}$ uma malha e $h_{n+1} = t_{n+1} - t_n$ os passos.
 
     \begin{defi}
-        Um método numérico para resolver o PVI \eqref{def:eq:PVI} é chamado de \textit{método de k-passos} se ele satisfaz 
+        Um método numérico para resolver o PVI \eqref{def:eq:PVI} é chamado de \textbf{método de k-passos} se ele satisfaz 
 
         \begin{equation}
             y_{n+1} = \alpha_{n, 1} y_n + ... + \alpha_{n, k} y_{n - k + 1} + h_{n+1} \Phi( y_n, ..., y_{n-k+1}; g, \Delta_n), 
@@ -1145,7 +1290,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
     \phantom{aa} $\bullet$ Caso $k = 1$, temos os chamados métodos de passo único, como o método de Euler 
 
     \[
-        y_{n+1} = y_n + h_n f(t_n, y_n)
+        y_{n+1} = y_n + h_n g(t_n, y_n)
     \]
 
     \phantom{aa} $\bullet$ Caso $k > 1$, temos os métodos multipasse. Um exemplo de um método multipasso é o método de Adams–Bashforth de 2 passos, o qual é definido por 
@@ -1181,7 +1326,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
                     \| \Phi(y_n, ..., y_{n - k + 1}; \tilde{g}, \Delta_n)  &- \Phi(y_n, ..., y_{n - k + 1}; g, \Delta_n) \| \\
                                                                            &\leq \gamma_g \sup_{t, y \in U_n} \| \tilde{g}(t, y) - g(t, y) \|
                 \end{split}
-                \label{chap3:assumption:point_lipschitz}
+                \label{chap3:assumption:point_lipschitz_Phi}
             \end{equation}
 
         para todo $\tilde{g} \in C^0([t_0, t_f] \times \R^d, \R^d)$ . 
@@ -1203,7 +1348,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 
     \small
     \begin{defi}[Extensão contínua]
-        Uma \textit{extensão contínua}, ou \textit{interpolante} do método \eqref{chap3:def:eq:ODE_method} é uma função polinomial $\eta(t)$ definida por partes nos intervalos $[t_n, t_{n+1}]$ baseada em valores calculados pelo método definidos em $[t_{n - i_n}, t_{n+j_n + 1}]$, para $i_n, j_n \geq 0$. 
+        Uma \textbf{extensão contínua}, ou uma \textbf{interpolante} do método \eqref{chap3:def:eq:ODE_method} é uma função polinomial $\eta(t)$ definida por partes nos intervalos $[t_n, t_{n+1}]$ baseada em valores calculados pelo método definidos em $[t_{n - i_n}, t_{n+j_n + 1}]$, para $i_n, j_n \geq 0$. 
 
         \scriptsize
         \begin{equation}
@@ -1300,7 +1445,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
                     \| \Psi(y_{n + jn}, ..., y_{n - i_n}; \tilde{g}, \Delta_n ')  &- \Psi(y_{n + jn}, ..., y_{n - i_n}; g , \Delta_n ') \| \\
            &\leq \gamma_g ' \sup_{t, y \in U_n '} \| \tilde{g}(t, y) - g(t, y) \|
                 \end{split}
-                \label{chap3:assumption:point_lipschitz}
+                \label{chap3:assumption:point_lipschitz_Psi}
             \end{equation}
 
             
@@ -1759,7 +1904,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
     \phantom{aa} $\bullet$ Quanto a $(\star)$, observe que, como $h_k + \dots h_{n+1} \leq t_f - t_0$, então
 
     \begin{align*}
-      e^{h_{n+1}Q} \dots e^{h_{k}Q} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}} &= e^{Q(h_{n+1} \dots h_k)} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}} \\
+      e^{h_{n+1}Q} \dots e^{h_{k}Q} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}} &= e^{Q(h_{n+1} + \dots + h_k)} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}} \\
                                                                                    &\leq e^{Q(t_f - t_0)} \vertiii{\mathbf{y}(t_{k-1})-\mathbf{y}_{k-1}},
     \end{align*}
 \end{frame}
@@ -1781,8 +1926,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
         \end{split}
     \]
 
-    \phantom{aa} $\bullet$ Por fim, obtemos a relação final
-
+    \phantom{aa} $\bullet$ Por fim, concluímos o resultado da convergência discreta com a relação final
 
     \[
       \vertiii{  \mathbf{y}(t_{n+1})-\mathbf{y}_{n+1} } \leq e^{Q(t_{f}-t_{0})} \vertiii{ \mathbf{y}(t_{k-1})-\mathbf{y}_{k-1} }
@@ -2159,7 +2303,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 \subsection{SIR com retardo?}
 \begin{frame}{SIR com retardo?}
 
-    falar sobre 
+    falar sobre
      
 \end{frame}
 
@@ -2168,7 +2312,7 @@ para $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, para {\color{red}o}  $\tau
 \begin{frame}{Referências}
 
 
-\begin{thebibliography}{3}
+\begin{thebibliography}{2}
 
 
 
@@ -2181,15 +2325,28 @@ K. W. Neves and A. Feldstein,
 \oldstylenums{1976}.
 \newblock \url{https://api.semanticscholar.org/CorpusID:121097839}.
 
+ 
+\end{thebibliography}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Referências}
+
+
+\begin{thebibliography}{2}
+
 
 \beamertemplatearticlebibitems
-\bibitem{neves[206]}
-K. W. Neves and S. Thompson,
-\newblock Software for the numerical solution of systems of functional differential equations with state-dependent delays.
-\newblock \emph{Applied Numerical Mathematics},
-\oldstylenums{9}(3):385-401,
-\oldstylenums{1992}.
-\newblock \url{https://doi.org/10.1016/0168-9274(92)90029-D}.
+\bibitem{NEVES1976689}
+K. W. Neves and A. Feldstein,
+\newblock Characterization of jump discontinuities for state dependent delay differential equations.
+\newblock \emph{Journal of Mathematical Analysis and Applications},
+\oldstylenums{56}(3):689-707,
+\oldstylenums{1976}.
+\newblock \url{https://doi.org/10.1016/0022-247X(76)90033-0}.
+
 
 
 \beamertemplatebookbibitems
@@ -2202,6 +2359,7 @@ A. Bellen and M. Zennaro,
  
 \end{thebibliography}
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -1,22 +1,21 @@
 \babel@toc {brazil}{}\relax 
 \beamer@sectionintoc {1}{Introdução}{3}{0}{1}
-\beamer@sectionintoc {2}{Revisão de EDO}{4}{0}{2}
-\beamer@sectionintoc {3}{Regularidade, existência e unicidade das EDRs}{8}{0}{3}
-\beamer@subsectionintoc {3}{1}{Introdução às EDRs e EDRNs}{8}{0}{3}
-\beamer@subsectionintoc {3}{2}{Propagação de Descontinuidades}{21}{0}{3}
-\beamer@subsectionintoc {3}{3}{Desaparecimento do Retardo}{30}{0}{3}
-\beamer@subsectionintoc {3}{4}{Retardos Limitados e Ilimitados}{33}{0}{3}
-\beamer@subsectionintoc {3}{5}{Existência e unicidade}{37}{0}{3}
-\beamer@sectionintoc {4}{Métodos Numéricos Contínuos}{38}{0}{4}
-\beamer@subsectionintoc {4}{1}{Intro}{38}{0}{4}
-\beamer@subsectionintoc {4}{2}{Métodos discretos para EDOs}{39}{0}{4}
-\beamer@subsectionintoc {4}{3}{Extensão Contínua}{42}{0}{4}
-\beamer@subsectionintoc {4}{4}{Ordem dos métodos}{46}{0}{4}
-\beamer@subsectionintoc {4}{5}{Teorema de convergência}{49}{0}{4}
-\beamer@sectionintoc {5}{Métodos Contínuos para EDRs}{64}{0}{5}
-\beamer@subsectionintoc {5}{1}{Adaptando o método das EDOs}{64}{0}{5}
-\beamer@subsectionintoc {5}{2}{Algoritmo para EDRs}{68}{0}{5}
-\beamer@subsectionintoc {5}{3}{Teorema de convergência}{69}{0}{5}
-\beamer@subsectionintoc {5}{4}{O Modelo SIR}{71}{0}{5}
-\beamer@subsectionintoc {5}{5}{SIR com retardo?}{74}{0}{5}
-\beamer@sectionintoc {6}{Referências}{76}{0}{6}
+\beamer@sectionintoc {2}{Revisão de EDO}{7}{0}{2}
+\beamer@sectionintoc {3}{Regularidade, existência e unicidade das EDRs}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Introdução às EDRs e EDRNs}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{Propagação de Descontinuidades}{17}{0}{3}
+\beamer@subsectionintoc {3}{3}{Desaparecimento do Retardo}{26}{0}{3}
+\beamer@subsectionintoc {3}{4}{Retardos Limitados e Ilimitados}{29}{0}{3}
+\beamer@subsectionintoc {3}{5}{Existência e unicidade}{33}{0}{3}
+\beamer@sectionintoc {4}{Métodos Numéricos Contínuos}{34}{0}{4}
+\beamer@subsectionintoc {4}{1}{Métodos discretos para EDOs}{34}{0}{4}
+\beamer@subsectionintoc {4}{2}{Extensão Contínua}{37}{0}{4}
+\beamer@subsectionintoc {4}{3}{Ordem dos métodos}{41}{0}{4}
+\beamer@subsectionintoc {4}{4}{Teorema de convergência}{44}{0}{4}
+\beamer@sectionintoc {5}{Métodos Contínuos para EDRs}{59}{0}{5}
+\beamer@subsectionintoc {5}{1}{Adaptando o método das EDOs}{59}{0}{5}
+\beamer@subsectionintoc {5}{2}{Algoritmo para EDRs}{63}{0}{5}
+\beamer@subsectionintoc {5}{3}{Teorema de convergência}{64}{0}{5}
+\beamer@subsectionintoc {5}{4}{O Modelo SIR}{66}{0}{5}
+\beamer@subsectionintoc {5}{5}{SIR com retardo?}{69}{0}{5}
+\beamer@sectionintoc {6}{Referências}{72}{0}{6}
