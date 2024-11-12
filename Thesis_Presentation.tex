@@ -1257,7 +1257,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Retardos Limitados e Ilimitados}
+\begin{frame}{Argumentos desviados limitados e ilimitados}
     
     $\bullet$ Para garantir a suavização das soluções, a função $\alpha$ deve setisfazer as seguintes duas hipóteses.
 
@@ -1280,7 +1280,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Retardos Limitados e Ilimitados}
+\begin{frame}{Argumentos desviados limitados e ilimitados}
 
     \begin{figure}
         \begin{center}
@@ -1343,6 +1343,7 @@
     \begin{defi}
         Um método numérico para resolver o PVI \eqref{def:eq:PVI} é chamado de \textbf{método de k-passos} se ele satisfaz 
 
+        \vspace{-0.3cm}
         \begin{equation}
             y_{n+1} = \alpha_{n, 1} y_n + ... + \alpha_{n, k} y_{n - k + 1} + h_{n+1} \Phi( y_n, ..., y_{n-k+1}; g, \Delta_n), 
             \label{chap3:def:eq:ODE_method}
@@ -2305,9 +2306,9 @@
             \item [$\bullet$] O modelo é dado por
                 $ 
                 \begin{cases}
-                    \frac{ds}{dt} &= -\beta i s; \\ 
-                    \frac{di}{dt} &= \beta i s - \gamma i;  \\
-                    \frac{dr}{dt} &= \gamma i \gamma. 
+                    \frac{dS}{dt} &= -\beta I S; \\ 
+                    \frac{dI}{dt} &= \beta I S - \gamma I;  \\
+                    \frac{dR}{dt} &= \gamma I. 
                 \end{cases}
                 $ 
                 onde $S + I + R = 1$;
@@ -2523,7 +2524,7 @@
                 (S) edge node {$\gamma$ \\[.2em]} (R)
                 (S) edge  [out=60, in=120] node[above] {$\eta$} (R)
                 (S) edge  [out=-60, in=-120] node[above] {$\delta$} (R)
-                (R) edge  [out=-100, in=-80] node[above] {$1 - \lambda$} (I);
+                (I) edge  [out=-80, in=-100] node[above] {$1 - \lambda$} (R);
             \end{tikzpicture}
         \end{center}
         \vspace{-0.6cm}
@@ -2633,8 +2634,9 @@
 \begin{frame}{Referências}
 
 
-\begin{thebibliography}{2}
+\begin{thebibliography}{4}
 
+\tiny
 
 \beamertemplatebookbibitems
 \bibitem{zennaro}
@@ -2656,16 +2658,16 @@ K. W. Neves and A. Feldstein,
 
 
  
-\end{thebibliography}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Referências}
-
-
-\begin{thebibliography}{2}
+% \end{thebibliography}
+% \end{frame}
+%
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \begin{frame}{Referências}
+%
+%
+% \begin{thebibliography}{2}
 
 
 

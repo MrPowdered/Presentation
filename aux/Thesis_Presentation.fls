@@ -1035,16 +1035,13 @@ INPUT ./images/usp-logo-transp.png
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmss.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmss.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmss.fd
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ts1-lmss10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ts1-lmss8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmtt8.tfm
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT ./images/usp-logo-transp.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
-INPUT ./images/usp-logo-transp.png
 OUTPUT aux/Thesis_Presentation.nav
 OUTPUT aux/Thesis_Presentation.toc
 OUTPUT aux/Thesis_Presentation.snm
@@ -1074,6 +1071,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txexa.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsya.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb
