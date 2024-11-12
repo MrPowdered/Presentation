@@ -169,17 +169,19 @@
 \headcommand {\beamer@framepages {63}{63}}
 \headcommand {\slideentry {5}{2}{2}{64/64}{SIR para rumores}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\slideentry {5}{2}{3}{65/65}{SIR para rumores}{0}}
+\headcommand {\beamer@subsectionpages {63}{64}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{65}{Cronograma}}
+\headcommand {\slideentry {5}{3}{1}{65/65}{Cronograma}{0}}
 \headcommand {\beamer@framepages {65}{65}}
-\headcommand {\slideentry {5}{2}{4}{66/66}{SIR para rumores}{0}}
+\headcommand {\beamer@sectionpages {61}{65}}
+\headcommand {\beamer@subsectionpages {65}{65}}
+\headcommand {\sectionentry {6}{Referências}{66}{Referências}{0}}
+\headcommand {\slideentry {6}{0}{1}{66/66}{}{0}}
 \headcommand {\beamer@framepages {66}{66}}
-\headcommand {\beamer@sectionpages {61}{66}}
-\headcommand {\beamer@subsectionpages {63}{66}}
-\headcommand {\sectionentry {6}{Referências}{67}{Referências}{0}}
-\headcommand {\slideentry {6}{0}{1}{67/67}{}{0}}
+\headcommand {\slideentry {6}{0}{2}{67/67}{}{0}}
 \headcommand {\beamer@framepages {67}{67}}
 \headcommand {\beamer@partpages {1}{67}}
-\headcommand {\beamer@subsectionpages {67}{67}}
-\headcommand {\beamer@sectionpages {67}{67}}
+\headcommand {\beamer@subsectionpages {66}{67}}
+\headcommand {\beamer@sectionpages {66}{67}}
 \headcommand {\beamer@documentpages {67}}
 \headcommand {\gdef \inserttotalframenumber {67}}
