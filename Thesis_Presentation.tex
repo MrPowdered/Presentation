@@ -55,6 +55,9 @@
 \usepackage{lipsum}
 \usetikzlibrary{arrows,positioning}
 
+\usepackage{graphicx}
+\usepackage{adjustbox}
+
 
 \usepackage{multicol}
 
@@ -2310,32 +2313,32 @@
 \begin{frame}{Gráfico da solução numérica do modelo SIR}
 
 \begin{figure}
-    $\bullet$ Modelo no Geogebra \url{https://www.geogebra.org/classic/pbddxfeh}
+    $\bullet$ \url{https://www.geogebra.org/classic/pbddxfeh}
     \begin{center}
-        \begin{tikzpicture}[yscale=0.8, xscale=0.9]
+        \begin{tikzpicture}[scale=0.7]
             \begin{axis}[
                 xlabel={Tempo},
                 ylabel={População Normalizada},
-                legend style={
-                    at={(0.5,-0.2)},
-                    anchor=north,
-                    legend columns=3,
-                    draw=none,
-                    /tikz/every even column/.append style={column sep=0.5cm}
-                },
+                % legend style={
+                %     at={(0.5,-0.2)},
+                %     anchor=north,
+                %     legend columns=3,
+                %     draw=none,
+                %     /tikz/every even column/.append style={column sep=0.5cm}
+                % },
                 cycle list name=color list,
                 every axis plot/.append style={line width=1.5pt},
                 ]
 
                 \addplot table [y expr=\thisrow{S}/1000, mark=none, col sep=comma] {data.csv};
-                \addlegendentry{Suscetíveis}
+                \addlegendentry{S}
                 \addplot table [y expr=\thisrow{I}/1000, mark=none, col sep=comma] {data.csv};
-                \addlegendentry{Infeciosos}
+                \addlegendentry{I}
 
                 \addplot table [y expr=\thisrow{R}/1000, mark=none, col sep=comma] {data.csv};
-                \addlegendentry{Removidos}
+                \addlegendentry{R}
 
-                \node[align=center, anchor=north east] at (axis description cs:1,0.8) {$\beta = 0.3$ \\ $\gamma = 0.1$};
+                \node[align=center, anchor=north east] at (axis description cs:1,0.7) {$\beta = 0.3$ \\ $\gamma = 0.1$};
 
             \end{axis}  
         \end{tikzpicture}
@@ -2463,8 +2466,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{SIR com retardo?}
-\begin{frame}{SIR com retardo?}
+\subsection{SIR para rumores}
+\begin{frame}{SIR para rumores}
 
 
     \small
@@ -2483,6 +2486,7 @@
 
     \end{itemize}
 
+    \vspace{-0.2cm}
     \noindent\begin{minipage}{0.4\textwidth}% adapt widths of minipages to your needs
     \begin{figure}
         \begin{center}
@@ -2492,30 +2496,67 @@
                 \node [int, right=of S] (R) {$R$};
                 \path[->, auto=false] (I) edge node {$\lambda$ \\[.2em]} (S) 
                 (S) edge node {$\gamma$ \\[.2em]} (R)
-                (S) edge  [out=60, in=120] node[above] {$\eta$} node[below] {S}(R)
+                (S) edge  [out=60, in=120] node[above] {$\eta$} (R)
                 (S) edge  [out=-60, in=-120] node[above] {$\delta$} (R)
                 (R) edge  [out=-100, in=-80] node[above] {$1 - \lambda$} (I);
             \end{tikzpicture}
         \end{center}
-        \caption{Diagrama do modelo SIR para rumores}\label{fig:}
+        \vspace{-0.6cm}
+        \caption{\small Diagrama do modelo SIR para rumores}\label{fig:}
     \end{figure}
 
     \end{minipage}%
     \hfill%
-    \begin{minipage}{0.55\textwidth}\raggedleft
+    \begin{minipage}{0.5\textwidth}
+        \vspace{-0.3cm}
 
+        \begin{itemize}
+            \item[$\bullet$] $\bar{k}$ média de contatos 
+            \item[$\bullet$] $\lambda$ taxa de transmissão
+            \item[$\bullet$] $\eta$ remoção por stifler 
+            \item[$\bullet$] $\gamma$ remoção por ignorantes 
+            \item[$\bullet$] $\delta$ remoção expontânea 
+        \end{itemize}
 
-
-
-        Yesterday,\\
-        all my troubles seemed so far away\\
-        Now it looks as though they're here to stay\\
-        Oh, I believe in yesterday.
     \end{minipage}
 
     
      
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{SIR para rumores}
+    $\bullet$ \url{https://github.com/MrPowdered/SIR-Rumor-Spreading}
+
+    % \begin{figure}[scale=0.7]
+    %     \begin{center}
+    %         \includegraphics[width=0.8\textwidth]{images/SIR_rumos.png}
+    %     \end{center}
+    %     \caption{Gráfico SIR rumores}\label{fig:sir_rumors}
+    % \end{figure}
+    
+    \begin{tikzpicture}[]
+        % \node[anchor=south west] (image) at (0,0) {\includegraphics[width=9cm]{images/SIR_rumos.png}};
+        %
+        % % Define positions for nodes to the right of the image
+        % \node[right=1cm of image.north east, anchor=north west] (node1) {$\bar{k} = 10$};
+        % \node[below=0.5cm of node1, anchor=west] (node2) {$\lambda = 0.5$};
+        % \node[below=0.5cm of node2, anchor=west] (node3) {$\gamma = 0.2$};
+        % \node[below=0.5cm of node3, anchor=west] (node4) {$\eta, \delta = 0.2$};
+
+        \node[anchor=south west, inner sep=0] (image) at (0,0) {\adjustbox{width=9cm}{\includegraphics{images/SIR_rumos.png}}};
+
+        \node at (10,5) {$\bullet  \bar{k} = 10$};   
+        \node at (10, 4.5) {$\bullet \lambda = 0.5$}; 
+        \node at (10, 4) {$\bullet \gamma = 0.1$};    
+        \node at (10, 3.5) {$\bullet \eta = 0.2$}; 
+        \node at (10, 3) {$\bullet \delta = 0.2$}; 
+
+    \end{tikzpicture}
+
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

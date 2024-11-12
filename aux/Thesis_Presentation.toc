@@ -17,5 +17,5 @@
 \beamer@subsectionintoc {4}{7}{Teorema de convergência}{60}{0}{4}
 \beamer@sectionintoc {5}{Aplicações}{61}{0}{5}
 \beamer@subsectionintoc {5}{1}{O modelo SIR}{61}{0}{5}
-\beamer@subsectionintoc {5}{2}{SIR com retardo?}{63}{0}{5}
-\beamer@sectionintoc {6}{Referências}{66}{0}{6}
+\beamer@subsectionintoc {5}{2}{SIR para rumores}{63}{0}{5}
+\beamer@sectionintoc {6}{Referências}{67}{0}{6}
