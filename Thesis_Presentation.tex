@@ -53,6 +53,7 @@
 \usepackage{algpseudocode}
 \usepackage{adjustbox}
 \usepackage{lipsum}
+\usetikzlibrary{arrows,positioning}
 
 
 \usepackage{multicol}
@@ -516,7 +517,7 @@
 
 \begin{frame}{Exemplo 1: Propagação de descontinuidades}
 
-    \footnotesize
+    \scriptsize
         Considere a equação
         \begin{equation}
             \begin{cases}
@@ -549,6 +550,9 @@
                     \end{cases} 
                 \end{equation*}
 
+                Cuja solução é única e dada por $y_2(t) = \frac{1}{2}(t^2 - 4t + 3)$
+
+
         \end{itemize}
 
 
@@ -557,7 +561,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
     \begin{itemize}
-        \item[$\bullet$] Cuja solução é única e dada por $y_2(t) = \frac{1}{2}(x^2 - 4x + 3)$
         \item[$\bullet$] Repetindo este processo, o PI se reduz a um PVI nos intervalos $[i, i+1], i = 1, 2, \dots$, cuja solução existe e é única. 
 
     \end{itemize}
@@ -617,7 +620,7 @@
 
 \begin{frame}{Exemplo 1: Propagação de descontinuidades}
 
-    \small
+    \scriptsize
         Reconsideremos a equação
         \begin{equation}
             \begin{cases}
@@ -628,29 +631,50 @@
 
 
         \begin{itemize}
-            \item[$\bullet$] $y'$ tem uma descontinuidade no 0 já que
+            \item[$\bullet$] $y'$ é contínua para todo $t > 0$ mas tem uma descontinuidade no 0 já que
 
                 \[
                     y'(0)^- = 0 \neq -1 = -y(-1) = y'(0)^+,
                 \]
     
-                mas $y'$ é contínua para todo $t > 0$.
 
 
-            \item[$\bullet$] $y''(t)$ tem uma descontinuidade no 1 já que 
+            \item[$\bullet$] $y''(t)$ é contínua para todo $t>1$ mas tem uma descontinuidade no 1 já que 
 
-                \begin{equation*}
+                \begin{equation}
                     y''(t) = - y'(t - 1)
                     \label{ex_intro1_eq1}
-                \end{equation*}
+                \end{equation}
 
                 mas $y''(t)$ é contínua para todo $t > 1$.
+
+
+            \item[$\bullet$] É possível mostrar por indução que \eqref{ex_intro1_eq1} implica que $y^{(n+1)}$ é contínua em todo $t>n$ mas tem uma descontinuidade em $n$ já que
+
+                \[
+                    y^{(n+1)}(t) = (-1)^n y'(t - n), \qquad n = 1,2, ...
+                \]
 
 
         \end{itemize}
 
 \end{frame}
 
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \begin{frame}{Exemplo 1: Propagação de descontinuidades}
+%      
+%     \begin{itemize}
+%         \item[$\bullet$] É possível mostrar por indução que a equação  $y''(t) = - y'(t - 1)$ implica na seguinte relação de recorrência
+%
+%             \[
+%                 y^{(n+1)}(t) = (-1)^n y'(t - n), \qquad n = 1,2, ...
+%             \]
+%
+%     \end{itemize}
+%
+% \end{frame}
 
 
 
@@ -760,7 +784,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Exemplo 3: Propagação de Descontinuidades (EDRs)}
+\begin{frame}{Exemplo 3: Propagação de Descontinuidades (EDRNs)}
 
      Considere a equação 
 
@@ -926,19 +950,19 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Descontinuidades primárias}
-
-    $\bullet$ Cada $\xi_{k, i}$ gera uma descontinuidade em $y^{(k+1)}$. Estes pontos são chamados de \textit{descontinuidades primárias de k-ésimo nível}.
-
-    $\bullet$ Note que, conforme o nível das descontinuidades primárias aumentam, também aumenta a suavidade da solução, como descrito por Neves e Feldstein em \cite{Neves1976CharacterizationOJ} na forma do seguinte teorema.
-
-
-    \begin{teo}[Suavização para EDRs]
-        \label{chap2:teo:EDR_smooting}
-        Se \(\xi_{j, i}\) é um ponto de descontinuidade primária onde a função \(y(t)\) tem derivadas contínuas até a ordem \(\omega-1\), então \(y(t)\) é continuamente diferenciável no ponto propagado \(\xi_{j+1, k}\) pelo menos até a ordem \(z \cdot \omega\), desde que \(\xi_{j+1, k}\) seja uma raiz de \(\alpha(t) = \xi_{j, i}\) com multiplicidade ímpar \(z\).
-    \end{teo}
-
-\end{frame}
+% \begin{frame}{Descontinuidades primárias}
+%
+%     $\bullet$ Cada $\xi_{k, i}$ gera uma descontinuidade em $y^{(k+1)}$. Estes pontos são chamados de \textit{descontinuidades primárias de k-ésimo nível}.
+%
+%     $\bullet$ Note que, conforme o nível das descontinuidades primárias aumentam, também aumenta a suavidade da solução, como descrito por Neves e Feldstein em \cite{Neves1976CharacterizationOJ} na forma do seguinte teorema.
+%
+%
+%     \begin{teo}[Suavização para EDRs]
+%         \label{chap2:teo:EDR_smooting}
+%         Se \(\xi_{j, i}\) é um ponto de descontinuidade primária onde a função \(y(t)\) tem derivadas contínuas até a ordem \(\omega-1\), então \(y(t)\) é continuamente diferenciável no ponto propagado \(\xi_{j+1, k}\) pelo menos até a ordem \(z \cdot \omega\), desde que \(\xi_{j+1, k}\) seja uma raiz de \(\alpha(t) = \xi_{j, i}\) com multiplicidade ímpar \(z\).
+%     \end{teo}
+%
+% \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1040,23 +1064,23 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-    
-    $\bullet$ Em geral, a suavização das solução de EDRNs não pode ser garantida. 
-
-    $\bullet$ No entanto, o seguinte teorema abaixo é foi encontrado por Neves e Thompson \cite{PhysRevE.64.026118} que garante a suavização das EDRNs tais que $\tau=\sigma$ e que 
-
-    \[
-    \phi^{\prime}(t_{0})^{-}=y^{\prime}(t_{0})^{+}=f(t_{0}, \phi(t_{0}), \phi(\alpha(t_{0}), \phi^{\prime}(\alpha(t_{0}))))
-    \]
-
-
-    \begin{teo}[Suavização para EDRNs]
-        \label{chap2:teo:2}
-        Se $\xi_{j, i}$ é um ponto de descontinuidade primário onde a função $y(t)$ possui derivadas contínuas até a ordem $\omega-1$, então $y(t)$ é continuamente diferenciável no ponto propagado $\xi_{j+1, k}$ pelo menos até a ordem $z \cdot(\omega-1)$, desde que $\xi_{j+1, k}$ seja uma raiz de (2.1.5) com multiplicidade ímpar $z$.
-    \end{teo} 
-
-\end{frame}
+% \begin{frame}
+%     
+%     $\bullet$ Em geral, a suavização das solução de EDRNs não pode ser garantida. 
+%
+%     $\bullet$ No entanto, o seguinte teorema abaixo é foi encontrado por Neves e Thompson \cite{PhysRevE.64.026118} que garante a suavização das EDRNs tais que $\tau=\sigma$ e que 
+%
+%     \[
+%     \phi^{\prime}(t_{0})^{-}=y^{\prime}(t_{0})^{+}=f(t_{0}, \phi(t_{0}), \phi(\alpha(t_{0}), \phi^{\prime}(\alpha(t_{0}))))
+%     \]
+%
+%
+%     \begin{teo}[Suavização para EDRNs]
+%         \label{chap2:teo:2}
+%         Se $\xi_{j, i}$ é um ponto de descontinuidade primário onde a função $y(t)$ possui derivadas contínuas até a ordem $\omega-1$, então $y(t)$ é continuamente diferenciável no ponto propagado $\xi_{j+1, k}$ pelo menos até a ordem $z \cdot(\omega-1)$, desde que $\xi_{j+1, k}$ seja uma raiz de (2.1.5) com multiplicidade ímpar $z$.
+%     \end{teo} 
+%
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1078,7 +1102,7 @@
             \item[$\bullet$] Suponha que $f, \phi, \alpha$ e $\beta$ sejam $C^\infty$ nos seus respectivos domínios.
             \item[$\bullet$] Seja $\xi > t_0$ único ponto fixo de $\alpha$ em $[t_0, \xi]$.
             \item[$\bullet$] Suponha que exista alguma descontinuidade primária $\xi_k < \xi$ de grau $k$.
-            \item Então, para qualquer vizinhança a esquerda de $\xi$, existem infinitos pontos de descontinuidade nesta vizinhança.+
+            \item Então, para qualquer vizinhança a esquerda de $\xi$, existem infinitos pontos de descontinuidade nesta vizinhança.
         \end{itemize}
 
 
@@ -1133,6 +1157,14 @@
 
     \small
 
+    \begin{figure}
+        \begin{center}
+            \includegraphics[width=0.7\textwidth, height=0.5\textheight]{desaparecimento_do_retardo.png}
+        \end{center}
+        \caption{Desaparecimento do Retardo ({\color{red} texto})}\label{fig:Desaparecimento do Retardo}
+    \end{figure}
+
+
     % \begin{proof}[Demonstração ...Continuação]
     %     \[
     %         \vdots
@@ -1147,12 +1179,6 @@
         \label{H1:hipotese:hypothesis}
     \end{hip}
 
-    \begin{figure}
-        \begin{center}
-            \includegraphics[width=0.7\textwidth, height=0.5\textheight]{desaparecimento_do_retardo.png}
-        \end{center}
-        \caption{Desaparecimento do Retardo ({\color{red} texto})}\label{fig:Desaparecimento do Retardo}
-    \end{figure}
 
 
 
@@ -1325,6 +1351,7 @@
 
     \phantom{aa} $\bullet$ Os valores $y_0, ..., y_k$ são os valores iniciais.
 
+    \phantom{aa} $\bullet$ A solução numérica discreta é $\{y_{n}\}_{n=0}^{N}$, onde  $y_{n} \approx y(t_{n})$.
 
 
 \end{frame}
@@ -1335,23 +1362,25 @@
 
     \small
 
-    \phantom{aa} $\bullet$ Caso $k = 1$, temos os chamados métodos de passo único, como o método de Euler 
+
+    \phantom{aa} $\bullet$ Caso $k = 1$, temos os chamados métodos de passo único, como o método de Euler (convergência $\mathcal{O}(h)$ para $h = \max_{n \geq 1} h_n$) 
 
     \[
         y_{n+1} = y_n + h_n g(t_n, y_n)
     \]
 
-    \phantom{aa} $\bullet$ Caso $k > 1$, temos os métodos multipasse. Um exemplo de um método multipasso é o método de Adams–Bashforth de 2 passos, o qual é definido por 
+    \phantom{aa} $\bullet$ Caso $k > 1$, temos os métodos multipasso. Um exemplo de um método multipasso é o método de Adams–Bashforth de 2 passos (convergência $\mathcal{O}(h^2)$) , o qual é definido por 
+
 
     \[
-        y_{n} = y_{n-1} + \frac{3}{2} h g(t_{n-1},y_{n-1}) - \frac{1}{2} hg(t_{n-2},y_{n-2}),
+        y_{n+1} = y_{n} + \frac{3}{2} h_{n+1} g(t_{n},y_{n}) - \frac{1}{2} h_{n}g(t_{n-1},y_{n-1}),
     \]
 
     \noindent
-    e  inicializado por algum método de passo único, como o método do ponto médio descrito abaixo
+    e  inicializado por algum método de passo único, como o método do ponto médio (convergência $\mathcal{O}(h^2)$) descrito abaixo
 
     \[
-        y_{n}=y_{n-1}+hg\left(t_{n-1}+{\tfrac {1}{2}}h,y_{n-1}+{\tfrac {1}{2}}hg(t_{n-1},y_{n-1})\right).
+        y_{n+1}=y_{n}+h_{n+1}g\left(t_{n}+{\tfrac {1}{2}}h_{n+1},y_{n}+{\tfrac{1}{2}}h_{n}g(t_{n},y_{n})\right).
     \]
 \end{frame}
 
@@ -1586,7 +1615,10 @@
 
 \begin{frame}{Ordem dos métodos}
 
+    \small
+
     \phantom{aa} $\bullet$ Seja $h = \max_{1 \leq n \leq N} h_n$.
+
 
     \begin{defi}[Ordem Global de um Método Discreto]
         
@@ -1603,7 +1635,7 @@
         Um interpolante \eqref{chap3:def:eq:Interpolant_extension} tem ordem global $p$, se 
 
         \begin{equation}
-            \max_{t_0 \leq t \leq t_f} \| y(t) - \eta(t) \| = \mathcal{O}(h^{p}).
+            \max_{t_0 - r \leq t \leq t_f} \| y(t) - \eta(t) \| = \mathcal{O}(h^{p}).
         \end{equation}
     \end{defi}
 
@@ -1612,19 +1644,17 @@
 
 \subsection{Teorema de convergência}
 
-\begin{frame}{Apêndice}
+\begin{frame}{Preliminares para o teorema de convergência}
     \begin{defi}[Norma induzida de matrizes]
         \label{apendices:def:induced_matrix_norm}
         Seja $K$ o corpo dos reais ou dos complexos e sejam $\|\cdot\|_\alpha$ e $\|\cdot\|_\beta$ normas em $K^n$ e $K^m$, respectivamente.
         A norma $\| \cdot \|_{\alpha, \beta}$ em $K^{m \times n}$ é chamada de \textit{norma induzida} se 
 
-        \noindent
-        \[ \| A \|_{\alpha, \beta} = \sup\{\frac{\|Ax\|_\beta}{\|x\|_\alpha} : x\in K^n \backslash \{0\} \}. \]
+        \[ \| A \|_{\alpha, \beta} = \sup\left\{\frac{\|Ax\|_\beta}{\|x\|_\alpha} : x\in K^n \backslash \left\{0\right\} \right\}. \]
 
 
         Normalmente, a notação a acima é reduzida simplesmente a 
 
-        \noindent
         \[ \| A \|_{\alpha, \beta} = \sup_{\|x\|_\alpha = 1} \|Ax\|_\beta.\]
 
     \end{defi}
@@ -1634,7 +1664,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Apêndice}
+\begin{frame}{Preliminares para o teorema de convergência}
 
     \small
     \begin{defi}[Produto de Kronecker]
@@ -1643,7 +1673,6 @@
         para $K = \R$ (ou $\C$). O \textit{produto Kronecker} entre $A$ e $B$ é dado pela função
         $\otimes: K^{m, n} \times K^{p, q} \to (K^{pm \times qn})$ definida notação por blocos
 
-        \noindent
         \[
             A \otimes B = 
             \begin{bmatrix}
@@ -1664,12 +1693,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}%{Teorema: Convergência dos Métodos para EDOs}
-    \scriptsize
     \begin{teo}[Convergência dos Métodos para EDOs]
         \label{chap3:teo:continuous_ODE}
-
+        \scriptsize
         Considere o método \eqref{chap3:def:eq:ODE_method} de ordem $p \geq 1$ e, para cada $n$, seja
 
+        \tiny
         \[
             C_n = 
             \begin{bmatrix}
@@ -1681,6 +1710,8 @@
             \end{bmatrix}
         \]
 
+
+        \scriptsize
         Caso 
 
         \phantom{aa} $\bullet$ Existe uma norma $\| \cdot \|_* $ em $\R^k$, independente de $n$ e da malha $\Delta$, tal que, para a norma induzida da matriz, a seguinte condição de estabilidade é satisfeita.
@@ -1694,7 +1725,7 @@
 
         \phantom{aa} $\bullet$ Os valores iniciais $y_0, \cdots, y_{k-1}$ aproxima a solução exata com ordem $p$.
 
-        Então, o método discreto \eqref{chap3:def:eq:ODE_method} é convergente e de ordem global $p$ em $[t_0, t_f]$, já o interpolante, de ordem \eqref{chap3:def:eq:Interpolant_extension} $q' = \min\{p, q+1\}$.
+        Então, o método discreto \eqref{chap3:def:eq:ODE_method} é convergente e de ordem global $p$ em $[t_0, t_f]$, já a extensão contínua \eqref{chap3:def:eq:Interpolant_extension} é convergente sua ordem global é $q' = \min\{p, q+1\}$.
     \end{teo}
 
 
@@ -2027,8 +2058,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Métodos Contínuos para EDRs}
-\subsection{Adaptando o método das EDOs}
+\subsection{Métodos Contínuos para EDRs}
 
 \begin{frame}{Métodos Contínuos para EDRs}
 
@@ -2059,6 +2089,7 @@
 
 \begin{frame}{Métodos Contínuos para EDRs}
 
+    \footnotesize
 
     \begin{equation}
         \left\{\begin{array}{l}
@@ -2080,8 +2111,9 @@
 
     e \(\eta(t)\) é o interpolante dado por \ref{chap3:def:eq:Interpolant_extension}. 
 
-    \phantom{aa} $\bullet$ Quanto a equação \eqref{chap3:sec:2:eq:1}, temos os seguintes casos:
-
+    \phantom{aa} $\bullet$ Se \( s=t-\tau\left(t, w_{n+1}(t)\right) \leq t_{n}$ para todo $t \in\left[t_{n}, t_{n+1}\right]\), então \eqref{chap3:sec:2:eq:1} se reduz a uma EDO.
+    
+    \phantom{aa} $\bullet$ Caso contrário, $\eta$ ainda aproxima $x(s)$ mas de forma implicita.
 \end{frame}
 
 
@@ -2111,6 +2143,7 @@
 
 
 
+
 \end{frame}
 
 
@@ -2119,7 +2152,7 @@
 \begin{frame}{Métodos Contínuos para EDRs}
     \begin{equation}
         \begin{split}
-            \eta(t_n + \theta h_{n+1}) = &\beta_{n, 1} (\theta) y_{n + j_n} + \dots + \beta_{n, j_n + i_n + 1}(\theta) y_{n - i_n} \\
+            \eta(t_n + \theta h_{n+1}) = &\beta_{n, 1} (\theta) y_{n} + \dots + \beta_{n, j_n + i_n + 1}(\theta) y_{n - i_n} \\
                                          &+ h_{n+1} \Psi(y_{n+j_n}, \dots, y_{n-i_n}; \theta, g_\eta, \Delta _n '), \qquad 0 \leq \theta \leq 1,
                                          \label{chap3:sec:2:def:eq:Interpolant_extension}
         \end{split}
@@ -2164,6 +2197,7 @@
 
         \phantom{aa} 2. Resolva a equação
 
+            \vspace{0.3cm}
             \noindent
             \[
                 \left\{\begin{array}{l}
@@ -2181,6 +2215,7 @@
 
         \phantom{aaaaaa}$\bullet$ Resolva a equação
 
+        \vspace{0.3cm}
         \noindent
         \[
             \left\{\begin{array}{l}
@@ -2227,22 +2262,20 @@
 \end{teo}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{E o grude?}
-    Os próximos slides do modelo SIR eu não sei o que fazer
-\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{O Modelo SIR}
-\begin{frame}{Modelo de Kermack e McKendrick}
+\section{Aplicações}
+\subsection{O modelo SIR}
 
-    \footnotesize
-    \begin{exampleblock}
-        <1->{Modelo SIR}
-        \begin{itemize}
-            \item [$\bullet$] $s,i,r :=$ Percentual de Susceptíveis, Infectados e Removidos;
+\begin{frame}{O modelo SIR}
+     
+
+    \small
+    
+    \begin{itemize}
+            \item [$\bullet$] $S,I,R :=$ Percentual de Susceptíveis, Infectados e Removidos;
             \item [$\bullet$] $\beta, \gamma := $ Taxa média de Contato e de Remoção por tempo;
             \item [$\bullet$] O modelo é dado por
                 $ 
@@ -2252,97 +2285,179 @@
                     \frac{dr}{dt} &= \gamma i \gamma. 
                 \end{cases}
                 $ 
-                onde $s + i + r = 1$;
-            \item [$\bullet$] Note que a taxa de infeção é homogênea, ou seja, a chance de um indivíduo
-                infectado contaminar outra pessoa é sempre a mesma, independente da pessoa. 
-            \item [$\bullet$] Soluções analíticas para o modelo são difíceis de encontrar, o que não 
-                nos impede de tirar conclusões importantes sobre o comportamento do modelo.
+                onde $S + I + R = 1$;
 
-        \end{itemize}
-
-    \end{exampleblock} 
-    
-\end{frame}
+    \end{itemize}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Modelo de Kermack e McKendrick}
-
-
-    \small
-    \begin{exampleblock}
-        <1->{Número Básico de Reprodução}
-
-        \begin{itemize}
-            \item [$\bullet$] Suponha que a população sucetível seja 1. O Número Básico de Reprodução 
-                $R_0$ é o número médio de pessoas que a doença é transmitida antes da pessoa ser 
-                imunizada. Note que, se $R_0>1$ a doença cresce, já se $R_0<0$, a doença descresce. 
-                O limiar epidemiológico é definido quando $R_0 = 1$i.
-            \item [$\bullet$] No modelo SIR, a doença cresce quando $\frac{di}{dt} > 0$. Supondo que 
-                $s=1$ obtemos
-                \[
-                 0 < \frac{di}{dt} = \beta i s - \gamma i \iff 
-                 0 < \beta i - \gamma i \iff 
-                 i < \frac{\beta}{\gamma}i \iff 
-                 0 < \frac{\beta}{\gamma}
-                \]
-                ou seja, $R_0 = \frac{\beta}{\gamma}$ denota o início da epidemia.
-        \end{itemize}
-
-    \end{exampleblock} 
-    
+    \begin{figure}
+        \begin{center}
+            \begin{tikzpicture}[node distance=1cm,auto,>=latex',every node/.append style={align=center},int/.style={draw, minimum size=1cm}]
+                \node [int] (S)             {$S$};
+                \node [int, right=of S] (I) {$I$};
+                \node [int, right=of I] (R) {$R$};
+                \coordinate[right=of I] (out);
+                \path[->, auto=false] (S) edge node {$\beta$ \\[.2em]} (I)
+                (I) edge node {$\gamma$ \\[.2em]} (R);
+            \end{tikzpicture}
+        \end{center}
+        \caption{Diagrama do modelo SIR}
+    \end{figure}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Modelo de Kermack e McKendrick}
-    \footnotesize
-    \begin{exampleblock}
-	     <1->{Tamanho da Epidemia}
-             \begin{itemize}
-                 \item [$\bullet$] O tamanho da epidemia no modelo SIR nunca é igual a $1$ 
-                     independente se $R_0 >> 1$ (onde $R_0 < \infty$), ou seja 
-                    \[
-                        s_\infty = 1 - r_\infty > 0, \qquad \forall R_0 \in \mathbb{R}.
-                    \] 
-                     A demonstração deste fato é envolvida, eis um modelo visual interativo para 
-                     exploração: \href{https://www.geogebra.org/classic/pbddxfeh}{geogebra}
-            
-\begin{center}
-    
-\begin{tikzpicture}[scale=0.4]
-  \begin{axis}[
-    xlabel={Tempo},
-    ylabel={População Normalizada},
-    legend style={
-      at={(0.5,-0.2)},
-      anchor=north,
-      legend columns=3,
-      draw=none,
-      /tikz/every even column/.append style={column sep=0.5cm}
-    },
-    cycle list name=color list,
-    every axis plot/.append style={line width=1.5pt},
-    ]
-    
-    \addplot table [y expr=\thisrow{S}/1000, mark=none, col sep=comma] {data.csv};
-    \addlegendentry{Suscetíveis}
-    \addplot table [y expr=\thisrow{I}/1000, mark=none, col sep=comma] {data.csv};
-    \addlegendentry{Infeciosos}
-    
-    \addplot table [y expr=\thisrow{R}/1000, mark=none, col sep=comma] {data.csv};
-    \addlegendentry{Removidos}
-    
-    \node[align=center, anchor=north east] at (axis description cs:1,0.8) {$\beta = 0.3$ \\ $\gamma = 0.1$};
-    
-  \end{axis}  
-\end{tikzpicture}
 
-\end{center}                
-\end{itemize}
-\end{exampleblock}
+\begin{frame}{Gráfico da solução numérica do modelo SIR}
+
+\begin{figure}
+    $\bullet$ Modelo no Geogebra \url{https://www.geogebra.org/classic/pbddxfeh}
+    \begin{center}
+        \begin{tikzpicture}[yscale=0.8, xscale=0.9]
+            \begin{axis}[
+                xlabel={Tempo},
+                ylabel={População Normalizada},
+                legend style={
+                    at={(0.5,-0.2)},
+                    anchor=north,
+                    legend columns=3,
+                    draw=none,
+                    /tikz/every even column/.append style={column sep=0.5cm}
+                },
+                cycle list name=color list,
+                every axis plot/.append style={line width=1.5pt},
+                ]
+
+                \addplot table [y expr=\thisrow{S}/1000, mark=none, col sep=comma] {data.csv};
+                \addlegendentry{Suscetíveis}
+                \addplot table [y expr=\thisrow{I}/1000, mark=none, col sep=comma] {data.csv};
+                \addlegendentry{Infeciosos}
+
+                \addplot table [y expr=\thisrow{R}/1000, mark=none, col sep=comma] {data.csv};
+                \addlegendentry{Removidos}
+
+                \node[align=center, anchor=north east] at (axis description cs:1,0.8) {$\beta = 0.3$ \\ $\gamma = 0.1$};
+
+            \end{axis}  
+        \end{tikzpicture}
+
+    \end{center}                
+
+    %\caption{}\label{fig:}
+\end{figure}
+
 
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}{Modelo de Kermack e McKendrick}
+%
+%     \footnotesize
+%     \begin{exampleblock}
+%         <1->{Modelo SIR}
+%         \begin{itemize}
+%             \item [$\bullet$] $s,i,r :=$ Percentual de Susceptíveis, Infectados e Removidos;
+%             \item [$\bullet$] $\beta, \gamma := $ Taxa média de Contato e de Remoção por tempo;
+%             \item [$\bullet$] O modelo é dado por
+%                 $ 
+%                 \begin{cases}
+%                     \frac{ds}{dt} &= -\beta i s; \\ 
+%                     \frac{di}{dt} &= \beta i s - \gamma i;  \\
+%                     \frac{dr}{dt} &= \gamma i \gamma. 
+%                 \end{cases}
+%                 $ 
+%                 onde $s + i + r = 1$;
+%             \item [$\bullet$] Note que a taxa de infeção é homogênea, ou seja, a chance de um indivíduo
+%                 infectado contaminar outra pessoa é sempre a mesma, independente da pessoa. 
+%             \item [$\bullet$] Soluções analíticas para o modelo são difíceis de encontrar, o que não 
+%                 nos impede de tirar conclusões importantes sobre o comportamento do modelo.
+%
+%         \end{itemize}
+%
+%     \end{exampleblock} 
+%     
+% \end{frame}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}{Modelo de Kermack e McKendrick}
+%
+%
+%     \small
+%     \begin{exampleblock}
+%         <1->{Número Básico de Reprodução}
+%
+%         \begin{itemize}
+%             \item [$\bullet$] Suponha que a população sucetível seja 1. O Número Básico de Reprodução 
+%                 $R_0$ é o número médio de pessoas que a doença é transmitida antes da pessoa ser 
+%                 imunizada. Note que, se $R_0>1$ a doença cresce, já se $R_0<0$, a doença descresce. 
+%                 O limiar epidemiológico é definido quando $R_0 = 1$i.
+%             \item [$\bullet$] No modelo SIR, a doença cresce quando $\frac{di}{dt} > 0$. Supondo que 
+%                 $s=1$ obtemos
+%                 \[
+%                  0 < \frac{di}{dt} = \beta i s - \gamma i \iff 
+%                  0 < \beta i - \gamma i \iff 
+%                  i < \frac{\beta}{\gamma}i \iff 
+%                  0 < \frac{\beta}{\gamma}
+%                 \]
+%                 ou seja, $R_0 = \frac{\beta}{\gamma}$ denota o início da epidemia.
+%         \end{itemize}
+%
+%     \end{exampleblock} 
+%     
+% \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}{Modelo de Kermack e McKendrick}
+%     \footnotesize
+%     \begin{exampleblock}
+% 	     <1->{Tamanho da Epidemia}
+%              \begin{itemize}
+%                  \item [$\bullet$] O tamanho da epidemia no modelo SIR nunca é igual a $1$ 
+%                      independente se $R_0 >> 1$ (onde $R_0 < \infty$), ou seja 
+%                      \[
+%                          s_\infty = 1 - r_\infty > 0, \qquad \forall R_0 \in \mathbb{R}.
+%                      \] 
+%                      A demonstração deste fato é envolvida, eis um modelo visual interativo para 
+%                      exploração: \href{https://www.geogebra.org/classic/pbddxfeh}{geogebra}
+%
+%                      \begin{center}
+%
+%                          \begin{tikzpicture}[scale=0.4]
+%                              \begin{axis}[
+%                                  xlabel={Tempo},
+%                                  ylabel={População Normalizada},
+%                                  legend style={
+%                                      at={(0.5,-0.2)},
+%                                      anchor=north,
+%                                      legend columns=3,
+%                                      draw=none,
+%                                      /tikz/every even column/.append style={column sep=0.5cm}
+%                                  },
+%                                  cycle list name=color list,
+%                                  every axis plot/.append style={line width=1.5pt},
+%                                  ]
+%
+%                                  \addplot table [y expr=\thisrow{S}/1000, mark=none, col sep=comma] {data.csv};
+%                                  \addlegendentry{Suscetíveis}
+%                                  \addplot table [y expr=\thisrow{I}/1000, mark=none, col sep=comma] {data.csv};
+%                                  \addlegendentry{Infeciosos}
+%
+%                                  \addplot table [y expr=\thisrow{R}/1000, mark=none, col sep=comma] {data.csv};
+%                                  \addlegendentry{Removidos}
+%
+%                                  \node[align=center, anchor=north east] at (axis description cs:1,0.8) {$\beta = 0.3$ \\ $\gamma = 0.1$};
+%
+%                              \end{axis}  
+%                          \end{tikzpicture}
+%
+%                      \end{center}                
+%              \end{itemize}
+%          \end{exampleblock}
+%
+% \end{frame}
 
 
 
@@ -2351,7 +2466,54 @@
 \subsection{SIR com retardo?}
 \begin{frame}{SIR com retardo?}
 
-    Colocar a foto dos compartimentos 
+
+    \small
+    
+    \begin{itemize}
+            \item [$\bullet$] $I, S, R :=$ Percentual de "ignorants, spreaders and stiflers".
+            \item [$\bullet$] 
+                $ 
+                \begin{cases}
+                    \frac{dI}{dt} &= -\bar{k}IS,\\
+                    \frac{dS}{dt} &= \lambda\bar{k}IS - \bar{k}S(\gamma S + \eta R) - \delta S, \\ 
+                    \frac{dR}{dt} &= (1 - \lambda)\bar{k}S + \bar{k}S(\gamma S + \eta R) + \delta S.
+                \end{cases}
+                $ 
+                onde $I + S + R = 1$;
+
+    \end{itemize}
+
+    \noindent\begin{minipage}{0.4\textwidth}% adapt widths of minipages to your needs
+    \begin{figure}
+        \begin{center}
+            \begin{tikzpicture}[node distance=1cm,auto,>=latex',every node/.append style={align=center},int/.style={draw, minimum size=1cm}]
+                \node [int] (I)             {$I$};
+                \node [int, right=of I] (S) {$S$};
+                \node [int, right=of S] (R) {$R$};
+                \path[->, auto=false] (I) edge node {$\lambda$ \\[.2em]} (S) 
+                (S) edge node {$\gamma$ \\[.2em]} (R)
+                (S) edge  [out=60, in=120] node[above] {$\eta$} node[below] {S}(R)
+                (S) edge  [out=-60, in=-120] node[above] {$\delta$} (R)
+                (R) edge  [out=-100, in=-80] node[above] {$1 - \lambda$} (I);
+            \end{tikzpicture}
+        \end{center}
+        \caption{Diagrama do modelo SIR para rumores}\label{fig:}
+    \end{figure}
+
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}{0.55\textwidth}\raggedleft
+
+
+
+
+        Yesterday,\\
+        all my troubles seemed so far away\\
+        Now it looks as though they're here to stay\\
+        Oh, I believe in yesterday.
+    \end{minipage}
+
+    
      
 \end{frame}
 
