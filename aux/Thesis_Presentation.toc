@@ -5,7 +5,7 @@
 \beamer@subsectionintoc {3}{1}{Introdução às EDRs e EDRNs}{10}{0}{3}
 \beamer@subsectionintoc {3}{2}{Propagação de Descontinuidades}{17}{0}{3}
 \beamer@subsectionintoc {3}{3}{Desaparecimento do Retardo}{23}{0}{3}
-\beamer@subsectionintoc {3}{4}{Retardos Limitados e Ilimitados}{26}{0}{3}
+\beamer@subsectionintoc {3}{4}{Argumentos desviados Limitados e Ilimitados}{26}{0}{3}
 \beamer@subsectionintoc {3}{5}{Existência e unicidade}{29}{0}{3}
 \beamer@sectionintoc {4}{Métodos Numéricos Contínuos}{30}{0}{4}
 \beamer@subsectionintoc {4}{1}{Métodos discretos para EDOs}{30}{0}{4}

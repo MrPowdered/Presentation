@@ -210,14 +210,14 @@
     \footnotesize
     \begin{defi}[Equações Diferenciais Ordinárias (EDOs)]
         \label{def:1:EDO} 
-        Uma \textit{Equação Diferencial Ordinária (EDO) de Primeira Ordem} é definida como.
+        Uma \textbf{Equação Diferencial Ordinária (EDO) de Primeira Ordem} é definida como.
 
         \begin{equation}
             y'(t) = g(t, y(t))
         \end{equation}
 
 
-        para $g: [t_0, t_f] \times \R^d \to \R^d$. Um \textit{Problema de Valor Inicial (PVI)} para EDOs é dado por
+        para $g: [t_0, t_f] \times \R^d \to \R^d$. Um \textbf{Problema de Valor Inicial (PVI)} para EDOs é dado por
 
         \begin{equation}
             \begin{cases}
@@ -231,7 +231,7 @@
         para algum valor inicial $(t_0, y_0) \in \R^{d+1}$. 
 
         \begin{enumerate}
-            \item[$\bullet$] Uma função $\gamma: [t_0, t_f] \to \R^d$ é dita \textit{solução} do PVI se $\gamma$ é diferenciável e se satisfaz \ref{def:eq:PVI}.
+            \item[$\bullet$] Uma função $\gamma: [t_0, t_f] \to \R^d$ é dita \textbf{solução} do PVI se $\gamma$ é diferenciável e se satisfaz \ref{def:eq:PVI}.
         \end{enumerate}
 
     \end{defi}
@@ -245,13 +245,13 @@
         \footnotesize
     \begin{defi}[Equações Diferenciais com Retardo (EDRs)]
 
-        Uma \textit{Equação Diferencial com Retardo (EDR)} é dada por
+        Uma \textbf{Equação Diferencial com Retardo (EDR)} é dada por
 
         \begin{equation}
             y'(t) = f(t, y(t), y(t - \tau(t, y(t)))),
         \end{equation}
 
-        para $p > 0$, $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, $\tau: [t_0, t_f] \times \R^d \to [0, p]$. Um \textit{Problema Inicial (PI)} para EDRs é dado por
+        para $p > 0$, $f:[t_0, t_f] \times \R^d \times \R^d \to \R^d$, $\tau: [t_0, t_f] \times \R^d \to [0, p]$. Um \textbf{Problema Inicial (PI)} para EDRs é dado por
 
         \begin{equation}  
             \begin{cases}
@@ -266,7 +266,7 @@
 
         \begin{itemize}
             \item[$\bullet$] A função retardo $\tau$ é positiva e pode ser constante, depender do tempo ou do estado.
-            \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{def:eq:EDR}.
+            \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textbf{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{def:eq:EDR}.
 
         \end{itemize}
     \end{defi}
@@ -281,7 +281,7 @@
     \footnotesize
     \begin{defi}[Equações Diferenciais do tipo Neutro com Retardo]
 
-        Uma \textit{Equação Diferencial do tipo Neutro com Retardo (EDRN)} é dada por
+        Uma \textbf{Equação Diferencial do tipo Neutro com Retardo (EDRN)} é dada por
 
         \begin{equation}
             y'(t) = f(t, y(t), y(t - \tau(t, y(t))), y'(t - \sigma(t, y(t)))), 
@@ -302,7 +302,7 @@
         
         \begin{itemize}
             \item[$\bullet$] $\tau$ e $\sigma$ são retardos positivos.
-            \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
+            \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textbf{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
         \end{itemize}
 
     \end{defi}
@@ -351,7 +351,7 @@
 %     \small
 %     \begin{defi}[Equações Diferenciais Ordinárias (EDOs)]
 %         \label{def:1:EDO} 
-%         Um \textit{Problema de Valor Inicial (PVI)} para \textit{Equações Diferenciais Ordinárias (EDOs)} é dado por
+%         Um \textbf{Problema de Valor Inicial (PVI)} para \textbf{Equações Diferenciais Ordinárias (EDOs)} é dado por
 %
 %
 %         \begin{equation}
@@ -368,7 +368,7 @@
 %
 %         \begin{enumerate}
 %             \item[$\bullet$] A primeira equação é a chamada EDO e a segunda, o valor inicial.
-%             \item[$\bullet$] Uma função $\gamma: [t_0, t_f] \to \R^d$ é dita \textit{solução} do PVI se $\gamma$ é diferenciável e se satisfaz \ref{def:eq:PVI}.
+%             \item[$\bullet$] Uma função $\gamma: [t_0, t_f] \to \R^d$ é dita \textbf{solução} do PVI se $\gamma$ é diferenciável e se satisfaz \ref{def:eq:PVI}.
 %         \end{enumerate}
 %
 %     \end{defi}
@@ -385,7 +385,7 @@
     \small
     \begin{defi}[Condição de Lipschitz]
         \label{def:2:condicao_de_lispchitz}
-        Diz-se que uma função $g: D = [t_0, t_f] \times \R^d \to \R^d$ satisfaz uma condição de \textit{Lipschitz} em relação a variável y no conjunto $D$ se, e somente se,
+        Diz-se que uma função $g: D = [t_0, t_f] \times \R^d \to \R^d$ satisfaz uma condição de \textbf{Lipschitz} em relação a variável y no conjunto $D$ se, e somente se,
 
         \begin{equation}
             \| g(t, y_1) - g(t, y_2) \| \leq L \| y_1 - y_2 \|, 
@@ -411,10 +411,10 @@
     \begin{defi}[Problema bem posto]
          \label{def:3:problema_bem_posto}
             
-         O PVI \eqref{def:eq:PVI} é dito ser um \textit{problema bem posto} se 
+         O PVI \eqref{def:eq:PVI} é dito ser um \textbf{problema bem posto} se 
          \begin{itemize}
              \item[$\bullet$] Existe uma única solução $y(t)$ para o PVI.
-         \item[$\bullet$] Existem  $\epsilon_0 > 0$ e $k>0$ tais que, para qualquer $\epsilon $ sendo $0 < \epsilon < \epsilon_0$ o \textit{problema perturbado}
+         \item[$\bullet$] Existem  $\epsilon_0 > 0$ e $k>0$ tais que, para qualquer $\epsilon $ sendo $0 < \epsilon < \epsilon_0$ o \textbf{problema perturbado}
 
 
          \begin{equation*}
@@ -483,8 +483,8 @@
 %         
 %     \begin{itemize}
 %         \item[$\bullet$] A primeira equação do PI é a chamada EDR, já a segunda, o estado inicial.
-%         \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{def:eq:EDR}.
-%         \item[$\bullet$] A função $\tau$ é chamada de \textit{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
+%         \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textbf{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{def:eq:EDR}.
+%         \item[$\bullet$] A função $\tau$ é chamada de \textbf{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
 %
 %     \end{itemize}
 %     \end{defi}
@@ -503,8 +503,8 @@
 %      \begin{itemize}
 %          \item[$\bullet$] O retardo depende do estado quando a função $\tau$ depende tanto do tempo $t$, quando do estado $y$.
 %          quanto do estado $y$
-%          \item[$\bullet$] \textit{O retardo depende do tempo} caso a função retardo $\tau$ dependa apenas da tempo $t$.
-%          \item[$\bullet$] \textit{O retardo é constante} caso $\tau$ for constante.
+%          \item[$\bullet$] \textbf{O retardo depende do tempo} caso a função retardo $\tau$ dependa apenas da tempo $t$.
+%          \item[$\bullet$] \textbf{O retardo é constante} caso $\tau$ for constante.
 %      \end{itemize}
 %      
 %     Novos desafios emergem ao fazer a generalização das EDOs para EDRs, sendo necessária uma nova teoria de existência, unicidade e estabilidade das soluções.
@@ -609,7 +609,7 @@
                      \end{tikzpicture}
                  \end{adjustbox}
              \end{center}
-             \caption{Representação do nível e localização dos pontos de descontinuidade da solução de  \eqref{chap1:ex1:eq:1}}
+             \caption{\footnotesize Representação do nível e localização dos pontos de descontinuidade da solução de  \eqref{chap1:ex1:eq:1}}
              \label{chap1:ex1:fig:1}
          \end{figure}
 
@@ -774,8 +774,8 @@
 %         \[ \vdots \]
 %         \begin{itemize}
 %             \item[$\bullet$] A primeira equação do PI é a chamada EDRN, já a segunda, o estado inicial.
-%             \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textit{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
-%             \item[$\bullet$] A função $\tau$ é chamada de \textit{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
+%             \item[$\bullet$] Uma função $\gamma:[t_0 - p, t_f] \to \R^d$ é chamada de \textbf{solução} para o PI se $\gamma$ for contínua em $[t_0 - p, t_f]$, diferenciável em $[t_0, t_f]$ e satisfaz \eqref{chap1:def:EDRN}.
+%             \item[$\bullet$] A função $\tau$ é chamada de \textbf{retardo} e assumisse que $\tau(t, y(t))\geq0$ para todo $t \in [t_0, t_f]$.
 %         \end{itemize} 
 %
 %     \end{exampleblock}
@@ -888,7 +888,7 @@
             \]
 
         \noindent
-        os quais são chamados de \textit{argumentos desviados}. 
+        os quais são chamados de \textbf{argumentos desviados}. 
 
         \item[$\bullet$] Note que $\alpha(t) \leq t$ e $\beta(t) \leq t$.
 
@@ -955,7 +955,7 @@
 
 % \begin{frame}{Descontinuidades primárias}
 %
-%     $\bullet$ Cada $\xi_{k, i}$ gera uma descontinuidade em $y^{(k+1)}$. Estes pontos são chamados de \textit{descontinuidades primárias de k-ésimo nível}.
+%     $\bullet$ Cada $\xi_{k, i}$ gera uma descontinuidade em $y^{(k+1)}$. Estes pontos são chamados de \textbf{descontinuidades primárias de k-ésimo nível}.
 %
 %     $\bullet$ Note que, conforme o nível das descontinuidades primárias aumentam, também aumenta a suavidade da solução, como descrito por Neves e Feldstein em \cite{Neves1976CharacterizationOJ} na forma do seguinte teorema.
 %
@@ -979,11 +979,11 @@
 
     \begin{defi}
         \label{chap2:def:principal_descontinuity}
-    Seja $\bar{\xi_0} = t_0$ definido como uma \textit{descontinuidade principal de nível 0}. Indutivamente, uma \textit{descontinuidade principal de nível (k+1)} é a menor raiz $\bar{\xi}_{k+1}$ de 
+    Seja $\bar{\xi_0} = t_0$ definido como uma \textbf{descontinuidade principal de nível 0}. Indutivamente, uma \textbf{descontinuidade principal de nível (k+1)} é a menor raiz $\bar{\xi}_{k+1}$ de 
         \[
             \alpha(t) = \bar{\xi_k}
         \]
-        com multiplicidade ímpar, sendo $\bar{\xi_k}$ uma \textit{descontinuidade principal de nível (k)}
+        com multiplicidade ímpar, sendo $\bar{\xi_k}$ uma \textbf{descontinuidade principal de nível (k)}
     \end{defi}
 
 
@@ -1164,9 +1164,9 @@
         \begin{center}
             \includegraphics[width=0.7\textwidth, height=0.5\textheight]{desaparecimento_do_retardo.png}
         \end{center}
-        \caption{Desaparecimento do Retardo ({\color{red} texto})}\label{fig:Desaparecimento do Retardo}
+    \vspace{-0.3cm}
+    \caption{\small Acumulação dos pontos de descontinuidades em uma vizinhança ponto $\xi$ onde o retardo desaparece}\label{fig:Desaparecimento do Retardo}
     \end{figure}
-
 
     % \begin{proof}[Demonstração ...Continuação]
     %     \[
@@ -1175,6 +1175,8 @@
     %     $\bullet$ Como $\xi$ é único ponto fixo em $[t_0, \xi]$ por hípotese, então $\lim_{n \to \infty} s_n = \xi$. Portanto, existem infinitos pontos de descontinuidade em qualquer vizinhança a esquerda de $\xi$.
     % \end{proof}
     %
+
+    \vspace{-0.3cm}
     $\bullet$ Para evitar este problema, a seguinte hipótese é introduzida.
 
     \begin{hip}
@@ -1206,11 +1208,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Retardos Limitados e Ilimitados}
-\begin{frame}{Retardos Limitados e Ilimitados}
+\subsection{Argumentos desviados Limitados e Ilimitados}
+\begin{frame}{Argumentos desviados Limitados e Ilimitados}
 
     \scriptsize
-    $\bullet$ Caso o retardo seja limitado, a suavização da solução como visto no teorema \ref{chap2:teo:EDR_smooting}, não ocorre.
+    $\bullet$ Caso o argumento desviado seja limitado, a suavização da solução não ocorre.
 
     $\bullet$ Para mostrar tanto, supoha que exista algum $M>0$ tal que \( \lim_{t \to \infty} \alpha(t) \leq M \).
 
@@ -1220,7 +1222,7 @@
         \begin{center}
             \includegraphics[width=0.7\textwidth, height=0.5\textheight]{retardo_limitado.png}
         \end{center}
-        \caption{Retardo limitado ({\color{red} texto})}\label{fig:Retardo_limitado}
+        \caption{\footnotesize  Progragação dos pontos de descontinuidade de mesmo nível pelo argumento desviado limitado}\label{fig:argumento desviado_limitado}
     \end{figure}
 
     % \begin{exampleblock}
@@ -1284,7 +1286,7 @@
         \begin{center}
             \includegraphics[width=0.9\textwidth, height=0.7\textheight]{hip123.png}
         \end{center}
-        \caption{Hipóteses 1, 2 e 3 (Ainda vou montar a minha)}\label{fig:hip123}
+        \caption{Ilustração das hipóteses 1, 2 e 3 combinadas}\label{fig:hip123}
     \end{figure}
 
 \end{frame}
@@ -1461,12 +1463,12 @@
     Note que
 
     \begin{itemize}
-        \item[$\bullet$] Caso $i_n = j_n = 0$, a interpolação ocorre baseada nos valores em $[t_n, t_{n+1}]$. Tal caso é chamado de \textit{interpolação de passo único}. Caso isso não ocorra, temos uma interpolação de múltiplos passos. 
+        \item[$\bullet$] Caso $i_n = j_n = 0$, a interpolação ocorre baseada nos valores em $[t_n, t_{n+1}]$. Tal caso é chamado de \textbf{interpolação de passo único}. Caso isso não ocorra, temos uma interpolação de múltiplos passos. 
         \item[$\bullet$] Caso $j_{n} > 0$, o interpolante \eqref{chap3:def:eq:Interpolant_extension} não pode ser calculado simultâneamente com o método \eqref{chap3:def:eq:ODE_method}, devendo esperá-lo atingir o passo $t_{n + j_n + 1}$ para poder ser calculado.
     \end{itemize}
 
 
-    Um método numérico discreto para EDOs acompanhado de uma extensão contínua é chamado um \textit{método numérico contínuo para EDOs}. 
+    Um método numérico discreto para EDOs acompanhado de uma extensão contínua é chamado um \textbf{método numérico contínuo para EDOs}. 
 
 
 \end{frame}
@@ -1651,7 +1653,7 @@
     \begin{defi}[Norma induzida de matrizes]
         \label{apendices:def:induced_matrix_norm}
         Seja $K$ o corpo dos reais ou dos complexos e sejam $\|\cdot\|_\alpha$ e $\|\cdot\|_\beta$ normas em $K^n$ e $K^m$, respectivamente.
-        A norma $\| \cdot \|_{\alpha, \beta}$ em $K^{m \times n}$ é chamada de \textit{norma induzida} se 
+        A norma $\| \cdot \|_{\alpha, \beta}$ em $K^{m \times n}$ é chamada de \textbf{norma induzida} se 
 
         \[ \| A \|_{\alpha, \beta} = \sup\left\{\frac{\|Ax\|_\beta}{\|x\|_\alpha} : x\in K^n \backslash \left\{0\right\} \right\}. \]
 
@@ -1673,7 +1675,7 @@
     \begin{defi}[Produto de Kronecker]
         \label{apendices:def:kronecker_product}
         Sejam $A$ e $B$ duas matrizes quaisquer nos espaços vetorias $K^{m, n}, m,n \geq 0$ e $B \in K^{p, q}, r,s \geq 0$ 
-        para $K = \R$ (ou $\C$). O \textit{produto Kronecker} entre $A$ e $B$ é dado pela função
+        para $K = \R$ (ou $\C$). O \textbf{produto Kronecker} entre $A$ e $B$ é dado pela função
         $\otimes: K^{m, n} \times K^{p, q} \to (K^{pm \times qn})$ definida notação por blocos
 
         \[
@@ -1897,9 +1899,14 @@
           C_n x^{(j)}.
     \]
 
-    \phantom{aa} $\bullet$ Pela propriedade da estabilidade \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition} sobre $C_n$, temos que $\| C_n x^{(j)} \|_* \leq \| x^{(j)} \|_*$. 
+    \phantom{aa} $\bullet$ Pela propriedade da estabilidade \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition} sobre $C_n$, temos que $\| C_n x^{(j)} \|_* \leq \| x^{(j)} \|_*$ para todo $1 \leq j \leq d$.
 
-    \phantom{aa} $\bullet$ Finalmente, como $\vertiii{ \mathcal{C}_{n} \mathbf{x}} \leq \|x^{(j)}\|_*$ para todo $1 \leq j \leq d$, então $\vertiii{ \mathcal{C}_{n} \mathbf{x}} \leq \vertiii{\mathbf{x}}$ e $\mathcal{C}_n$ satisfaz a propriedade.
+    % \phantom{aa} $\bullet$ Portanto, $\vertiii{ \mathcal{C}_{n} \mathbf{x}} =  \max_{1 \leq j \leq q} \| C_n x^{(j)} \|_* \leq \max_{1 \leq j \leq q} \| x^{(j)} \|_*$  = \|x^{(j)}\|_*$  e $\mathcal{C}_{n}$ satisfaz a propriedade \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition}.
+
+    \vspace{0.2cm}
+    \phantom{aa} $\bullet$ Portanto, \(\vertiii{ \mathcal{C}_{n} \mathbf{x}} =  \max_{1 \leq j \leq q} \| C_n x^{(j)} \|_* \leq \max_{1 \leq j \leq q} \| x^{(j)} \|_*\ = \vertiii{ \mathbf{x} }\) e \(\mathcal{C}_{n}\) satisfaz a propriedade \eqref{chap3:teo:ODE_methods_convergence:eq:stability_condition}.
+
+    % \phantom{aa} $\bullet$ Finalmente, como $\vertiii{ \mathcal{C}_{n} \mathbf{x}} \leq \|x^{(j)}\|_*$ para todo $1 \leq j \leq d$, então $\vertiii{ \mathcal{C}_{n} \mathbf{x}} \leq \vertiii{\mathbf{x}}$ e $\mathcal{C}_n$ satisfaz a propriedade.
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2022,7 +2029,11 @@
 
 \begin{frame}{Teorema: Continuação}
 
+    \footnotesize
+
     \phantom{aa} $\bullet$ Quanto ao resultado de ordem uniforme global, suponha novamente \(y_{n}^{*}=y\left(t_{n}\right)\) em \eqref{chap3:eq:order_of_discrete_methods:2} , de modo que \eqref{chap3:def:interpolant_extension_order:eq:1} fornece 
+
+
 
     \begin{equation}
       \begin{aligned}
@@ -2038,6 +2049,16 @@
     \begin{equation}
       \max _{0 \leq n \leq N-1} \max _{0 \leq \theta \leq 1}\left\|\epsilon_{n+1}(\theta)\right\|=O\left(h^{q+1}\right)
       \label{chap3:teo:ODE_methods_convergence:eq:8}
+    \end{equation}
+
+    \phantom{aa} $\bullet$ Lembrando que a expressão da extensão contínua é dada por 
+
+    \vspace{-0.3cm}
+    \begin{equation}
+        \begin{split}
+            \eta(t_n + \theta h_{n+1}) = &\beta_{n, 1} (\theta) y_{n + j_n} + \dots + \beta_{n, j_n + i_n + 1}(\theta) y_{n - i_n} \\
+                                         &+ h_{n+1} \Psi(y_{n+j_n}, \dots, y_{n-i_n}; \theta, g, \Delta _n '), \qquad 0 \leq \theta \leq 1,
+        \end{split}
     \end{equation}
 
 
@@ -2169,7 +2190,7 @@
     $$
 
     \begin{itemize}
-        \item[$\bullet$] Observe que o uso da extensão contínua torna o método implicito, mesmo que o método discreto usado seja explicito. Este fenômeno é chamado de \textit{sobreposição} (do inglês: \textit{overlapping}).
+        \item[$\bullet$] Observe que o uso da extensão contínua torna o método implicito, mesmo que o método discreto usado seja explicito. Este fenômeno é chamado de \textbf{sobreposição} (do inglês: \textbf{overlapping}).
 
     \end{itemize}
 
@@ -2272,12 +2293,13 @@
 \section{Aplicações}
 \subsection{O modelo SIR}
 
-\begin{frame}{O modelo SIR}
+\begin{frame}{Aplicações}
      
+    \begin{exampleblock}
+        <1->{O modelo SIR}
+        \small
 
-    \small
-    
-    \begin{itemize}
+        \begin{itemize}
             \item [$\bullet$] $S,I,R :=$ Percentual de Susceptíveis, Infectados e Removidos;
             \item [$\bullet$] $\beta, \gamma := $ Taxa média de Contato e de Remoção por tempo;
             \item [$\bullet$] O modelo é dado por
@@ -2290,22 +2312,25 @@
                 $ 
                 onde $S + I + R = 1$;
 
-    \end{itemize}
+        \end{itemize}
 
 
-    \begin{figure}
-        \begin{center}
-            \begin{tikzpicture}[node distance=1cm,auto,>=latex',every node/.append style={align=center},int/.style={draw, minimum size=1cm}]
-                \node [int] (S)             {$S$};
-                \node [int, right=of S] (I) {$I$};
-                \node [int, right=of I] (R) {$R$};
-                \coordinate[right=of I] (out);
-                \path[->, auto=false] (S) edge node {$\beta$ \\[.2em]} (I)
-                (I) edge node {$\gamma$ \\[.2em]} (R);
-            \end{tikzpicture}
-        \end{center}
-        \caption{Diagrama do modelo SIR}
-    \end{figure}
+        \begin{figure}
+            \begin{center}
+                \begin{tikzpicture}[node distance=1cm,auto,>=latex',every node/.append style={align=center},int/.style={draw, minimum size=1cm}]
+                    \node [int] (S)             {$S$};
+                    \node [int, right=of S] (I) {$I$};
+                    \node [int, right=of I] (R) {$R$};
+                    \coordinate[right=of I] (out);
+                    \path[->, auto=false] (S) edge node {$\beta$ \\[.2em]} (I)
+                    (I) edge node {$\gamma$ \\[.2em]} (R);
+                \end{tikzpicture}
+            \end{center}
+            \caption{Diagrama do modelo SIR}
+        \end{figure}
+
+    \end{exampleblock}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
