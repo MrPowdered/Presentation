@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1731437051.03168 "Thesis_Presentation.tex" "Thesis_Presentation.pdf" "Thesis_Presentation" 1731437057.9239 0
+["pdflatex"] 1731438359.0671 "Thesis_Presentation.tex" "Thesis_Presentation.pdf" "Thesis_Presentation" 1731438365.98719 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -381,11 +381,11 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1704927586 8218547 a0ef5fb9328cbf1d1241f1eb1e2fef0a ""
   "/usr/local/texlive/2023/texmf.cnf" 1704927461.02649 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "TeiPel_En_Beamer_Layout.sty" 1730992842.70977 6860 c32369cd46e45c5d07cb2d73b9c56a02 ""
-  "Thesis_Presentation.tex" 1731437042.697 101067 7d5a8c495789ad80dd584ddff525e130 ""
-  "aux/Thesis_Presentation.aux" 1731437057.70692 27742 b4c8bd7f85fbf6bda05e855e0fce47d4 "pdflatex"
-  "aux/Thesis_Presentation.nav" 1731437057.71025 10694 d41e5100535b650be44e70d8efdf0018 "pdflatex"
-  "aux/Thesis_Presentation.out" 1731437057.71025 3550 fd67d51ea2b06e6e894f32a6083e3e28 "pdflatex"
-  "aux/Thesis_Presentation.toc" 1731437057.71025 1361 e481db625f59fae479f9078fe28e9e02 "pdflatex"
+  "Thesis_Presentation.tex" 1731438350.40983 101068 8fe43fb2586d564e00237675a648c631 ""
+  "aux/Thesis_Presentation.aux" 1731438365.76974 27743 6b61fd2fc835a401f1c15f8181815529 "pdflatex"
+  "aux/Thesis_Presentation.nav" 1731438365.77641 10694 d41e5100535b650be44e70d8efdf0018 "pdflatex"
+  "aux/Thesis_Presentation.out" 1731438365.77308 3550 fd67d51ea2b06e6e894f32a6083e3e28 "pdflatex"
+  "aux/Thesis_Presentation.toc" 1731438365.77641 1361 e481db625f59fae479f9078fe28e9e02 "pdflatex"
   "data.csv" 1730578270.73313 14702 03d7fb0f6bc29b48c6e937095c96c10a ""
   "images/SIR_rumos.png" 1731433573.96937 31908 14cb7079301a0e041f33be46ffcda8b3 ""
   "images/desaparecimento_do_retardo.png" 1730905973.2982 47125 2d0ff675c2589db6c40259eaed14eadf ""
